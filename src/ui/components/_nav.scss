@@ -1,0 +1,51 @@
+.ui-nav {
+  background-color: white;
+  padding: 16px 0;
+  // border-bottom: 1px solid $ui-nav-border-color;
+
+  .ui-nav-navitems {
+    @include display(flex);
+    @include align-items(center);
+
+    .ui-nav-navitem {
+      margin-right: $spacing-default + 10px;
+
+      &.ui-nav-navitem-brand {
+        @include display(flex);
+        @include align-items(center);
+
+        img {
+          opacity: 1;
+        }
+      }
+
+      &.ui-nav-navitem-right {
+        margin-left: auto;
+        margin-right: 0px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      > .ui-button, > .ui-dropdown-wrapper > .ui-button {
+        background: #004a73;
+        color: white;
+        border: 0;
+        box-shadow: none;
+
+        &:hover {
+          background: #004a73;
+        }
+      }
+
+    }
+  }
+
+  &.ui-nav-inverse {
+    background: $ui-nav-inverse-background;
+  }
+
+  &.ui-nav-fixed {
+  }
+}

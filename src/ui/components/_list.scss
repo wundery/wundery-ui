@@ -1,0 +1,56 @@
+.ui-list {
+  background: white;
+  border: 1px solid rgba(0,0,0,0.07);
+  margin-bottom: $spacing-double;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+
+  .ui-list-title {
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    font-size: 12px;
+    font-weight: $ui-font-weight-bold;
+    text-transform: uppercase;
+    color: #999;
+    padding: 10px;
+    background: #f9f9f9;
+  }
+
+  .ui-list-item {
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    padding: $spacing-default;
+
+    &.ui-list-item-active {
+      background: #f9f9f9;
+    }
+
+    &.ui-list-item-with-onclick {
+      cursor: pointer;
+      &:hover {
+        background: #f9f9f9;
+      }
+    }
+
+    &:first-child {
+      > a {
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+      }
+    }
+
+    &:last-child {
+      border: none;
+
+      > a {
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+      }
+    }
+  }
+
+  &.ui-list-embedded {
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,41 @@
+.ui-headline {
+  margin-bottom: $spacing-default;
+  color: $ui-headline-color;
+
+  &.ui-headline-size-huge {
+    font-size: 65px;
+    font-weight: $ui-font-weight-black;
+  }
+
+  &.ui-headline-size-large {
+  	font-size: 40px;
+    font-weight: 800;
+  }
+
+  &.ui-headline-size-default {
+    font-size: 30px;
+    font-weight: 800;
+  }
+
+  &.ui-headline-size-medium {
+		font-size: 20px;
+    font-weight: $ui-font-weight-default;
+    .ui-icon {
+      margin-right: 8px;
+    }
+  }
+
+  &.ui-headline-size-small {
+    $_color: lighten($ui-headline-color, 35%);
+  	font-size: 18px;
+    color: $_color;
+    padding-bottom: 4px;
+    border-bottom: 1px solid lighten($_color, 40%);
+  }
+
+  .ui-text-inverse {
+    color: white;
+  }
+
+}
+

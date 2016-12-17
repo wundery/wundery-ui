@@ -1,0 +1,30 @@
+.ui-thumbnail {
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  padding: 2px;
+  background: white;
+  line-height: 1;
+  display: inline-block;
+
+  .ui-thumbnail-label {
+    font-size: 12px;
+    font-weight: $ui-font-weight-bold;
+    padding: 8px;
+    color: #666;
+  }
+
+  img {
+    margin: 0;
+    padding: 0;
+    display: block;
+    max-width: 100%;
+  }
+
+  &.ui-thumbnail-circle {
+    border-radius: 50%;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+}

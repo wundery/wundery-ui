@@ -1,0 +1,23 @@
+.ui-message {
+  @include display(flex);
+
+  padding: $ui-spacing-default;
+
+  .ui-message-icon {
+    margin-right: 10px;
+  }
+
+  .ui-message-content {
+    font-size: 14px;
+  }
+
+  &.ui-message-theme-default {
+    border: 1px solid #ddd;
+  }
+
+  &.ui-message-theme-success {
+    background: $ui-color-green;
+    border-radius: $ui-border-radius;
+    color: white;
+  }
+}

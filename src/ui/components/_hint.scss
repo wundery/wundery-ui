@@ -1,0 +1,18 @@
+.ui-hint {
+  @include display(flex);
+
+  margin-top: 10px;
+  border-radius: 3px;
+  background: #f7f7f7;
+  padding: 10px;
+
+  .ui-hint-label {
+    @include flex-shrink(0);
+    margin-right: 10px;
+  }
+
+  .ui-hint-content {
+    font-size: 13px;
+    color: #666;
+  }
+}

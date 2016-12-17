@@ -1,0 +1,81 @@
+.ui-flexgrid {
+
+  // Wrapper for all items
+
+  .ui-flexgrid-items {
+    @include display(flex);
+    @include flex-wrap(wrap);
+
+    overflow-x: hidden;
+
+    // This is a hack to remove the outer padding added by each item
+    margin-left: -10px;
+    margin-right: -10px;
+
+    .ui-flexgrid-item {
+      padding-top: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+      overflow-x: hidden;
+      position: relative;
+
+      // Overlay
+
+      .ui-flexgrid-item-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+      }
+
+      // Widths
+
+      &.ui-flexgrid-item-width-md-6 {
+        @include flex-basis(50%);
+      }
+
+      &.ui-flexgrid-item-width-md-3 {
+        @include flex-basis(25%);
+      }
+
+
+      &.ui-flexgrid-item-width-md-4 {
+        @include flex-basis(33.33333%);
+      }
+
+      &.ui-flexgrid-item-width-md-9 {
+        @include flex-basis(75%);
+      }
+
+      &.ui-flexgrid-item-grow {
+        @include flex-grow(1);
+      }
+
+      // Borders
+
+      &.ui-flexgrid-item-border-right {
+        border-right: 1px solid rgba(223, 229, 232, 0.6);
+      }
+    }
+
+  }
+
+  &.ui-flexgrid-no-padding {
+    .ui-flexgrid-items {
+      margin-left: 0;
+      margin-right: 0;
+
+      .ui-flexgrid-item {
+        padding: 0;
+      }
+    }
+  }
+
+  &.ui-flexgrid-no-wrap {
+    .ui-flexgrid-items {
+      @include flex-wrap(nowrap);
+    }
+  }
+}

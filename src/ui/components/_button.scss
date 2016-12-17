@@ -1,0 +1,131 @@
+.ui-button-wrapper > a, .ui-button {
+  @include user-select(none);
+
+  padding: 4px 8px;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  font-size: $ui-button-default-font-size;
+  font-family: $ui-font-family;
+  font-weight: $ui-button-font-weight;
+  vertical-align: middle;
+
+  &.ui-button-left {
+    .ui-button-inner {
+      @include justify-content(flex-start);
+    }
+  }
+
+  .ui-button-inner {
+    @include display(flex);
+    @include justify-content(center);
+  }
+
+  // Append / Prepend
+
+  .ui-button-prepend {
+    margin-right: 4px;
+
+    &.ui-button-prepend-no-margin {
+      margin-right: 0;
+    }
+  }
+
+  .ui-button-append {
+    margin-left: 3px;
+  }
+
+  .ui-button-content {
+    text-align: left;
+
+    .ui-button-description {
+      display: block;
+      font-size: 12px;
+      font-weight: normal;
+      opacity: 0.6;
+    }
+  }
+
+  // Sizes
+
+  &.ui-button-size-small {
+    font-size: 11px;
+    padding: 3px 6px;
+    font-weight: $ui-font-weight-bold;
+  }
+
+  &.ui-button-size-large {
+    font-size: 15px;
+    padding: 8px 16px;
+    font-weight: $ui-font-weight-black;
+  }
+
+  &.ui-button-size-block {
+    display: block;
+    width: 100%;
+  }
+
+  // Types
+
+  &.ui-button-type-default {
+    @include linear-gradient(to bottom,#f7f8fa,#e7e9ec);
+    box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
+    border-color: #adb1b8 #a2a6ac #8d9096;
+    border-style: solid;
+    border-width: 1px;
+    color: #272727;
+
+    &:hover {
+      @include linear-gradient(to bottom,#e7eaf0,#d9dce1);
+      border-color: #a2a6ac #979aa1 #82858a;
+    }
+  }
+
+  &.ui-button-type-success {
+    @include linear-gradient(
+      $ui-button-success-background-color,
+      darken($ui-button-success-background-color, 4%)
+    );
+
+    box-shadow: 0 1px 0 rgba(255,255,255,0.2) inset;
+    border-color: #4aab00 #409600 #347900;
+    border-style: solid;
+    border-width: 1px;
+    color: $ui-button-success-color !important;
+
+    &:hover {
+      @include linear-gradient(
+        $ui-button-success-hover-background-color,
+        darken($ui-button-success-hover-background-color, 5%)
+      );
+    }
+  }
+
+  &.ui-button-type-danger {
+    font-weight: $ui-font-weight-bold;
+    border-color: #c73434 #c33030 #d62929;
+    background: linear-gradient(to bottom, #ff6a6a, #f43636);
+    color: white;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+
+    &:hover {
+      background: linear-gradient(to bottom, darken(#ff6a6a, 4%), darken(#f43636, 4%));
+    }
+  }
+
+  // States
+
+  &[disabled], &.ui-button-state-disabled {
+    pointer-events: none;
+    opacity: 0.6;
+  }
+
+  &.ui-button-state-loading {
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

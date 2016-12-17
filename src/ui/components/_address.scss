@@ -1,0 +1,81 @@
+.ui-address {
+  padding: 11px;
+  border-radius: 3px;
+
+  .ui-address-element {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 13px;
+  }
+
+  .ui-address-line {
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  .ui-address-name, .ui-address-company {
+    font-weight: $ui-font-weight-bold;
+  }
+
+  &.ui-address-compact {
+
+    .ui-address-element  {
+      display: inline;
+      margin-bottom: 0px;
+    }
+
+    .ui-address-line {
+      margin-bottom: 2px;
+    }
+
+    .ui-address-primary-details {
+
+      .ui-address-company {
+        &:after {
+          content: ", ";
+        }
+      }
+
+      * {
+        &:last-child {
+          &:after {
+            content: "";
+          }
+        }
+      }
+    }
+
+    .ui-address-location-details {
+      .ui-address-street, .ui-address-city {
+        &:after {
+          content: ", ";
+        }
+      }
+
+      * {
+        &:last-child {
+          &:after {
+            content: "";
+          }
+        }
+      }
+    }
+
+    .ui-address-contact-details {
+      .ui-address-email, .ui-address-phone, .ui-address-fax {
+        &:after {
+          content: ", ";
+        }
+      }
+
+      * {
+        &:last-child {
+          &:after {
+            content: "";
+          }
+        }
+      }
+    }
+  }
+}

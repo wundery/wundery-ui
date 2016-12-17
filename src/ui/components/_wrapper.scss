@@ -1,0 +1,30 @@
+.ui-wrapper {
+
+  &.ui-wrapper-accent {
+    background-color: $ui-wrapper-background-color-accent;
+  }
+
+  &.ui-wrapper-highlight {
+    @include linear-gradient(
+      $ui-wrapper-background-color-highlight,
+      darken($ui-wrapper-background-color-highlight, 10%)
+    );
+
+    // Boxes on this wrapper should have a decent
+    // shadow at the bottom
+    .ui-box {
+      box-shadow: 0px 2px 2px darken($ui-wrapper-background-color-highlight, 5%);
+    }
+  }
+
+  // Sizes
+
+  &.ui-wrapper-fullheight {
+  }
+}
+
+body > div > .ui-wrapper,
+body > .ui-wrapper {
+  padding-bottom: 60px;
+  min-height: 100%;
+}

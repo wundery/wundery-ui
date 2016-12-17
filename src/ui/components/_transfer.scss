@@ -1,0 +1,14 @@
+.ui-transfer {
+  .ui-transfer-icon {
+    font-size: 60px;
+    color: #d3d3d3;
+  }
+
+  .ui-flexgrid {
+    .ui-flexgrid-item {
+      @include display(flex);
+      @include align-items(center);
+      @include justify-content(center);
+    }
+  }
+}

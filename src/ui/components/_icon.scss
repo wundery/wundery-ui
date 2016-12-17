@@ -1,0 +1,33 @@
+.ui-icon {
+
+	&.ui-icon-state-success {
+		color: green;
+	}
+
+	// Sizes
+
+	&.ui-icon-size-large {
+		font-size: 40px;
+	}
+
+  &.ui-icon-size-small {
+		font-size: 10px;
+	}
+
+  &.ui-icon-size-larger {
+		font-size: 16px;
+	}
+
+	// Colors
+
+	&.ui-icon-color-light {
+		color: white;
+		opacity: 0.7;
+	}
+
+  // Customizing
+
+  &.ui-icon-nomargin {
+    margin-right: 0 !important;
+  }
+}

@@ -1,0 +1,20 @@
+.ui-media {
+  @include display(flex);
+  @include flex-wrap(no-wrap);
+  @include justify-content(space-between);
+
+  .ui-media-icon {
+    @include flex-shrink(0);
+
+    max-width: 200px;
+    padding-right: $ui-spacing-double;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .ui-media-content {
+    overflow-x: hidden;
+  }
+}

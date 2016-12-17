@@ -1,0 +1,173 @@
+// Vendor variables
+
+$fa-font-path: "./fonts";
+
+// Defaults
+
+$ui-border-radius: 3px;
+
+// Colors
+
+$ui-color-red: #f44336 !default;
+$ui-color-red-light: #deb4b1 !default;
+$ui-color-blue: #0071b1 !default;
+$ui-color-blue-medium: #4b9ccc !default;
+$ui-color-blue-dark: #006198 !default;
+$ui-color-green: #4bad00 !default;
+$ui-color-green-dark: #4da20b !default;
+$ui-color-darkblue: #0065BD !default;
+$ui-color-grey-light: #f5f5f5 !default;
+$ui-color-border: #ddd;
+
+// Font
+
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,700,800";
+
+$ui-font-size-default: 16px !default;
+$ui-font-default-color: #3c4146;
+$ui-font-weight-light: 400;
+$ui-font-weight-default: 400;
+$ui-font-weight-bold: 700;
+$ui-font-weight-black: 800;
+$ui-font-family: "Open Sans", helvetica, arial, serif;
+
+// Forms
+
+$ui-form-control-border-color: $ui-color-border;
+$ui-form-control-border-color-focus: $ui-color-blue-medium;
+$ui-form-control-border-radius: $ui-border-radius;
+$ui-form-control-background-color: white;
+$ui-form-control-background-color-focus: white;
+$ui-form-control-invalid-border-color: $ui-color-red;
+
+// Buttons
+
+$ui-button-font-weight: $ui-font-weight-bold;
+$ui-button-default-font-size: 13px;
+$ui-button-success-background-color: $ui-color-green;
+$ui-button-success-hover-background-color: $ui-color-green-dark;
+$ui-button-success-color: white;
+
+$ui-button-default-background-color: $ui-color-blue-dark;
+$ui-button-default-hover-background-color: darken($ui-color-blue-dark, 5%);
+$ui-button-default-color: white;
+
+// Body
+
+$ui-body-accent-color: #f7f7f7;
+
+// UI variables
+
+$ui-space-1x: 10px;
+$ui-spacing-default: 10px !default;
+$ui-spacing-half: $ui-spacing-default / 2 !default;
+$ui-spacing-double: $ui-spacing-default * 2 !default;
+
+// Nav
+
+$ui-nav-border-color: #eaeaea;
+$ui-nav-inverse-background: #005382;
+$ui-nav-inverse-brand-color: white;
+$ui-nav-inverse-muted-color: #C3D1DE;
+$ui-nav-inverse-navitem-color: rgba(255, 255, 255, 0.8);
+$ui-nav-inverse-button-backgorund: #005F8F;
+
+
+// Defaults
+
+$ui-link-color: $ui-color-blue;
+$ui-link-color-hover: darken($ui-link-color, 8%);
+
+// Badges
+
+$ui-badge-state-default-background: $ui-link-color;
+
+// Charts
+
+$ui-chart-series-a-color: #006498;
+$ui-chart-series-b-color: lighten($ui-chart-series-a-color, 8%);
+$ui-chart-series-c-color: lighten($ui-chart-series-b-color, 8%);
+
+// Wrapper
+
+$ui-wrapper-background-color-highlight: $ui-color-blue;
+$ui-wrapper-background-color-accent: #f7f8fa;
+
+// Headlines
+
+$ui-headline-color: #2d2d2d !default;
+
+// Tables
+
+$ui-table-body-font-size: 14px;
+$ui-table-border-color: #cad4d9 !default;
+$ui-table-inner-border-color: lighten($ui-table-border-color, 7%) !default;
+$ui-table-header-background-color: #FAFAFA;
+$ui-table-header-background: linear-gradient($ui-table-header-background-color, darken($ui-table-header-background-color, 1%));
+$ui-table-header-font-color: #677C88 !default;
+$ui-table-header-font-size: 11px !default;
+$ui-table-header-text-transform: uppercase !default;
+$ui-table-header-font-weight: $ui-font-weight-bold !default;
+$ui-table-header-cell-hover-background: darken($ui-table-header-background-color, 1%) !default;
+$ui-table-background-color: white;
+$ui-table-row-hover-background: lighten($ui-table-header-background-color, 1%);
+$ui-table-page-size-background-color: $ui-table-header-font-color;
+$ui-table-page-size-color: white;
+$ui-table-headers-sort-icon-color: lighten($ui-table-header-font-color, 15%);
+$ui-table-headers-sort-icon-background: transparent;
+$ui-table-headers-sort-icon-border: 1px solid lighten($ui-table-headers-sort-icon-color, 20%);
+$ui-table-headers-sort-icon-hover-color: darken($ui-table-headers-sort-icon-color, 20%);
+$ui-table-headers-sort-icon-hover-border: 1px solid #9AA9B3;
+$ui-table-title-background: $ui-table-header-background-color;
+
+// Box
+
+$ui-box-border-width: 0px;
+$ui-box-border-color: transparent;
+$ui-box-background-color: white;
+$ui-box-header-background: white;
+$ui-box-inner-border-color: $ui-color-grey-light;
+$ui-box-header-font-color: black;
+$ui-box-header-font-weight: normal;
+$ui-box-header-text-transform: none;
+$ui-box-header-font-size: $ui-font-size-default;
+
+// List
+
+$ui-list-inner-border-color: $ui-box-inner-border-color;
+
+// KPI
+
+$ui-kpi-inner-border-color: $ui-box-inner-border-color;
+$ui-kpi-horizon-description-color: lighten($ui-table-header-font-color, 30%);
+$ui-kpi-horizon-value-color: black;
+
+// Pagination
+
+$ui-pagination-link-color: #677C88;
+$ui-pagination-text-color: lighten($ui-pagination-link-color, 20%);
+$ui-pagination-font-size: 11px;
+
+// Buttons
+
+$ui-button-font-size: 11px;
+$ui-button-state-default-background: linear-gradient(#FAFAFA, #f7f7f7);
+$ui-button-state-default-hover-background: linear-gradient(darken(#FAFAFA, 3%), darken(#f7f7f7, 3%));
+$ui-button-state-default-border: 1px solid rgba(187, 199, 206, 0.43);
+$ui-button-state-default-color: rgba(59, 88, 103, 0.81);
+
+// deprecated
+
+$color-background-light: #f5f5f5 !default;
+$color-blue: $ui-color-blue !default;
+$color-red: $ui-color-red !default;
+$color-green: #4bad00 !default;
+$font-family-default: "Open Sans", sans-serif;
+$font-size-default: 13px !default;
+$font-color-grey: #999 !default;
+$border-color-default: darken(#f5f5f5, 5%) !default;
+$spacing-default: $ui-spacing-default;
+$spacing-half: $spacing-default / 2 !default;
+$spacing-double: 2* $spacing-default !default;
+
+// Vendor overrides

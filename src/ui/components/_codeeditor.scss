@@ -1,0 +1,49 @@
+.ui-codeeditor {
+
+  .ui-codeeditor-toolbar {
+    border-top-right-radius: $ui-border-radius;
+    border-top-left-radius: $ui-border-radius;
+    border: 1px solid #ddd;
+    border-bottom-width: 0px;
+
+    button {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      padding: 6px;
+      background: transparent;
+      border-right: 1px solid #ddd;
+      cursor: pointer;
+      outline: 0;
+      font-size: 14px;
+
+      &:hover {
+        background: #f5f5f5;
+      }
+
+      &.ql-active {
+        color: $ui-link-color;
+      }
+    }
+  }
+
+  .ui-codeeditor-editor {
+    border: 1px solid #ddd;
+    border-radius: $ui-border-radius;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+
+    pre {
+      margin: 0;
+      background: #f5f5f5;
+      width: 100% !important;
+      height: 400px !important;
+      border: 0;
+      outline: 0;
+      font-family: courier;
+      font-size: 14px;
+      padding: 10px;
+      line-height: 120%;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.ui-filters {
+  @include display(flex);
+  @include align-items(center);
+
+  .ui-filter {
+    @include display(flex);
+    @include align-items(center);
+    @include user-select(none);
+
+    margin-right: 10px;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    line-height: 1;
+    padding: 6px 8px;
+    cursor: pointer;
+    background: #f1f1f1;
+
+    input {
+      margin: 0;
+      padding: 0;
+      margin-right: 6px;
+    }
+  }
+}

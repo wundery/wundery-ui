@@ -1,0 +1,13 @@
+.ui-copyable {
+	@include user-select(none);
+	display: inline-block;
+
+	.ui-copyable-text {
+		display: inline-block;
+		border-bottom: 1px dotted #ccc;
+		cursor: pointer;
+	}
+
+	&:hover {
+	}
+}

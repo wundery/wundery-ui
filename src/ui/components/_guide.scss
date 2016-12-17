@@ -1,0 +1,18 @@
+.ui-guide {
+  .ui-guide-sections {
+    .ui-guide-section {
+      .ui-guide-section-code {
+        display: none;
+
+        &.ui-guide-section-markup-shown {
+          display: block;
+        }
+      }
+    }
+
+    pre[class*=language-] {
+      margin: 0;
+      background-color: #f6f6f6;
+    }
+  }
+}

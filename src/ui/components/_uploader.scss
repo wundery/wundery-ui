@@ -1,0 +1,58 @@
+.ui-uploader {
+  .ui-uploader-target {
+
+    // This is the dropzone-react rendered element which troggers the file
+    // select functionality
+    .ui-uploader-target-vendor-dropzone {
+
+    }
+
+    // Intended for stuff like "Click to upload"
+    .ui-uploader-target-inner {
+      padding: 30px;
+      text-align: center;
+      background: white;
+      border: 3px dashed #b2babf;
+      border-radius: 5px;
+
+      .ui-uploader-target-cta {
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: $ui-link-color;
+      }
+
+      .ui-uploader-target-info {
+        color: #8a8a8a;
+      }
+
+    }
+
+    .ui-uploader-progress {
+      margin-top: 20px;
+    }
+
+    &.ui-uploader-target-enabled {
+      .ui-uploader-target-inner {
+        cursor: pointer;
+
+        &:hover {
+          background: #eff3f5;
+        }
+      }
+    }
+
+    &.ui-uploader-target-disabled {
+      .ui-uploader-target-inner {
+        .ui-uploader-target-cta {
+          color: #5d5d5d;
+        }
+      }
+    }
+
+    &.ui-uploader-target-compact {
+      .ui-uploader-target-inner {
+        padding: 10px;
+      }
+    }
+  }
+}

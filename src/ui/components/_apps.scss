@@ -1,0 +1,128 @@
+.ui-apps {
+  .ui-app {
+    height: 100%;
+  }
+}
+
+.ui-app-icon {
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.ui-app {
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(space-between);
+  @include linear-gradient(240deg,
+    lighten($ui-table-header-background-color, 2%),
+    darken($ui-table-header-background-color, 1%)
+  );
+
+  border: 1px solid $ui-table-border-color;
+  border-radius: 3px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.06);
+  padding: 15px;
+  transition: border-color 0.2s;
+
+  .ui-app-meta {
+    @include display(flex);
+    @include justify-content(space-between);
+
+    .ui-app-meta-texts {
+      padding-right: 20px;
+      .ui-app-title {
+        font-weight: $ui-font-weight-bold;
+      }
+      .ui-app-description {
+        font-size: 13px;
+        margin-top: 4px;
+        color: #666;
+      }
+    }
+
+    .ui-app-meta-icon {
+
+    }
+  }
+
+  .ui-app-footer {
+
+    margin-top: 20px;
+
+    .ui-app-actions {
+      @include display(flex);
+      @include align-items(center);
+      @include justify-content(space-between);
+
+      .ui-app-info {
+        @include display(flex);
+        @include align-items(center);
+        @include order(1);
+
+        .ui-app-active-indicator {
+          @include order(2);
+
+          border: 1px solid $ui-color-green;
+          border-radius: $ui-border-radius;
+          padding: 3px 6px;
+          font-size: 11px;
+          text-transform: uppercase;
+          font-weight: $ui-font-weight-bold;
+          color: $ui-color-green;
+          background: $ui-color-green;
+          color: white;
+        }
+
+        .ui-app-price {
+          @include order(1);
+
+          border: 1px solid $ui-color-blue;
+          border-radius: $ui-border-radius;
+          padding: 3px 6px;
+          color: $ui-color-blue;
+          font-size: 11px;
+          text-transform: uppercase;
+          font-weight: $ui-font-weight-bold;
+          margin-right: 4px;
+        }
+      }
+      .ui-app-buttons {
+        @include order(2);
+      }
+    }
+
+    .ui-app-author {
+      margin-top: 4px;
+
+      .ui-app-developer {
+        @include order(1);
+
+        font-size: 11px;
+        text-transform: uppercase;
+        font-weight: $ui-font-weight-bold;
+        color: #999;
+      }
+    }
+  }
+
+  &:hover {
+    border-color: darken($ui-table-border-color, 8%);
+    cursor: pointer;
+  }
+
+  &.ui-app-with-background-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+
+    .ui-app-footer {
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.9);
+      border-bottom-left-radius: $ui-border-radius;
+      border-bottom-right-radius: $ui-border-radius;
+    }
+  }
+}

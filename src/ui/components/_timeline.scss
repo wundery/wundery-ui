@@ -1,0 +1,67 @@
+@-webkit-keyframes highlight-animation {
+  from { background: #fffbe4; }
+  to   { background: transparent; }
+}
+
+.ui-timeline {
+  max-height: 400px;
+  overflow-y: scroll;
+
+  .ui-timeline-item {
+    @include display(flex);
+
+    position: relative;
+
+    .ui-timeline-line {
+      background: #919394;
+      width: 2px;
+      position: absolute;
+      bottom: 0px;
+      top: 0px;
+      left: 14px;
+      z-index: 1;
+    }
+
+    .ui-timeline-item-icon {
+     @include flex-shrink(0);
+
+      width: 40px;
+      line-height: 1;
+      font-size: 24px;
+      z-index: 2;
+
+      .ui-icon {
+        background: white;
+        padding: 2px;
+      }
+    }
+
+    .ui-timeline-item-content {
+      padding-bottom: $ui-spacing-default;
+
+      .ui-timeline-item-date {
+        color: #999;
+        font-size: 12px;
+      }
+      .ui-timeline-item-title {
+        font-weight: $ui-font-weight-bold;
+        font-size: 13px;
+      }
+      .ui-timeline-item-description {
+        font-size: 13px;
+        color: #666;
+      }
+    }
+
+
+    &:last-child {
+      .ui-timeline-item-content {
+        padding-bottom: 0;
+      }
+    }
+
+    &.ui-timeline-item-highlighted {
+      animation: highlight-animation 10s;
+    }
+  }
+}

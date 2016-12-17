@@ -1,0 +1,255 @@
+input[type="text"], input[type="password"], textarea {
+  &.ui-form-control {
+    font-family: $ui-font-family;
+    border-radius: $ui-form-control-border-radius;
+    background-color: $ui-form-control-background-color;
+    border-color: $ui-form-control-border-color;
+    border-style: solid;
+    border-width: 1px;
+    padding: 4px 10px;
+    line-height: normal;
+    outline: 0;
+    -webkit-transition: all 50ms linear;
+    transition: all 50ms linear;
+    margin: 0;
+    font-size: 13px;
+    vertical-align: middle;
+    line-height: 19px;
+    width: 100%;
+    height: 28px;
+
+    &:focus {
+      outline: 0;
+      border-color: $ui-form-control-border-color-focus;
+      background-color: $ui-form-control-background-color-focus;
+    }
+  }
+}
+
+input[type="checkbox"] {
+  &.ui-form-control {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+select {
+  &.ui-form-control {
+    height: 37px;
+    font-size: 13px;
+    text-indent: 8px;
+    outline: none;
+    width: 100%;
+  }
+}
+
+textarea {
+  &.ui-form-control {
+    width: 100%;
+    height: 100px;
+  }
+}
+
+.ui-form {
+  margin-bottom: 10px;
+
+  > form {
+    > .ui-form-item {
+      margin-bottom: $ui-spacing-double;
+
+      &.ui-form-item-compact {
+        margin-bottom: $ui-spacing-default;
+      }
+    }
+  }
+
+  &.ui-form-inline {
+    display: inline-block;
+    margin-bottom: 0;
+
+    > form {
+      display: inline-block;
+
+      .ui-form-item {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.ui-form-item {
+  @include display(flex);
+  @include flex-wrap(nowrap);
+
+  .ui-form-label {
+    @include flex-basis(200px);
+    @include flex-grow(0);
+    @include flex-shrink(0);
+
+    font-weight: $ui-font-weight-bold;
+    padding-right: $spacing-double;
+    padding-bottom: $spacing-default;
+    text-align: right;
+  }
+
+  .ui-form-input {
+    @include flex-grow(1);
+  }
+
+  &.ui-form-item-compact {
+    @include flex-wrap(wrap);
+
+    .ui-form-label, .ui-form-input {
+      @include flex-basis(100%);
+    }
+
+    .ui-form-label {
+      text-align: left;
+      padding: 0 0 4px 0;
+    }
+  }
+
+  &.ui-form-item-inline {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+}
+
+
+.ui-form-item {
+
+}
+
+.ui-form-label {
+  .ui-form-label-required {
+    margin-top: 4px;
+
+    .ui-badge {
+      font-size: 10px;
+    }
+  }
+
+  .ui-form-label-addon {
+    margin-top: 10px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.ui-form-input {
+  .ui-form-input-description {
+    margin-top: 4px;
+    color: #666;
+  }
+}
+
+
+.ui-form-control-group-wrapper {
+  &.ui-form-control-group-wrapper-with-addon {
+    > .ui-form-control-group > .ui-form-control-wrapper > .ui-form-control {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+}
+
+.ui-form-control-group {
+  @include display(flex);
+
+  .ui-form-control-wrapper {
+    @include flex-grow(1);
+
+    position: relative;
+
+    .ui-form-control-spinner {
+      @include display(flex);
+      @include align-items(center);
+
+      position: absolute;
+      right: 5px;
+      top: 0;
+      bottom: 0;
+
+      .ui-spinner {
+        line-height: 1;
+      }
+    }
+  }
+
+  .ui-form-control-group-prefix, .ui-form-control-group-suffix {
+    border-color: $ui-form-control-border-color;
+    border-style: solid;
+    border-width: 1px;
+
+    &.ui-form-control-group-content-text {
+      @include display(flex);
+      @include align-items(center);
+      @include flex-shrink(0);
+
+      font-size: 12px;
+      background: #f5f5f5;
+      padding: 0 $spacing-default;
+    }
+
+    &.ui-form-control-group-content-button {
+      border: 0;
+
+      .ui-button {
+        height: 100%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+  }
+
+  .ui-form-control-group-prefix {
+    border-top-left-radius: $ui-form-control-border-radius;
+    border-bottom-left-radius: $ui-form-control-border-radius;
+    border-right: 0;
+  }
+
+  .ui-form-control-group-suffix {
+    border-top-right-radius: $ui-form-control-border-radius;
+    border-bottom-right-radius: $ui-form-control-border-radius;
+    border-left: 0;
+  }
+
+  &.ui-form-control-group-with-prefix {
+    > .ui-form-control-wrapper > .ui-form-control {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+
+  &.ui-form-control-group-with-suffix {
+    > .ui-form-control-wrapper > .ui-form-control {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-right: 0;
+    }
+  }
+}
+
+.ui-form-control-group-addon {
+  border-radius: 0 0 3px 3px;
+  border: 1px solid $ui-form-control-border-color;
+  border-top: 0;
+  background: #f7f7f7;
+}
+
+.ui-form-item-errors {
+  margin-top: 4px;
+
+  .ui-form-error {
+    display: inline-block;
+    background: #e63d3d;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-weight: $ui-font-weight-bold;
+    font-size: 11px;
+  }
+}

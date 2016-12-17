@@ -1,0 +1,120 @@
+.ui-dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+
+  .ui-button {
+    margin-right: 0;
+  }
+
+  &.ui-dropdown-wrapper-block {
+    display: block;
+  }
+}
+
+.ui-dropdown {
+
+  .ui-dropdown-header {
+    @include display(flex);
+    @include user-select(none);
+
+    border: 1px solid #ccc;
+    padding: $spacing-half $spacing-default;
+    border-radius: 3px;
+    background: white;
+    cursor: pointer;
+
+    &:hover {
+      background: #f5f5f5;
+    }
+
+    .ui-dropdown-title {}
+
+    .ui-dropdown-caret {}
+  }
+
+  .ui-dropdown-items {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 240px;
+    margin-top: 4px;
+    border-radius: $ui-border-radius;
+    z-index: 1000;
+
+    .ui-dropdown-item {
+      @include user-select(none);
+      @include display(flex);
+
+      border-bottom: 1px solid rgba(0,0,0,0.07);
+
+      padding: $spacing-default;
+      text-align: left;
+      cursor: pointer;
+
+      &:first-child {
+        border-top-right-radius: $ui-border-radius;
+        border-top-left-radius: $ui-border-radius;
+      }
+
+      &:last-child {
+        border-bottom: 0px;
+        border-bottom-right-radius: $ui-border-radius;
+        border-bottom-left-radius: $ui-border-radius;
+      }
+
+      &:hover, &.ui-dropdown-item-focussed {
+        background: #f5f5f5;
+      }
+
+      .ui-dropdown-item-icon {
+        margin-right: $spacing-default;
+      }
+
+      .ui-dropdown-item-image {
+        margin-right: $spacing-default;
+        img {
+          width: 70px;
+          border-radius: $ui-border-radius;
+        }
+      }
+
+      .ui-dropdown-item-content {
+        @include flex-grow(1);
+
+        .ui-dropdown-item-title {
+          font-size: 13px;
+          font-weight: $ui-font-weight-bold;
+        }
+
+        .ui-dropdown-item-description {
+          font-size: 12px;
+          margin-top: 2px;
+          color: #999;
+        }
+
+        .ui-dropdown-item-body {
+          margin-top: 4px;
+        }
+      }
+    }
+
+    &.ui-dropdown-items-right {
+      right: 0px;
+    }
+  }
+
+  &.ui-dropdown-open {
+    .ui-dropdown-items {
+      display: block;
+    }
+  }
+
+  // This should open to the left
+  &.ui-dropdown-left {
+    .ui-dropdown-items {
+      right: 0;
+    }
+  }
+
+}

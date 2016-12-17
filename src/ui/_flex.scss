@@ -1,0 +1,11 @@
+.ui-flex {
+	&.ui-flex-vertically-centered-container {
+		display: flex;
+		height: 100vh;
+		@include align-items(center);
+	}
+
+	&.ui-flex-vertically-centered-content {
+		@include flex-grow(1);
+	}
+}

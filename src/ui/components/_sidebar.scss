@@ -1,0 +1,81 @@
+.ui-sidebar {
+  background: white;
+  border: 1px solid rgba(0,0,0,0.07);
+  margin-bottom: $spacing-double;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+
+  .ui-sidebar-item {
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+
+    > a, > button {
+      @include user-select(none);
+      @include flex-grow(1);
+      @include display(flex);
+      @include align-items(center);
+
+      outline: 0;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+      font-size: 14px;
+      background: none;
+      border: none;
+      font-weight: $ui-font-weight-bold;
+      color: $ui-link-color;
+      padding: $spacing-default;
+
+      .ui-icon {
+        margin-right: 6px;
+        font-size: 18px;
+      }
+
+      .ui-badge {
+        margin-left: auto;
+      }
+    }
+
+    &:first-child {
+      > a {
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+      }
+    }
+
+    &:last-child {
+      border: none;
+
+      > a {
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+      }
+    }
+  }
+
+  .ui-sidebar-item-active {
+    > a, > button {
+      background-color: $ui-link-color;
+      color: white;
+
+      .ui-badge {
+        background: $ui-color-blue-dark;
+      }
+
+      .ui-icon {
+        color: white !important;
+      }
+    }
+  }
+
+  &.ui-sidebar-embedded {
+    border-radius: none;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+
+    a {
+      border-radius: 0px !important;
+    }
+  }
+}

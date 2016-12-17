@@ -1,0 +1,18 @@
+.ui-circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-block;
+
+  &.ui-circle-theme-default {
+    background-color: darken(#f5f5f5, 5%);
+  }
+
+  &.ui-circle-theme-success {
+    background-color: $color-green;
+  }
+
+  &.ui-circle-theme-danger {
+    background-color: $color-red;
+  }
+}

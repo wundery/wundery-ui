@@ -1,0 +1,47 @@
+.ui-badge {
+  color: white;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-size: 13px;
+  display: inline-block;
+  font-weight: $ui-font-weight-bold;
+  vertical-align: middle;
+
+
+  &.ui-badge-success {
+    background: $ui-button-success-background-color;
+  }
+
+  &.ui-badge-danger {
+    background: $ui-color-red;
+  }
+
+  &.ui-badge-info {
+    background: $ui-color-blue;
+  }
+
+  &.ui-badge-default {
+    color: #676767;
+    font-weight: $ui-font-weight-default;
+    background: $ui-color-grey-light;
+  }
+
+  .ui-icon {
+    margin-right: 3px;
+  }
+}
+
+.ui-badge-group {
+  @include display(flex);
+  @include flex-wrap(wrap);
+
+  > * {
+    display: inline-block;
+    margin-right: 3px;
+    margin-bottom: 3px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

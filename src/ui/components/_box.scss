@@ -1,0 +1,111 @@
+.ui-box {
+  border: 1px solid $ui-table-border-color;
+  border-radius: 3px;
+  background-color: $ui-table-background-color;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.06);
+  position: relative;
+
+  // Themes
+
+  &.ui-box-theme-highlight {
+    @include linear-gradient(240deg,
+      lighten($ui-table-header-background-color, 2%),
+      darken($ui-table-header-background-color, 1%)
+    );
+  }
+
+  &.ui-box-theme-info {
+    .ui-box-content {
+      border: 5px solid #f1f6f9;
+    }
+  }
+
+  // Boxes might be clickable and then need hover styles
+
+  &.ui-box-clickable {
+    cursor: pointer;
+  }
+
+  &.ui-box-borderless {
+    border: 0;
+  }
+
+  .ui-box-content {
+    padding: 20px;
+    // border-top: 1px solid #dfe5e8;
+
+    &.ui-box-content-transparent {
+      background: transparent;
+      border: 0;
+    }
+
+    &.ui-box-content-no-padding {
+      padding: 0;
+    }
+
+    &.ui-box-content-border-bottom {
+      border-bottom: 1px solid rgba(223, 229, 232, 0.6);
+    }
+  }
+
+  // Header and footer
+
+  .ui-box-header, .ui-box-footer {
+    padding: 10px;
+    background: #f9f9f9;
+  }
+
+  // Header
+
+  .ui-box-header {
+    border-bottom: 1px solid rgba(223, 229, 232, 0.6);
+
+    .ui-icon {
+      margin-right: 5px;
+    }
+
+    &.ui-box-header-no-padding {
+      padding: 0;
+    }
+
+    &.ui-box-header-compact {
+      font-size: 12px;
+      font-weight: $ui-font-weight-bold;
+      text-transform: uppercase;
+      color: #999;
+    }
+
+    &.ui-box-header-center {
+      text-align: center;
+    }
+  }
+
+  .ui-box-header-description {
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 7px;
+  }
+
+  // Ribbon
+
+  .ui-box-ribbon-wrapper {
+    @include display(flex);
+    @include justify-content(center);
+
+    position: absolute;
+    top: -10px;
+    right: 0;
+    left: 0;
+
+    .ui-box-ribbon {
+      background: #C1E4A6;
+      color: #528829;
+      border-radius: $ui-border-radius;
+      padding: 2px 6px;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: $ui-font-weight-bold;
+    }
+  }
+
+}

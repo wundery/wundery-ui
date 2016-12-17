@@ -1,0 +1,24 @@
+.ui-breadcrumb {
+  @include display(flex);
+
+  border: 1px solid #e8e8e8;
+
+  .ui-breadcrumb-item {
+    padding: 10px;
+
+    &.ui-breadcrumb-item-parent {
+      font-weight: $ui-font-weight-bold;
+    }
+  }
+
+  .ui-breadcrumb-separator {
+    @include display(flex);
+    @include align-items(center);
+
+    color: #c3c6c7;
+  }
+
+  &.ui-breadcrumb-embedded {
+    border-width: 0;
+  }
+}

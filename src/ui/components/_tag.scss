@@ -1,0 +1,30 @@
+.ui-tag-list {
+  .ui-tag {
+    margin: 6px;
+  }
+}
+
+.ui-tag {
+  display: inline-block;
+  border-radius: 3px;
+  border: 1px solid #adb1b8;
+  background: white;
+
+  .ui-tag-inner {
+    @include display(flex);
+    @include flex-wrap(nowrap);
+    @include align-items(center);
+
+    .ui-tag-content {
+      padding: 0 10px;
+    }
+
+    .ui-tag-addon {
+      .ui-button {
+        border-width: 0;
+        border-left-width: 1px;
+        border-radius: 0px;
+      }
+    }
+  }
+}

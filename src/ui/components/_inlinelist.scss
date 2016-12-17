@@ -1,0 +1,11 @@
+.ui-inline-list {
+  @include display(flex);
+
+  .ui-inline-list-item {
+    margin-right: 8px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

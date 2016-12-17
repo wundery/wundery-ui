@@ -1,0 +1,6 @@
+{
+  "name": "wundery-ui",
+  "devDependencies": {
+    "bourbon": "4.2.3"
+  }
+}

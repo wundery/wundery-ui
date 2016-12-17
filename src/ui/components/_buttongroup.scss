@@ -1,0 +1,38 @@
+.ui-buttongroup {
+  display: inline-block;
+
+  .ui-button {
+    margin-right: 4px;
+
+    &.ui-button-block {
+      margin-right: 0px;
+    }
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  &.ui-buttongroup-block {
+    display: block;
+  }
+
+  &.ui-buttongroup-snap {
+    .ui-button {
+      border-right-width: 0px;
+      border-radius: 0;
+      margin-right: 0;
+
+      &:first-child {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+      }
+
+      &:last-child {
+        border-right-width: 1px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+      }
+    }
+  }
+}

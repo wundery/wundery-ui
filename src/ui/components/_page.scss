@@ -1,0 +1,9 @@
+.ui-page {
+	.ui-page-item {
+		margin-bottom: $spacing-double;
+
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+}
