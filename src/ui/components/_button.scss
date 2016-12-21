@@ -76,6 +76,7 @@
     border-style: solid;
     border-width: 1px;
     color: #272727;
+    font-weight: $ui-font-weight-bold;
 
     &:hover {
       @include linear-gradient(to bottom,#e7eaf0,#d9dce1);
