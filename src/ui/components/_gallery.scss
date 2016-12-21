@@ -18,12 +18,33 @@
       border: 1px solid #ddd;
       border-radius: $ui-border-radius;
 
+      .ui-gallery-item-ribbon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 100;
+        background: $ui-color-green;
+        color: white;
+        font-size: 12px;
+        font-weight: $ui-font-weight-bold;
+        padding: 2px 4px;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+        text-align: center;
+        @include linear-gradient(
+          $ui-button-success-background-color,
+          darken($ui-button-success-background-color, 4%)
+        );
+      }
+
       .ui-gallery-item-src-missing {
         @include display(flex);
         @include justify-content(center);
         @include align-items(center);
 
         height: 100%;
+        min-height: 90px;
         .ui-icon {
           color: #e8e8e8;
         }
@@ -45,24 +66,6 @@
 
         .ui-gallery-item-src-loading {
           display: none;
-        }
-
-        .ui-gallery-item-ribbon {
-          position: absolute;
-          top: 0;
-          z-index: 100;
-          background: $ui-color-green;
-          color: white;
-          font-size: 12px;
-          font-weight: $ui-font-weight-bold;
-          padding: 2px 4px;
-          border-bottom-right-radius: 3px;
-          border-bottom-left-radius: 3px;
-          text-align: center;
-          @include linear-gradient(
-          $ui-button-success-background-color,
-          darken($ui-button-success-background-color, 4%)
-          );
         }
       }
 
