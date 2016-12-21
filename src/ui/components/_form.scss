@@ -53,13 +53,11 @@ textarea {
 .ui-form {
   margin-bottom: 10px;
 
-  > form {
-    > .ui-form-item {
-      margin-bottom: $ui-spacing-double;
+  > .ui-form-item {
+    margin-bottom: $ui-spacing-double;
 
-      &.ui-form-item-compact {
-        margin-bottom: $ui-spacing-default;
-      }
+    &.ui-form-item-compact {
+      margin-bottom: $ui-spacing-default;
     }
   }
 
