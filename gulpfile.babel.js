@@ -14,7 +14,7 @@ import replace from 'gulp-replace';
 
 const args  = yargs.argv;
 const buildDir = 'build';
-const version = args.version;
+const version = args.version || 'latest';
 const releaseDir = `${buildDir}/${version}`;
 
 util.log(`Building ${releaseDir}`);
