@@ -544,7 +544,7 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
-bourbon@^4.2.6:
+bourbon@^4.2.7:
   version "4.2.7"
   resolved "https://registry.yarnpkg.com/bourbon/-/bourbon-4.2.7.tgz#48a805dff475fbf61e002a64e1e4db68d2f82fba"
 

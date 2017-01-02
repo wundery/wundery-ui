@@ -7,16 +7,15 @@ import yargs from 'yargs';
 import runSequence from 'run-sequence';
 import sourcemaps from 'gulp-sourcemaps';
 import IF from 'gulp-if';
-import rev from 'git-rev-sync';
 import concat from 'gulp-concat';
 import cors from 'cors';
 import plumber from 'gulp-plumber';
 import replace from 'gulp-replace';
 
 const args  = yargs.argv;
-const gitTag = rev.tag();
 const buildDir = 'build';
-const releaseDir = `${buildDir}/${gitTag}`;
+const version = args.version;
+const releaseDir = `${buildDir}/${version}`;
 
 util.log(`Building ${releaseDir}`);
 
