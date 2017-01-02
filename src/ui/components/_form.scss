@@ -70,6 +70,11 @@ textarea {
 
       .ui-form-item {
         margin-bottom: 0;
+        margin-right: 10px;
+
+        &:last-child {
+          margin-right: 0;
+        }
       }
     }
   }
@@ -110,7 +115,6 @@ textarea {
   &.ui-form-item-inline {
     display: inline-block;
     margin-bottom: 0;
-    margin-right: 10px;
   }
 }
 
