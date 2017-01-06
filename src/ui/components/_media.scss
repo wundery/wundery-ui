@@ -1,7 +1,7 @@
 .ui-media {
   @include display(flex);
   @include flex-wrap(no-wrap);
-  @include justify-content(space-between);
+  // @include justify-content(space-between);
 
   .ui-media-icon {
     @include flex-shrink(0);
