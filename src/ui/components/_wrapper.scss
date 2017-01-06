@@ -9,12 +9,6 @@
       $ui-wrapper-background-color-highlight,
       darken($ui-wrapper-background-color-highlight, 10%)
     );
-
-    // Boxes on this wrapper should have a decent
-    // shadow at the bottom
-    .ui-box:first-of-type {
-      box-shadow: 0px 2px 2px darken($ui-wrapper-background-color-highlight, 5%);
-    }
   }
 
   // Sizes
