@@ -97,6 +97,15 @@ textarea {
 
   .ui-form-input {
     @include flex-grow(1);
+
+    &.ui-form-input-with-errors {
+      input[type="text"], input[type="password"], textarea {
+        &.ui-form-control {
+          border: 1px solid red;
+          background: #fff2f2;
+        }
+      }
+    }
   }
 
   &.ui-form-item-compact {
