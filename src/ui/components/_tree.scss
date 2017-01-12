@@ -1,15 +1,52 @@
-.ui-tree {
-  .ui-tree-branch,
-  .ui-tree-branch-connected {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-    border-bottom-left-radius: 3px;
-    opacity: 0.7;
-  }
-  .ui-tree-branch-connected {
-    border-left: 2px solid #ddd;
-    border-bottom: 2px solid #ddd;
+.f-no-select {
+  user-select: none;
+}
+.m-tree {
+  position: relative;
+  overflow: hidden;
+  -moz-user-select: none;
+  user-select: none;
+}
+.m-draggable {
+  position: absolute;
+  opacity: 0.8;
+  user-select: none;
+}
+.m-node.placeholder > * {
+  visibility: hidden;
+}
+.m-node.placeholder {
+  border: 1px dashed #ccc;
+}
+.m-node .inner {
+  position: relative;
+  cursor: pointer;
+  padding-left: 10px;
+}
+.m-node .collapse {
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+}
+.m-node .caret-right:before {
+  content: '\25B8';
+}
+.m-node .caret-down:before {
+  content: '\25BE';
+}
+
+.m-tree > .m-node,
+.m-draggable > .m-node {
+   > .inner > .collapse {
+    display: none;
+   }
+}
+
+.m-node {
+  user-select: none;
+  cursor: move;
+
+  &.placeholder {
+    border: 1px dashed #1385e5;
   }
 }
