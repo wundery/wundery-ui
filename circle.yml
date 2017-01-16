@@ -1,3 +1,8 @@
+general:
+  branches:
+    ignore:
+      - master
+
 machine:
   node:
     version: stable
@@ -5,24 +10,22 @@ machine:
     - pip install awscli
 
 dependencies:
+  pre:
+    - curl $WUNDERY_DEPLOYMENTS_ENDPOINT/start/$CIRCLE_PROJECT_REPONAME/$CIRCLE_SHA1-$CIRCLE_TAG/production/s3
+    - curl -o- -L https://yarnpkg.com/install.sh | bash
   override:
+    - yarn install
+    - yarn list
     - npm install -g gulp
-    - npm install
+    - gulp build --version $CIRCLE_TAG
 
 test:
   override:
-    - echo "No Tests :-)"
+    - echo "No Tests"
 
 deployment:
-  staging:
-    branch: staging
-    commands:
-      - gulp build --version latest
-      - aws s3 sync build $AWS_S3_BUCKET_STAGING --acl public-read --cache-control "public, max-age=0"
-
   production:
     tag: /v[0-9]+(\.[0-9]+)*/
     commands:
-      - TAG=$(git describe --tags `git rev-list --tags --max-count=1`)
-      - gulp build --version $TAG
-      - aws s3 sync build $AWS_S3_BUCKET_PRODUCTION --acl public-read --cache-control "public, max-age=31536000"
+      - aws s3 sync build $BUCKET --acl public-read --cache-control "public, max-age=31536000"
+      - curl $WUNDERY_DEPLOYMENTS_ENDPOINT/finish/$CIRCLE_PROJECT_REPONAME/$CIRCLE_SHA1-$CIRCLE_TAG/production/s3
