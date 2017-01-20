@@ -51,6 +51,8 @@
     border-radius: 3px;
     z-index: 2000;
     opacity: 0;
+    margin-top: 40px;
+    overflow: hidden;
 
     .ui-modal-header, .ui-modal-footer {
       padding: 20px;
