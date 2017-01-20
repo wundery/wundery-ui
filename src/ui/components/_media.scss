@@ -20,4 +20,10 @@
   > div:first-child {
     padding-right: $ui-spacing-double;
   }
+
+  &.ui-media-compact {
+    > div:first-child {
+      padding-right: 6px;;
+    }
+  }
 }
