@@ -21,6 +21,10 @@
     border-bottom: 1px solid rgba(0,0,0,0.07);
     padding: $spacing-default;
 
+    &.ui-list-item-compact {
+      padding: 3px;
+    }
+
     &.ui-list-item-active {
       background: #f9f9f9;
     }
