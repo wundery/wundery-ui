@@ -1,3 +1,7 @@
+body.ui-modal-attached {
+  overflow: hidden;
+}
+
 .ui-modal-wrapper {
   display: none;
   position: fixed;
@@ -44,6 +48,7 @@
     position: absolute;
     margin: 0px auto;
     right: 0;
+    top: 40px;
     left: 0;
     display: none;
     background: white;
@@ -51,8 +56,9 @@
     border-radius: 3px;
     z-index: 2000;
     opacity: 0;
-    margin-top: 40px;
     overflow: hidden;
+    max-height: 90vh;
+    overflow-y: scroll;
 
     .ui-modal-header, .ui-modal-footer {
       padding: 20px;
@@ -88,5 +94,13 @@
     &.ui-modal-size-small {
       width: 300px;
     }
+
+    @include phone {
+      right: 20px;
+      left: 20px;
+      top: 20px;
+      width: auto !important;
+    }
+
   }
 }

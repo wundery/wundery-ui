@@ -1,11 +1,28 @@
 .ui-inline-list {
   @include display(flex);
 
+  @include phone {
+    display: block;
+  }
+
   .ui-inline-list-item {
     margin-right: 8px;
 
     &:last-child {
       margin-right: 0;
     }
+
+    @include phone {
+      margin-right: 0;
+      margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &.ui-inline-list-block {
+    display: block;
   }
 }

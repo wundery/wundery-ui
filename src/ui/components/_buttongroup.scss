@@ -1,8 +1,16 @@
 .ui-buttongroup {
   display: inline-block;
 
+  @include phone {
+    display: block;
+  }
+
   .ui-button {
     margin-right: 4px;
+
+    @include phone {
+      margin-bottom: 4px;
+    }
 
     &.ui-button-block {
       margin-right: 0px;

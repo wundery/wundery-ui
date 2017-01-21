@@ -32,7 +32,7 @@
 
   .ui-box-content {
     padding: 20px;
-    // border-top: 1px solid #dfe5e8;
+    overflow: scroll;
 
     &.ui-box-content-transparent {
       background: transparent;

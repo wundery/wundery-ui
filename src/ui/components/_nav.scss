@@ -14,11 +14,22 @@
     @include display(flex);
     @include align-items(center);
 
+    @include phone {
+      display: block;
+    }
+
     padding: 16px;
 
     .ui-nav-navitem {
-
       margin-right: $spacing-default + 10px;
+
+      @include phone {
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
 
       &.ui-nav-navitem-brand {
         @include display(flex);

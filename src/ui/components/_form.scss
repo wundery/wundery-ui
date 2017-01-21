@@ -84,6 +84,10 @@ textarea {
   @include display(flex);
   @include flex-wrap(nowrap);
 
+  @include phone {
+    display: block;
+  }
+
   .ui-form-label {
     @include flex-basis(200px);
     @include flex-grow(0);
@@ -93,6 +97,10 @@ textarea {
     padding-right: $spacing-double;
     padding-bottom: $spacing-default;
     text-align: right;
+
+    @include phone {
+      text-align: left;
+    }
   }
 
   .ui-form-input {

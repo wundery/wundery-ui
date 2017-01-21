@@ -32,6 +32,42 @@
         bottom: 0;
       }
 
+      // Devices
+
+      &.ui-flexgrid-item-width-d-3 {
+        @include flex-basis(25%);
+      }
+
+      &.ui-flexgrid-item-width-d-4 {
+        @include flex-basis(33.3333%);
+      }
+
+      &.ui-flexgrid-item-width-d-6 {
+        @include flex-basis(50%);
+      }
+
+      &.ui-flexgrid-item-width-d-9 {
+        @include flex-basis(75%);
+      }
+
+      &.ui-flexgrid-item-width-t-6 {
+        @include tablet {
+          @include flex-basis(50%);
+        }
+      }
+
+      &.ui-flexgrid-item-width-p-6 {
+        @include phone {
+          @include flex-basis(50%);
+        }
+      }
+
+      &.ui-flexgrid-item-width-p-12 {
+        @include phone {
+          @include flex-basis(100%);
+        }
+      }
+
       // Widths
 
       &.ui-flexgrid-item-width-md-6 {

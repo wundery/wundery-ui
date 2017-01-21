@@ -25,17 +25,6 @@
     display: none;
   }
 
-  &.ui-table-embedded {
-    border: 0;
-    border-radius: 0;
-  }
-
-  &.ui-table-loading {
-    > .ui-table-overlay {
-      @include display(flex);
-    }
-  }
-
   .ui-table {
     table-layout: fixed;
     border-collapse: collapse;
@@ -55,110 +44,12 @@
       font-size: 15px;
     }
 
-    .ui-table-row-wrapper {
-
-      .ui-table-row {
-        @include display(flex);
-        border-bottom: 1px solid $ui-table-inner-border-color;
-
-        .ui-table-cell {
-          @include display(flex);
-          // @include flex-direction(column);
-          @include justify-content(center);
-          @include flex-grow(1);
-
-          text-align: left;
-          padding: 10px 14px;
-          border: 1px solid $ui-table-inner-border-color;
-          border-left: none;
-          border-top: none;
-          border-bottom: none;
-
-          .ui-buttongroup {
-            .ui-button {
-              margin-bottom: 0;
-            }
-          }
-
-          &.ui-table-cell-bold {
-            font-weight: bold;
-          }
-
-
-          .ui-table-cell-content {
-            @include display(flex);
-
-            word-break: break-word;
-            width: 100%;
-          }
-
-          &.ui-table-cell-right {
-            text-align: right;
-
-            .ui-table-cell-content {
-              @include justify-content(flex-end);
-
-              .ui-buttongroup {
-                @include justify-content(flex-end);
-              }
-            }
-          }
-
-          &.ui-table-cell-center {
-            text-align: center;
-
-            .ui-table-cell-content {
-              @include justify-content(center);
-            }
-          }
-
-          .ui-table-cell-suffix {
-            display: inline-block;
-            margin-left: 10px;
-          }
-
-          .ui-table-drag-handle {
-            cursor: pointer;
-            color: lighten($ui-table-header-font-color, 40%);
-          }
-
-          &:last-child {
-            border-right: none;
-          }
-
-          &.ui-table-cell-align-center {
-            text-align: center;
-            .ui-table-cell-content {
-              @include justify-content(space-around);
-            }
-          }
-
-          &.ui-table-cell-align-right {
-            text-align: right;
-          }
-
-          &.ui-table-cell-align-left {
-            text-align: left;
-          }
-
-          &.ui-table-cell-order-handle {
-            color: $ui-link-color;
-            cursor: pointer;
-          }
-        }
-      }
-
-      .ui-table-row-addon {
-        // border-bottom: 1px solid $ui-table-inner-border-color;
-
-        > .ui-table-wrapper {
-          box-shadow: none;
-        }
-      }
-    }
-
     .ui-table-header {
       background: $ui-table-header-background;
+
+      @include phone {
+        display: none;
+      }
 
       .ui-table-row {
         border-bottom: 1px solid $ui-table-inner-border-color;
@@ -228,6 +119,144 @@
               background: $ui-table-header-cell-hover-background;
             }
           }
+        }
+      }
+    }
+
+    .ui-table-row-wrapper {
+
+      .ui-table-row {
+        @include display(flex);
+
+        border-bottom: 1px solid $ui-table-inner-border-color;
+
+        @include phone {
+          display: block;
+        }
+
+        .ui-table-cell {
+          @include display(flex);
+          @include justify-content(center);
+          @include flex-grow(1);
+
+          text-align: left;
+          padding: 10px 14px;
+          border: 1px solid $ui-table-inner-border-color;
+          border-left: none;
+          border-top: none;
+          border-bottom: none;
+
+          @include phone {
+            display: block;
+            padding-bottom: 0;
+            border: none;
+
+            &:last-child {
+              padding-bottom: 10px;
+            }
+          }
+
+          .ui-buttongroup {
+            .ui-button {
+              margin-bottom: 0;
+            }
+          }
+
+          .ui-table-cell-title {
+            display: none;
+            color: #b1b1b1;
+      			padding-right: $spacing-double;
+            text-transform: uppercase;
+            font-size: 11px;
+            font-weight: $ui-font-weight-bold;
+            margin-bottom: 4px;
+
+            @include phone {
+              display: block;
+            }
+          }
+
+          .ui-table-cell-content {
+            @include display(flex);
+
+            word-break: break-word;
+            width: 100%;
+          }
+
+
+          &.ui-table-cell-bold {
+            font-weight: bold;
+          }
+
+          &.ui-table-cell-right {
+            text-align: right;
+
+            @include phone {
+              text-align: left;
+            }
+
+            .ui-table-cell-content {
+              @include justify-content(flex-end);
+
+              .ui-buttongroup {
+                @include justify-content(flex-end);
+              }
+            }
+          }
+
+          &.ui-table-cell-center {
+            text-align: center;
+
+            @include phone {
+              text-align: left;
+            }
+
+            .ui-table-cell-content {
+              @include justify-content(center);
+            }
+          }
+
+          .ui-table-cell-suffix {
+            display: inline-block;
+            margin-left: 10px;
+          }
+
+          .ui-table-drag-handle {
+            cursor: pointer;
+            color: lighten($ui-table-header-font-color, 40%);
+          }
+
+          &:last-child {
+            border-right: none;
+          }
+
+          &.ui-table-cell-align-center {
+            text-align: center;
+            .ui-table-cell-content {
+              @include justify-content(space-around);
+            }
+          }
+
+          &.ui-table-cell-align-right {
+            text-align: right;
+          }
+
+          &.ui-table-cell-align-left {
+            text-align: left;
+          }
+
+          &.ui-table-cell-order-handle {
+            color: $ui-link-color;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .ui-table-row-addon {
+        // border-bottom: 1px solid $ui-table-inner-border-color;
+
+        > .ui-table-wrapper {
+          box-shadow: none;
         }
       }
     }
@@ -391,6 +420,22 @@
     }
   }
 
+
+  .ui-table-footer {
+    border-top: 1px solid $ui-table-inner-border-color;
+  }
+
+  &.ui-table-embedded {
+    border: 0;
+    border-radius: 0;
+  }
+
+  &.ui-table-loading {
+    > .ui-table-overlay {
+      @include display(flex);
+    }
+  }
+
   &.ui-table-loading {
     .ui-table-error {
       display: none;
@@ -400,7 +445,4 @@
     }
   }
 
-  .ui-table-footer {
-    border-top: 1px solid $ui-table-inner-border-color;
-  }
 }
