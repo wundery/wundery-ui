@@ -183,6 +183,10 @@ textarea {
 
     position: relative;
 
+    .ui-form-control {
+      height: 100%;
+    }
+
     .ui-form-control-spinner {
       @include display(flex);
       @include align-items(center);

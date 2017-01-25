@@ -1,6 +1,13 @@
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
 .ui-button-wrapper > a, .ui-button {
   @include user-select(none);
 
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   padding: 4px 8px;
   border-radius: 3px;
   border: 0;
