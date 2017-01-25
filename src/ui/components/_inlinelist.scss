@@ -24,5 +24,12 @@
 
   &.ui-inline-list-block {
     display: block;
+    .ui-inline-list-item {
+      margin-bottom: 4px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }
