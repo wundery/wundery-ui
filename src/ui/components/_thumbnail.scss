@@ -20,6 +20,10 @@
     max-width: 100%;
   }
 
+  &.ui-thumbnail-inline {
+    display: inline-block;;
+  }
+
   &.ui-thumbnail-circle {
     border-radius: 50%;
 
