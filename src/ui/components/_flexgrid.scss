@@ -32,6 +32,17 @@
         bottom: 0;
       }
 
+
+      // Borders
+
+      &.ui-flexgrid-item-border-right {
+        border-right: 1px solid rgba(223, 229, 232, 0.6);
+      }
+
+      &.ui-flexgrid-item-border-left {
+        border-left: 1px solid rgba(223, 229, 232, 0.6);
+      }
+
       // Devices
 
       &.ui-flexgrid-item-width-d-3 {
@@ -65,6 +76,11 @@
       &.ui-flexgrid-item-width-p-12 {
         @include phone {
           @include flex-basis(100%);
+
+          &.ui-flexgrid-item-border-right,
+          &.ui-flexgrid-item-border-left {
+            border: 0;
+          }
         }
       }
 
@@ -93,16 +109,6 @@
 
       &.ui-flexgrid-item-no-shrink {
         @include flex-shrink(0);
-      }
-
-      // Borders
-
-      &.ui-flexgrid-item-border-right {
-        border-right: 1px solid rgba(223, 229, 232, 0.6);
-      }
-
-      &.ui-flexgrid-item-border-left {
-        border-left: 1px solid rgba(223, 229, 232, 0.6);
       }
     }
 

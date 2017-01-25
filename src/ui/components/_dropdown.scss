@@ -114,6 +114,10 @@
   &.ui-dropdown-left {
     .ui-dropdown-items {
       right: 0;
+
+      @include phone {
+        right: auto;
+      }
     }
   }
 
