@@ -123,6 +123,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     }
   }
 
+  &.ui-button-highlight {
+    color: $color-blue;
+  }
+
   // States
 
   &[disabled], &.ui-button-state-disabled {
