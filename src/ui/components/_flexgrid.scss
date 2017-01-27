@@ -103,6 +103,10 @@
         @include flex-basis(75%);
       }
 
+      &.ui-flexgrid-item-width-md-8 {
+        @include flex-basis(66.66666%);
+      }
+
       &.ui-flexgrid-item-grow {
         @include flex-grow(1);
       }
