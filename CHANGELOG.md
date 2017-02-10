@@ -1,3 +1,11 @@
+# 1.0.11
+
+* New feature: funnel component.
+* New feature: hero unit component.
+* Box: add shade theme.
+* Flexgrid: add missing device modifiers.
+* Icon: add success theme.
+
 # 1.0.10
 
 * Bugfix: do not scroll for overflowing boxes.
