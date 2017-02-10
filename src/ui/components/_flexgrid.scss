@@ -99,6 +99,14 @@
         @include flex-basis(33.33333%);
       }
 
+      &.ui-flexgrid-item-width-md-5 {
+        @include flex-basis(41%);
+      }
+
+      &.ui-flexgrid-item-width-md-7 {
+        @include flex-basis(59%);
+      }
+
       &.ui-flexgrid-item-width-md-9 {
         @include flex-basis(75%);
       }
