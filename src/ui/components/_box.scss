@@ -49,6 +49,10 @@
     &.ui-box-content-border-bottom {
       border-bottom: 1px solid rgba(223, 229, 232, 0.6);
     }
+
+    &.ui-box-content-theme-shade {
+      background: #f9f9f9;
+    }
   }
 
   // Header and footer
