@@ -44,6 +44,10 @@
       font-size: 15px;
     }
 
+    .ui-table-cell {
+      outline: none;
+    }
+
     .ui-table-header {
       background: $ui-table-header-background;
 
@@ -58,7 +62,8 @@
           color: $ui-table-header-font-color;
           font-weight: $ui-table-header-font-weight;
           text-transform: $ui-table-header-text-transform;
-          font-size: $ui-table-header-font-size;
+          font-size: $ui-table-header-font-size !important;
+          padding: 10px 14px;
 
           &.ui-table-cell-align-right {
             .ui-table-cell-content {
@@ -124,15 +129,10 @@
     }
 
     .ui-table-row-wrapper {
-
       .ui-table-row {
         @include display(flex);
 
         border-bottom: 1px solid $ui-table-inner-border-color;
-
-        @include phone {
-          display: block;
-        }
 
         .ui-table-cell {
           @include display(flex);
@@ -140,19 +140,24 @@
           @include flex-grow(1);
 
           text-align: left;
-          padding: 10px 14px;
           border: 1px solid $ui-table-inner-border-color;
           border-left: none;
           border-top: none;
           border-bottom: none;
 
-          @include phone {
-            display: block;
-            padding-bottom: 0;
-            border: none;
+          .ui-table-row-expand-trigger {
+            @include display(flex);
+            @include justify-content(center);
+            @include align-items(center);
+            @include flex-grow(1);
 
-            &:last-child {
-              padding-bottom: 10px;
+            color: #717f88;
+            outline: none;
+
+            &:hover {
+              background: #f9f9f9;
+              cursor: pointer;
+              color: darken(#717f88, 10%);
             }
           }
 
@@ -183,6 +188,25 @@
             width: 100%;
           }
 
+          .ui-table-cell-suffix {
+            display: inline-block;
+            margin-left: 10px;
+          }
+
+          .ui-table-drag-handle {
+            cursor: pointer;
+            color: lighten($ui-table-header-font-color, 40%);
+          }
+
+          @include phone {
+            display: block;
+            padding-bottom: 0;
+            border: none;
+
+            &:last-child {
+              padding-bottom: 10px;
+            }
+          }
 
           &.ui-table-cell-bold {
             font-weight: bold;
@@ -216,16 +240,6 @@
             }
           }
 
-          .ui-table-cell-suffix {
-            display: inline-block;
-            margin-left: 10px;
-          }
-
-          .ui-table-drag-handle {
-            cursor: pointer;
-            color: lighten($ui-table-header-font-color, 40%);
-          }
-
           &:last-child {
             border-right: none;
           }
@@ -249,6 +263,20 @@
             color: $ui-link-color;
             cursor: pointer;
           }
+        }
+
+        @include phone {
+          display: block;
+        }
+      }
+
+      .ui-table-row-expansion {
+        border-bottom: 1px solid $ui-table-inner-border-color;
+        background: $ui-table-inner-border-color;
+        padding: 4px;
+
+        @include phone {
+          display: none;
         }
       }
 
@@ -311,12 +339,38 @@
     .ui-table-body {
       position: relative;
 
+      .ui-table-row-wrapper {
+        .ui-table-row {
+          .ui-table-cell {
+            font-size: $ui-table-body-font-size;
+            padding: 10px 14px;
 
-      .ui-table-cell {
-        font-size: $ui-table-body-font-size;
+            .ui-table-cell-text {
+              width: 100%;
+            }
 
-        .ui-table-cell-text {
-          width: 100%;
+            &.ui-table-cell-editable {
+              &:hover {
+                @include user-select(none);
+
+                background: #fffceb;
+                cursor: pointer;
+              }
+            }
+
+            &.ui-table-cell-expander {
+              padding: 0;
+
+              @include phone {
+                display: none;
+              }
+
+              .ui-table-cell-text {
+                @include display(flex);
+                @include justify-content(center);
+              }
+            }
+          }
         }
       }
 
