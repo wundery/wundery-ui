@@ -18,6 +18,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   font-family: $ui-font-family;
   font-weight: $ui-button-font-weight;
   vertical-align: middle;
+  margin-left: 0;
 
   &.ui-button-left {
     .ui-button-inner {
