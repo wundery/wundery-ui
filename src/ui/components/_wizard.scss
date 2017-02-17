@@ -1,0 +1,131 @@
+/* Copyright 2013-2015 etc Chris Tabor. See https://github.com/christabor/css-progress-wizard/blob/master/LICENSE for details. */
+
+// colors
+
+$incomplete: #cad4d9 !default;
+$complete: $ui-color-green !default;
+$active: #a7b9c1 !default;
+$hover: #5671d0 !default;
+
+// sizing
+
+$bubble-size: 20px !default;
+$bubble-line-thickness: 3px !default;
+$border-thickness: 1px !default;
+$darken-amount: 30% !default;
+
+@mixin bubble-style($color) {
+  background-color: $color;
+  color: $color;
+  border-color: darken($color, $darken-amount);
+  &:before,
+  &:after {
+    background-color: $color;
+    border-color: darken($color, $darken-amount);
+  }
+}
+
+.ui-wizard {
+
+  .ui-wizard-prefix {
+    padding: $spacing-double;
+    padding-bottom: 0;
+  }
+
+  .ui-wizard-indicators {
+    @include display(flex);
+
+    margin: 0;
+    padding: $spacing-default;
+    text-transform: uppercase;
+    border-bottom: 1px solid #eaedef;
+
+    .ui-wizard-indicator {
+      @include user-select(none);
+      @include flex(1);
+
+      text-align: center;
+      width: auto;
+      padding: 0;
+      margin: 0;
+      position: relative;
+      text-overflow: ellipsis;
+      display: block;
+      color: #b5c2ca;
+      font-weight: $ui-font-weight-bold;
+      text-transform: uppercase;
+      font-size: 11px !important;
+      outline: none;
+      cursor: pointer;
+
+      &.ui-wizard-indicator-active {
+        color: #677C88;
+
+        .ui-wizard-indicator-bubble {
+          @include bubble-style($active);
+        }
+      }
+
+      &.ui-wizard-indicator-done {
+        color: #0d8a00;
+        cursor: pointer;
+
+        .ui-wizard-indicator-bubble {
+          @include bubble-style($complete);
+        }
+
+        &:hover {
+          .ui-wizard-indicator-bubble {
+            @include bubble-style(darken($complete, 3%));
+          }
+        }
+      }
+    }
+
+    .ui-wizard-indicator-bubble {
+      border-radius: 1000px;
+      width: $bubble-size;
+      height: $bubble-size;
+      background-color: $incomplete;
+      display: block;
+      margin: 0 auto 0.5em auto;
+    }
+
+    .ui-wizard-indicator-bubble:before,
+    .ui-wizard-indicator-bubble:after {
+      display: block;
+      position: absolute;
+      top: $bubble-size / 2 - $border-thickness;
+      width: 100%;
+      height: $bubble-line-thickness;
+      content: '';
+      background-color: $incomplete;
+    }
+
+    .ui-wizard-indicator-bubble:before {
+      left: 0;
+    }
+
+    .ui-wizard-indicator-bubble:after {
+      right: 0;
+    }
+
+    .ui-wizard-indicator:first-child .ui-wizard-indicator-bubble:before,
+    .ui-wizard-indicator:first-child .ui-wizard-indicator-bubble:after {
+      width: 50%;
+      margin-left: 50%;
+    }
+
+    .ui-wizard-indicator:last-child .ui-wizard-indicator-bubble:before,
+    .ui-wizard-indicator:last-child .ui-wizard-indicator-bubble:after {
+      width: 50%;
+      margin-right: 50%;
+    }
+  }
+
+  .ui-wizard-contents {
+    .ui-wizard-content {
+      padding: $ui-spacing-double;
+    }
+  }
+}
