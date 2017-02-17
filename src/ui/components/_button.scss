@@ -45,6 +45,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     margin-left: 3px;
   }
 
+  .ui-button-prepend, .ui-button-append {
+    @include display(flex);
+    @include align-items(center);
+  }
+
   .ui-button-content {
     text-align: left;
 

@@ -21,6 +21,14 @@
     }
   }
 
+  .ui-dropdown-wrapper {
+    margin-right: 4px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
   &.ui-buttongroup-block {
     display: block;
   }
