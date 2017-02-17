@@ -24,6 +24,12 @@
     }
   }
 
+  &.ui-box-theme-success {
+    .ui-box-content {
+      border: 5px solid rgba(75, 173, 0, 0.11);
+    }
+  }
+
   // Boxes might be clickable and then need hover styles
 
   &.ui-box-clickable {
