@@ -1,3 +1,16 @@
+# 1.0.12
+
+* Add link theme for buttons.
+* Add success theme for boxes.
+* Enhance badge light theme.
+* Add defaults for form elements.
+* Add new wizard component.
+* Table: support expansion and inline edit.
+* Form: specify exact button and input height.
+* Text: add success theme.
+* Minor enhancements to multiple components.
+* Bugfix: fix button style in Safari.
+
 # 1.0.11
 
 * New feature: funnel component.
