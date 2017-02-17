@@ -50,7 +50,11 @@
 
   &.ui-badge-theme-light {
     border: 2px solid #f1f1f1;
-    color: #929292;
+    color: #5f676d;
+
+    .ui-badge-label {
+      color: #b9b9b9;
+    }
   }
 
   .ui-icon {
