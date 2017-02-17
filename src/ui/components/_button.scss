@@ -124,6 +124,18 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     }
   }
 
+  &.ui-button-type-link {
+    border: none;
+    background: transparent;
+    color: $ui-color-blue;
+    padding: 0;
+    margin: 0;
+    font-weight: $ui-font-weight-default;
+
+    &:hover {
+    }
+  }
+
   &.ui-button-highlight {
     color: $color-blue;
   }
