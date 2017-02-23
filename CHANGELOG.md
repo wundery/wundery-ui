@@ -1,3 +1,8 @@
+# 1.0.13
+
+* Limit max height of images in tabs.
+* Add info button style.
+
 # 1.0.12
 
 * Add link theme for buttons.
