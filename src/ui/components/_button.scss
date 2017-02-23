@@ -117,6 +117,26 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     }
   }
 
+  &.ui-button-type-info {
+    @include linear-gradient(
+      $ui-button-info-background-color,
+      darken($ui-button-info-background-color, 4%)
+    );
+
+    // box-shadow: 0 1px 0 rgba(255,255,255,0.2) inset;
+    border-color: #0087d4 #0074b5 #006096;
+    border-style: solid;
+    border-width: 1px;
+    color: $ui-button-info-color !important;
+
+    &:hover {
+      @include linear-gradient(
+        $ui-button-info-hover-background-color,
+        darken($ui-button-info-hover-background-color, 5%)
+      );
+    }
+  }
+
   &.ui-button-type-danger {
     font-weight: $ui-font-weight-bold;
     border-color: #c73434 #c33030 #d62929;
