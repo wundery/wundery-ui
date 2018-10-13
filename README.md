@@ -11,3 +11,7 @@ Embed the ui framework:
 ```
 
 For the React people we have sweet [bindings at place](https://github.com/wundery/wundery-ui-react).
+
+## Local development
+
+* Run `yarn start`
