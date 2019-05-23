@@ -4,6 +4,10 @@
 
     border-top: 1px solid #ddd;
 
+    @include phone {
+      display: block;
+    }
+
     > .ui-tab-header {
       @include user-select(none);
       @include display(flex);
@@ -20,6 +24,10 @@
       cursor: pointer;
       border-top: 3px solid transparent;
 
+      @include phone {
+        border-left-width: 0;
+      }
+
       .ui-icon {
         margin-right: 5px;
       }
@@ -31,10 +39,14 @@
       &:last-child {
         border-top-right-radius: $ui-border-radius;
         border-right-width: 1px;
+
+        @include phone {
+          border-right-width: 0;
+        }
       }
 
       &.ui-tab-header-active, &:hover {
-        background: white;
+        background: #ecf8ff;
       }
 
       &.ui-tab-header-active {
@@ -49,7 +61,7 @@
         }
       }
 
-      img.ui-tab-header-image {
+      img {
         max-height: 18px;
         margin-left: 10px;
       }

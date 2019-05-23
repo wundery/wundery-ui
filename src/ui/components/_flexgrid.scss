@@ -13,6 +13,8 @@
     margin-right: -10px;
 
     .ui-flexgrid-item {
+      // @include flex-shrink(0);
+
       padding-top: 0;
       padding-left: 10px;
       padding-right: 10px;
@@ -30,6 +32,58 @@
         bottom: 0;
       }
 
+
+      // Borders
+
+      &.ui-flexgrid-item-border-right {
+        border-right: 1px solid rgba(223, 229, 232, 0.6);
+      }
+
+      &.ui-flexgrid-item-border-left {
+        border-left: 1px solid rgba(223, 229, 232, 0.6);
+      }
+
+      // Devices
+
+      &.ui-flexgrid-item-width-d-3 {
+        @include flex-basis(25%);
+      }
+
+      &.ui-flexgrid-item-width-d-4 {
+        @include flex-basis(33.3333%);
+      }
+
+      &.ui-flexgrid-item-width-d-6 {
+        @include flex-basis(50%);
+      }
+
+      &.ui-flexgrid-item-width-d-9 {
+        @include flex-basis(75%);
+      }
+
+      &.ui-flexgrid-item-width-t-6 {
+        @include tablet {
+          @include flex-basis(50%);
+        }
+      }
+
+      &.ui-flexgrid-item-width-p-6 {
+        @include phone {
+          @include flex-basis(50%);
+        }
+      }
+
+      &.ui-flexgrid-item-width-p-12 {
+        @include phone {
+          @include flex-basis(100%);
+
+          &.ui-flexgrid-item-border-right,
+          &.ui-flexgrid-item-border-left {
+            border: 0;
+          }
+        }
+      }
+
       // Widths
 
       &.ui-flexgrid-item-width-md-6 {
@@ -45,18 +99,28 @@
         @include flex-basis(33.33333%);
       }
 
+      &.ui-flexgrid-item-width-md-5 {
+        @include flex-basis(41%);
+      }
+
+      &.ui-flexgrid-item-width-md-7 {
+        @include flex-basis(59%);
+      }
+
       &.ui-flexgrid-item-width-md-9 {
         @include flex-basis(75%);
+      }
+
+      &.ui-flexgrid-item-width-md-8 {
+        @include flex-basis(66.66666%);
       }
 
       &.ui-flexgrid-item-grow {
         @include flex-grow(1);
       }
 
-      // Borders
-
-      &.ui-flexgrid-item-border-right {
-        border-right: 1px solid rgba(223, 229, 232, 0.6);
+      &.ui-flexgrid-item-no-shrink {
+        @include flex-shrink(0);
       }
     }
 

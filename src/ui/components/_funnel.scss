@@ -1,0 +1,72 @@
+.ui-funnel {
+  @include display(flex);
+  @include flex-wrap(wrap);
+
+  .ui-funnel-step {
+    @include display(flex);
+    @include flex-wrap(no-wrap);
+    @include flex-shrink(1);
+    @include flex-grow(0);
+    @include align-items(center);
+    @include transition(border 200ms ease-out);
+
+    @include phone {
+      @include flex-grow(1);
+    }
+
+    padding: $spacing-default;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid #dee4e6;
+    margin-right: 6px;
+    margin-top: 6px;
+    background: white;
+
+    .ui-funnel-step-number, .ui-funnel-step-icon {
+      @include display(flex);
+      @include justify-content(center);
+      @include align-items(center);
+      @include flex-shrink(0);
+      @include flex-grow(0);
+
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 3px solid #d4d7d8;
+      margin-right: 10px;
+    }
+
+    .ui-funnel-step-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: $ui-font-weight-bold;
+    }
+
+    .ui-funnel-step-number {
+      font-weight: $ui-font-weight-black;
+      color: #848b8e;
+      font-size: 13px;
+    }
+
+    .ui-funnel-step-icon {
+    }
+
+    &.ui-funnel-step-done {
+      .ui-funnel-step-label {
+        color: #a3acb1;
+      }
+      .ui-funnel-step-icon {
+        color: $ui-color-green;
+        border-color: $ui-color-green;
+      }
+    }
+
+    &:last-child {
+      // border-right: none;
+    }
+
+    &:hover {
+      border-color: darken(#dee4e6, 20%);
+    }
+  }
+}

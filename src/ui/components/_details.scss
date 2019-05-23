@@ -9,7 +9,7 @@
 
 		.ui-details-item-label {
 			@include flex-grow(0);
-			@include flex-shrink(1);
+			@include flex-shrink(0);
 			@include flex-basis(170px);
 
       text-align: right;

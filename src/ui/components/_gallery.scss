@@ -67,6 +67,14 @@
         .ui-gallery-item-src-loading {
           display: none;
         }
+
+        &.ui-gallery-item-clickable {
+          cursor: pointer;
+        }
+      }
+
+      &.ui-gallery-item-highlighted {
+        border-color: $ui-color-blue;
       }
 
       &.ui-gallery-item-wrapper-size-small {

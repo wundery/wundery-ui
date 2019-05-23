@@ -1,6 +1,13 @@
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
 .ui-button-wrapper > a, .ui-button {
   @include user-select(none);
 
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   padding: 4px 8px;
   border-radius: 3px;
   border: 0;
@@ -11,6 +18,7 @@
   font-family: $ui-font-family;
   font-weight: $ui-button-font-weight;
   vertical-align: middle;
+  margin-left: 0;
 
   &.ui-button-left {
     .ui-button-inner {
@@ -35,6 +43,11 @@
 
   .ui-button-append {
     margin-left: 3px;
+  }
+
+  .ui-button-prepend, .ui-button-append {
+    @include display(flex);
+    @include align-items(center);
   }
 
   .ui-button-content {
@@ -104,6 +117,26 @@
     }
   }
 
+  &.ui-button-type-info {
+    @include linear-gradient(
+      $ui-button-info-background-color,
+      darken($ui-button-info-background-color, 4%)
+    );
+
+    // box-shadow: 0 1px 0 rgba(255,255,255,0.2) inset;
+    border-color: #0087d4 #0074b5 #006096;
+    border-style: solid;
+    border-width: 1px;
+    color: $ui-button-info-color !important;
+
+    &:hover {
+      @include linear-gradient(
+        $ui-button-info-hover-background-color,
+        darken($ui-button-info-hover-background-color, 5%)
+      );
+    }
+  }
+
   &.ui-button-type-danger {
     font-weight: $ui-font-weight-bold;
     border-color: #c73434 #c33030 #d62929;
@@ -116,11 +149,28 @@
     }
   }
 
+  &.ui-button-type-link {
+    border: none;
+    background: transparent;
+    color: $ui-color-blue;
+    padding: 0;
+    margin: 0;
+    font-weight: $ui-font-weight-default;
+
+    &:hover {
+    }
+  }
+
+  &.ui-button-highlight {
+    color: $color-blue;
+  }
+
   // States
 
   &[disabled], &.ui-button-state-disabled {
-    pointer-events: none;
-    opacity: 0.6;
+    .ui-button-inner {
+      opacity: 0.6;
+    }
   }
 
   &.ui-button-state-loading {

@@ -1,7 +1,10 @@
 .ui-media {
   @include display(flex);
   @include flex-wrap(no-wrap);
-  // @include justify-content(space-between);
+
+  @include phone {
+    display: block;
+  }
 
   .ui-media-icon {
     @include flex-shrink(0);
@@ -19,5 +22,11 @@
 
   > div:first-child {
     padding-right: $ui-spacing-double;
+  }
+
+  &.ui-media-compact {
+    > div:first-child {
+      padding-right: 6px;;
+    }
   }
 }

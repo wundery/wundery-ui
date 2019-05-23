@@ -1,29 +1,35 @@
 .ui-icon {
 
-	&.ui-icon-state-success {
-		color: green;
-	}
+  &.ui-icon-state-success {
+    color: green;
+  }
 
-	// Sizes
+  // Sizes
 
-	&.ui-icon-size-large {
-		font-size: 40px;
-	}
+  &.ui-icon-size-large {
+    font-size: 40px;
+  }
 
   &.ui-icon-size-small {
-		font-size: 10px;
-	}
+    font-size: 9px;
+  }
 
   &.ui-icon-size-larger {
-		font-size: 16px;
-	}
+    font-size: 16px;
+  }
 
-	// Colors
+  // Colors
 
-	&.ui-icon-color-light {
-		color: white;
-		opacity: 0.7;
-	}
+  &.ui-icon-color-light {
+    color: white;
+    opacity: 0.7;
+  }
+
+  // Themes
+
+  &.ui-icon-theme-success {
+    color: $ui-color-green;
+  }
 
   // Customizing
 

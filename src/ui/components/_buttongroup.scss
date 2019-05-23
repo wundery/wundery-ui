@@ -1,12 +1,28 @@
 .ui-buttongroup {
-  display: inline-block;
+  @include display(inline-flex);
+
+  @include phone {
+    display: block;
+  }
 
   .ui-button {
     margin-right: 4px;
 
+    @include phone {
+      margin-bottom: 4px;
+    }
+
     &.ui-button-block {
       margin-right: 0px;
     }
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  .ui-dropdown-wrapper {
+    margin-right: 4px;
 
     &:last-child {
       margin-right: 0px;

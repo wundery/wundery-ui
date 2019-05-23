@@ -5,66 +5,99 @@
   border-radius: 2px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.07);
 
-  .ui-sidebar-item {
-    font-size: 14px;
-    border-bottom: 1px solid rgba(0,0,0,0.07);
+  .ui-sidebar-expand-wrapper {
+    @include above-phone {
+      display: none;
+    }
 
-    > a, > button {
-      @include user-select(none);
-      @include flex-grow(1);
-      @include display(flex);
-      @include align-items(center);
-
-      outline: 0;
-      cursor: pointer;
+    button {
+      outline: none;
+      font-size: 13px;
+      padding: 6px;
       width: 100%;
-      text-align: left;
-      font-size: 14px;
-      background: none;
-      border: none;
+      color: #49575f;
       font-weight: $ui-font-weight-bold;
-      color: $ui-link-color;
-      padding: $spacing-default;
+      text-align: left;
+      cursor: pointer;
 
       .ui-icon {
         margin-right: 6px;
-        font-size: 18px;
-      }
-
-      .ui-badge {
-        margin-left: auto;
-      }
-    }
-
-    &:first-child {
-      > a {
-        border-top-right-radius: 3px;
-        border-top-left-radius: 3px;
-      }
-    }
-
-    &:last-child {
-      border: none;
-
-      > a {
-        border-bottom-right-radius: 3px;
-        border-bottom-left-radius: 3px;
       }
     }
   }
 
-  .ui-sidebar-item-active {
-    > a, > button {
-      background-color: $ui-link-color;
-      color: white;
+  .ui-sidebar-items {
+    @include phone {
+      display: none;
+    }
 
-      .ui-badge {
-        background: $ui-color-blue-dark;
+    .ui-sidebar-item {
+      font-size: 14px;
+      border-bottom: 1px solid rgba(0,0,0,0.07);
+
+      > a, > button {
+        @include user-select(none);
+        @include flex-grow(1);
+        @include display(flex);
+        @include align-items(center);
+
+        outline: 0;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+        font-size: 14px;
+        background: none;
+        border: none;
+        font-weight: $ui-font-weight-bold;
+        color: $ui-link-color;
+        padding: $spacing-default;
+
+        .ui-icon {
+          margin-right: 6px;
+          font-size: 18px;
+        }
+
+        .ui-badge {
+          margin-left: auto;
+        }
       }
 
-      .ui-icon {
-        color: white !important;
+      &:first-child {
+        > a {
+          border-top-right-radius: 3px;
+          border-top-left-radius: 3px;
+        }
       }
+
+      &:last-child {
+        border: none;
+
+        > a {
+          border-bottom-right-radius: 3px;
+          border-bottom-left-radius: 3px;
+        }
+      }
+    }
+
+    .ui-sidebar-item-active {
+      > a, > button {
+        background-color: $ui-link-color;
+        color: white;
+
+        .ui-badge {
+          background: $ui-color-blue-dark;
+        }
+
+        .ui-icon {
+          color: white !important;
+        }
+      }
+    }
+  }
+
+  &.ui-sidebar-expanded {
+    .ui-sidebar-items {
+      display: block;
     }
   }
 

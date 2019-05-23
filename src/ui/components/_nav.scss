@@ -1,14 +1,35 @@
 .ui-nav {
   background-color: white;
-  padding: 16px 0;
-  // border-bottom: 1px solid $ui-nav-border-color;
+
+  .ui-nav-prefix {
+    background: #003858;
+    padding: 4px 8px;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: $ui-font-weight-bold;
+  }
 
   .ui-nav-navitems {
     @include display(flex);
     @include align-items(center);
 
+    @include phone {
+      display: block;
+    }
+
+    padding: 16px;
+
     .ui-nav-navitem {
       margin-right: $spacing-default + 10px;
+
+      @include phone {
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
 
       &.ui-nav-navitem-brand {
         @include display(flex);
