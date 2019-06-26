@@ -84,6 +84,15 @@
           height: 60px;
         }
       }
+
+      &.ui-gallery-item-wrapper-size-medium{
+        width: 150px;
+        .ui-gallery-item-src {
+          height: 100px;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
     }
     /*.ui-gallery-item-wrapper {
       @include display(flex);
