@@ -1,0 +1,13 @@
+.custom-modal-currency {
+  text-align: center;
+  .ui-modal-footer{
+    @include linear-gradient(240deg,
+      lighten($ui-table-header-background-color, 2%),
+      darken($ui-table-header-background-color, 1%)
+    );
+    .close-modal-change-currency {
+      max-width: 100px;
+      margin: 0 auto;
+    }
+  } 
+}
