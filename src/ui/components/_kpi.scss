@@ -90,3 +90,15 @@
 		margin: 0;
 	}
 }
+
+.summary-revenue {
+  .ui-kpi {
+    .ui-kpi-horizons {
+      .ui-kpi-horizon {
+        .ui-kpi-horizon-value {
+          height: auto;
+        }
+      }
+    }
+  }
+}
