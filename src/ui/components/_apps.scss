@@ -33,6 +33,10 @@
 
     .ui-app-meta-texts {
       padding-right: 20px;
+
+      &.ui-app-meta-texts-margin {
+        margin-left: 30px;
+      }
       .ui-app-title {
         font-weight: $ui-font-weight-bold;
       }
@@ -44,7 +48,15 @@
     }
 
     .ui-app-meta-icon {
+      &.ui-app-meta-icon-border {
+        background-color: #0085be;
+        padding-top: 5px;
+        border-radius: 5px;
+      }
 
+      #svg-palette {
+        margin: 0px 5px;
+      }
     }
   }
 
@@ -56,6 +68,10 @@
       @include display(flex);
       @include align-items(center);
       @include justify-content(space-between);
+
+      &.ui-app-actions-margin {
+        margin: auto;
+      }
 
       .ui-app-info {
         @include display(flex);
