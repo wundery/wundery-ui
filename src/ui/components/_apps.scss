@@ -48,15 +48,16 @@
     }
 
     .ui-app-meta-icon {
-      &.ui-app-meta-icon-border {
-        background-color: #0085be;
-        padding-top: 5px;
-        border-radius: 5px;
-      }
 
       #svg-palette {
-        margin: 0px 5px;
+        border-radius: 5px;
+        padding: 4px;
+        background-color: #0085be;
       }
+    }
+
+    .ui-app-actions-margin {
+      margin: auto;
     }
   }
 
@@ -68,10 +69,6 @@
       @include display(flex);
       @include align-items(center);
       @include justify-content(space-between);
-
-      &.ui-app-actions-margin {
-        margin: auto;
-      }
 
       .ui-app-info {
         @include display(flex);
