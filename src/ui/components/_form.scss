@@ -285,3 +285,16 @@ textarea {
     font-size: 11px;
   }
 }
+
+.ui-form-feature-lists {
+  .ui-form-feature-list {
+    padding-right: 100px;
+    margin-bottom: 15px;
+    position: relative;
+    .ui-actions{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}
