@@ -31,8 +31,18 @@
     @include display(flex);
     @include justify-content(space-between);
 
+    &.ui-app-meta-theme {
+      height: 100%;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
     .ui-app-meta-texts {
       padding-right: 20px;
+
+      &.ui-app-meta-texts-margin {
+        margin-left: 30px;
+      }
       .ui-app-title {
         font-weight: $ui-font-weight-bold;
       }
@@ -44,7 +54,21 @@
     }
 
     .ui-app-meta-icon {
+      &.ui-app-meta-icon-flex {
+        display: -webkit-flex;
+        display: flex;
+      }
 
+      #svg-palette {
+        border-radius: 5px;
+        padding: 4px;
+        background-color: #0085be;
+      }
+    }
+
+    .ui-app-actions-margin {
+      margin: auto;
+      margin-right: 5%;
     }
   }
 

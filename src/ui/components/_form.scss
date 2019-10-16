@@ -51,7 +51,7 @@ textarea {
 }
 
 .ui-form {
-  > .ui-form-item {
+  .ui-form-item {
     margin-bottom: $ui-spacing-double;
 
     &.ui-form-item-compact {
@@ -156,6 +156,12 @@ textarea {
 
     img {
       max-width: 100%;
+    }
+
+    .ui-font-italic {
+      font-weight: 100;
+      font-size: 12px;
+      font-style: italic;
     }
   }
 }
@@ -277,5 +283,18 @@ textarea {
     border-radius: 3px;
     font-weight: $ui-font-weight-bold;
     font-size: 11px;
+  }
+}
+
+.ui-form-feature-lists {
+  .ui-form-feature-list {
+    padding-right: 100px;
+    margin-bottom: 15px;
+    position: relative;
+    .ui-actions{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
   }
 }
