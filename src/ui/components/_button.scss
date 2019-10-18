@@ -63,6 +63,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
   // Sizes
 
+  &.ui-button-size-small-padding {
+    font-size: 11px;
+    padding: 3px 3px;
+    font-weight: $ui-font-weight-bold;
+  }
+
   &.ui-button-size-small {
     font-size: 11px;
     padding: 3px 6px;
