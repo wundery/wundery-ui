@@ -11,3 +11,15 @@
     }
   } 
 }
+.footer-layer {
+  position: fixed;
+  bottom: 0;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  background: $ui-color-blue;
+  .footer-text{
+    margin-right: 20px;
+    color: white;
+  }
+}
