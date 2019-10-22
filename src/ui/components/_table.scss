@@ -45,6 +45,11 @@
 
     .ui-table-cell {
       outline: none;
+      &.ui-table-cell-product-title {
+        @include tablet-portrait-landscape {
+          flex: 0 0 200px;
+        }
+      }
     }
 
     .ui-table-header {
@@ -471,6 +476,10 @@
         }
       }
     }
+
+    @include tablet-portrait-landscape {
+      width: 1000px;
+    }
   }
 
 
@@ -495,6 +504,14 @@
     }
     .ui-table-body {
       min-height: 40px;
+    }
+  }
+
+  @include tablet-portrait-landscape {
+    overflow-x: auto;
+    .ui-table-header, 
+    .ui-table-body {
+      width: 100%;
     }
   }
 
