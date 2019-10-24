@@ -23,6 +23,12 @@
   }
 }
 
+@mixin tablet-portrait-landscape {
+  @media (min-width: 421px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
 @mixin desktop {
   @media (min-width: 1025px) {
     @content;
