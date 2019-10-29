@@ -3,6 +3,12 @@
   to   { background: transparent; }
 }
 
+@mixin responsive-table {
+   @media (min-width: 421px) and (max-width: 1440px) {
+    @content;
+   }
+}
+
 .ui-table-wrapper {
   border: 1px solid $ui-table-border-color;
   border-radius: 3px;
@@ -46,7 +52,7 @@
     .ui-table-cell {
       outline: none;
       &.ui-table-cell-product-title {
-        @include tablet-portrait-landscape {
+        @include responsive-table {
           flex: 0 0 200px;
         }
       }
@@ -475,11 +481,15 @@
           }
         }
       }
+      @include phone {
+        overflow-x: auto;
+      }
     }
 
-    @include tablet-portrait-landscape {
+    @include responsive-table {
       width: 1000px;
     }
+
   }
 
 
@@ -507,12 +517,11 @@
     }
   }
 
-  @include tablet-portrait-landscape {
+  @include responsive-table {
     overflow-x: auto;
     .ui-table-header, 
     .ui-table-body {
       width: 100%;
     }
   }
-
 }
