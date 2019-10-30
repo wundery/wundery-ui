@@ -150,3 +150,30 @@
     }
   }
 }
+
+.ui-display-flex {
+  @include display(flex);
+}
+
+.ui-display-flex-small {
+  @include display(flex);
+  @include phone {
+    @include display(block);
+  }
+}
+
+.ui-invited {
+  @include flex-shrink(0);
+  @include flex-basis(400px);
+
+  @include phone {
+    @include flex-basis(180px);
+  }
+}
+
+.flex-basic-full {
+  @include flex-basis(100%);
+}
+
+
+

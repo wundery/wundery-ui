@@ -47,6 +47,20 @@
 .ui-text-theme-danger {
   color: $ui-color-red;
 }
+
+.ui-text-blue-light {
+  color: $ui-color-blue-light;
+  border-bottom: $ui-border-line solid $ui-color-blue-light;
+}
+
+.ui-text-green-light {
+  color: $ui-color-green-light;
+}
+
+.ui-text-theme-danger-dark {
+  color: $ui-color-red-dark;
+}
+
 .ui-text-link {
   color: $ui-color-blue;
 }

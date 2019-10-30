@@ -298,3 +298,20 @@ textarea {
     }
   }
 }
+
+.ui-account-tab-normal {
+  @include flex-basis(10%);
+  @include flex-grow(0);
+  @include flex-shrink(0);
+
+  $_color: lighten($ui-headline-color, 35%);
+  font-size: 18px;
+  color: $_color;
+  padding-bottom: 4px;
+  padding-right: $spacing-double;
+
+  @include phone {
+    @include flex-basis(10px);
+    text-align: left;
+  }
+}
