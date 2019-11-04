@@ -315,3 +315,17 @@ textarea {
     text-align: left;
   }
 }
+
+.ui-form-item-checkbox-default {
+  margin-right: 10px;
+}
+
+.ui-form-item-type-checkbox-default {
+  @include phone {
+    @include display(flex);
+  }
+}
+
+.ui-form-label-checkbox-default {
+  color: $ui-color-black;
+}
