@@ -485,11 +485,6 @@
         overflow-x: auto;
       }
     }
-
-    @include responsive-table {
-      width: 1000px;
-    }
-
   }
 
 
@@ -516,7 +511,14 @@
       min-height: 40px;
     }
   }
+}
 
+.ui-table-responsive {
+  .ui-table {
+    @include responsive-table {
+      width: 1000px;
+    }
+  }
   @include responsive-table {
     overflow-x: auto;
     .ui-table-header, 
