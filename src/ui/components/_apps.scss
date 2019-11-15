@@ -164,15 +164,20 @@
 
 .ui-invited {
   @include flex-shrink(0);
-  @include flex-basis(400px);
-
-  @include phone {
-    @include flex-basis(180px);
-  }
+  @include flex-basis(100%);
 }
 
 .flex-basic-full {
   @include flex-basis(100%);
+}
+
+.ui-display-flex-table {
+  @include flex-basis(70%);
+
+  @include tablet {
+    @include flex-basis(100%);
+  }
+
 }
 
 
