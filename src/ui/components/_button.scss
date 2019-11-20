@@ -185,4 +185,26 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   &:focus {
     outline: none;
   }
+
+  &.ui-button-height-full {
+    height: 100%;
+  }
+
+  &.ui-button-width {
+    @include desktop {
+      width: 20%;
+    }
+  }
+
+  &.ui-margin-top-small {
+    margin-top: 10px;
+
+    @include desktop {
+      margin-top: 0px;
+    }
+
+    @include tablet {
+      margin-top: 0px;
+    }
+  }
 }

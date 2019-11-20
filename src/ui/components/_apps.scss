@@ -178,6 +178,31 @@
     @include flex-basis(100%);
   }
 
+  @include desktop-1280 {
+    @include flex-basis(90%);
+  }
+}
+
+.ui-flex-text {
+  @include flex-basis(86%);
+
+  @include tablet {
+    @include flex-basis(85%);
+  }
+
+  @include desktop-1280 {
+    @include flex-basis(82%);
+  }
+}
+
+.ui-display {
+  @include desktop {
+    @include display(flex);
+  }
+
+  @include tablet {
+    @include display(flex);
+  }
 }
 
 
