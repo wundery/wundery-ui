@@ -11,3 +11,31 @@
     }
   } 
 }
+.footer-layer {
+  position: fixed;
+  bottom: 0;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  background: $ui-color-blue;
+  .footer-text{
+    margin-right: 20px;
+    color: white;
+  }
+}
+
+.ui-tax-item {
+  position: relative;
+  padding-top: 6px;
+  padding-right: 12px;
+  .ui-tax-pdf-icon {
+    vertical-align: text-bottom;
+  }
+  .ui-tax-item-icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 13px;
+    cursor: pointer;
+  }
+}

@@ -150,3 +150,60 @@
     }
   }
 }
+
+.ui-display-flex {
+  @include display(flex);
+}
+
+.ui-display-flex-small {
+  @include display(flex);
+  @include phone {
+    @include display(block);
+  }
+}
+
+.ui-invited {
+  @include flex-shrink(0);
+  @include flex-basis(100%);
+}
+
+.flex-basic-full {
+  @include flex-basis(100%);
+}
+
+.ui-display-flex-table {
+  @include flex-basis(70%);
+
+  @include tablet {
+    @include flex-basis(100%);
+  }
+
+  @include desktop-1280 {
+    @include flex-basis(90%);
+  }
+}
+
+.ui-flex-text {
+  @include flex-basis(86%);
+
+  @include tablet {
+    @include flex-basis(85%);
+  }
+
+  @include desktop-1280 {
+    @include flex-basis(82%);
+  }
+}
+
+.ui-display {
+  @include desktop {
+    @include display(flex);
+  }
+
+  @include tablet {
+    @include display(flex);
+  }
+}
+
+
+
