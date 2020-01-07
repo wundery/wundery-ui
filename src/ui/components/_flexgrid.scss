@@ -44,6 +44,9 @@
       }
 
       // Devices
+      &.ui-flexgrid-item-width-d-2 {
+        @include flex-basis(15%);
+      }
 
       &.ui-flexgrid-item-width-d-3 {
         @include flex-basis(25%);
@@ -121,6 +124,10 @@
 
       &.ui-flexgrid-item-no-shrink {
         @include flex-shrink(0);
+      }
+
+      &.ui-flexgrid-item-padding {
+        padding-top: 10px;
       }
     }
 

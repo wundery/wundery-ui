@@ -39,3 +39,45 @@
     cursor: pointer;
   }
 }
+
+.ui-table-customer {
+  .ui-table-wrapper {
+    .ui-table {
+      .ui-table-row-wrapper {
+        .ui-table-row {
+          @include flex-wrap(wrap);
+        }
+      }
+    }
+  }
+}
+
+.ui-filter-customer-wrapper {
+  .ui-flexgrid-items {
+    .ui-flexgrid-item {
+      &.no-position {
+        position: initial;
+      }
+    }
+  }
+}
+
+.ui-invoice-note-customer {
+  .ui-invoice-note-label {
+    font-weight: 700;
+  }
+  .ui-note-invoice-input {
+    width: 100%;
+  }
+}
+
+.ui-b2b-settings {
+  .ui-discount-settings {
+    .ui-list {
+      box-shadow: inherit;
+      .ui-list-item {
+        border-bottom: 0;
+      }
+    }
+  }
+}

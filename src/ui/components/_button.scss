@@ -207,4 +207,22 @@ button::-moz-focus-inner, input::-moz-focus-inner {
       margin-top: 0px;
     }
   }
+  &.ui-button-relative {
+    position: relative;
+  }
+}
+
+.ui-notify {
+  position: absolute;
+  color: white;
+  background-color: $ui-color-green;
+  top: -7px;
+  right: -6px;
+  padding: 0px 5px;
+  border-radius: 4px;
+}
+
+.button-notify {
+  position: relative;
+  padding: 4px 20px;
 }
