@@ -1,0 +1,27 @@
+.ui-select {
+  position: relative;
+  select {
+    padding: 5px;
+    border: none;
+    width: 100%;
+    -webkit-appearance: button;
+    appearance: button;
+    background: white;
+    border: 1px solid $ui-color-border;
+
+  }
+  &::before {
+    content: "\f0dd";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    line-height: 19px;
+    background: $ui-color-grey-light;
+    pointer-events: none;
+    border: 1px solid $ui-color-border;
+  }
+}
