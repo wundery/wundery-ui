@@ -63,6 +63,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
   // Sizes
 
+  &.ui-button-size-small-padding {
+    font-size: 11px;
+    padding: 3px 3px;
+    font-weight: $ui-font-weight-bold;
+  }
+
   &.ui-button-size-small {
     font-size: 11px;
     padding: 3px 6px;
@@ -179,4 +185,44 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   &:focus {
     outline: none;
   }
+
+  &.ui-button-height-full {
+    height: 100%;
+  }
+
+  &.ui-button-width {
+    @include desktop {
+      width: 20%;
+    }
+  }
+
+  &.ui-margin-top-small {
+    margin-top: 10px;
+
+    @include desktop {
+      margin-top: 0px;
+    }
+
+    @include tablet {
+      margin-top: 0px;
+    }
+  }
+  &.ui-button-relative {
+    position: relative;
+  }
+}
+
+.ui-notify {
+  position: absolute;
+  color: white;
+  background-color: $ui-color-green;
+  top: -7px;
+  right: -6px;
+  padding: 0px 5px;
+  border-radius: 4px;
+}
+
+.button-notify {
+  position: relative;
+  padding: 4px 20px;
 }

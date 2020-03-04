@@ -3,6 +3,12 @@
   to   { background: transparent; }
 }
 
+@mixin responsive-table {
+   @media (min-width: 421px) and (max-width: 1440px) {
+    @content;
+   }
+}
+
 .ui-table-wrapper {
   border: 1px solid $ui-table-border-color;
   border-radius: 3px;
@@ -45,6 +51,11 @@
 
     .ui-table-cell {
       outline: none;
+      &.ui-table-cell-product-title {
+        @include responsive-table {
+          flex: 0 0 200px;
+        }
+      }
     }
 
     .ui-table-header {
@@ -122,6 +133,9 @@
               cursor: pointer;
               background: $ui-table-header-cell-hover-background;
             }
+          }
+          &.ui-table-no-padding {
+            padding: 0;
           }
         }
       }
@@ -262,6 +276,11 @@
             color: $ui-link-color;
             cursor: pointer;
           }
+        }
+
+        .ui-table-cell-break {
+          flex-basis: 100%;
+          height: 0;
         }
 
         @include phone {
@@ -470,6 +489,9 @@
           }
         }
       }
+      @include phone {
+        overflow-x: auto;
+      }
     }
   }
 
@@ -497,5 +519,19 @@
       min-height: 40px;
     }
   }
+}
 
+.ui-table-responsive {
+  .ui-table {
+    @include responsive-table {
+      width: 1000px;
+    }
+  }
+  @include responsive-table {
+    overflow-x: auto;
+    .ui-table-header, 
+    .ui-table-body {
+      width: 100%;
+    }
+  }
 }

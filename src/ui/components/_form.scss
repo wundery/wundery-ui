@@ -164,6 +164,13 @@ textarea {
       font-style: italic;
     }
   }
+
+  .ui-form-label-note {
+    font-size: 11px;
+    font-weight: normal;
+    margin-left: 5px;
+    display: inline;
+  }
 }
 
 .ui-form-input {
@@ -298,3 +305,49 @@ textarea {
     }
   }
 }
+
+.ui-account-tab-normal {
+  @include flex-basis(10%);
+  @include flex-grow(0);
+  @include flex-shrink(0);
+
+  $_color: lighten($ui-headline-color, 35%);
+  font-size: 18px;
+  color: $_color;
+  padding-bottom: 4px;
+  padding-right: $spacing-double;
+
+  @include phone {
+    @include flex-basis(10px);
+    text-align: left;
+  }
+}
+
+.ui-form-item-checkbox-default {
+  margin-right: 10px;
+}
+
+.ui-form-item-type-checkbox-default {
+  @include phone {
+    @include display(flex);
+  }
+}
+
+.ui-form-label-checkbox-default {
+  color: $ui-color-black;
+}
+
+.ui-form-input-width-short {
+  width: 10% !important;
+}
+
+.ui-form-input-width-normal {
+  width: 50% !important;
+}
+
+.ui-form-input-width-full {
+  width: 100% !important;
+}
+
+
+

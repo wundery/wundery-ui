@@ -11,3 +11,73 @@
     }
   } 
 }
+.footer-layer {
+  position: fixed;
+  bottom: 0;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  background: $ui-color-blue;
+  .footer-text{
+    margin-right: 20px;
+    color: white;
+  }
+}
+
+.ui-tax-item {
+  position: relative;
+  padding-top: 6px;
+  padding-right: 12px;
+  .ui-tax-pdf-icon {
+    vertical-align: text-bottom;
+  }
+  .ui-tax-item-icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 13px;
+    cursor: pointer;
+  }
+}
+
+.ui-table-customer {
+  .ui-table-wrapper {
+    .ui-table {
+      .ui-table-row-wrapper {
+        .ui-table-row {
+          @include flex-wrap(wrap);
+        }
+      }
+    }
+  }
+}
+
+.ui-filter-customer-wrapper {
+  .ui-flexgrid-items {
+    .ui-flexgrid-item {
+      &.no-position {
+        position: initial;
+      }
+    }
+  }
+}
+
+.ui-invoice-note-customer {
+  .ui-invoice-note-label {
+    font-weight: 700;
+  }
+  .ui-note-invoice-input {
+    width: 100%;
+  }
+}
+
+.ui-b2b-settings {
+  .ui-discount-settings {
+    .ui-list {
+      box-shadow: inherit;
+      .ui-list-item {
+        border-bottom: 0;
+      }
+    }
+  }
+}
