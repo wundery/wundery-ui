@@ -9,3 +9,9 @@
 .ui-margin-left-medium {
   margin-left: $spacing-default / 2;
 }
+
+@media (max-width: 414px) {
+  .ui-margin-top-larger {
+    margin-top: $spacing-default * 5 + 2;
+  }
+}
