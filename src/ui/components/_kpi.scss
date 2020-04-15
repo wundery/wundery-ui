@@ -60,6 +60,7 @@
         height: 20px;
         margin-top: 6px;
         margin-bottom: 6px;
+        flex-wrap: wrap;
 
 				.ui-kpi-horizon-value-loading {
 					background: lighten($ui-kpi-horizon-description-color, 20%);
