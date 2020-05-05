@@ -24,4 +24,13 @@
     pointer-events: none;
     border: 1px solid $ui-color-border;
   }
+  &.select-store-for-app {
+    &::before {
+      line-height: 30px;
+      width: 38px;
+    }
+    select {
+      height: 38px;
+    }
+  }
 }
