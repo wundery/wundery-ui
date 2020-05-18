@@ -934,3 +934,9 @@
   vertical-align: middle;
   float: none;
 }
+
+@media (min-width: 768px) {
+  .pull-right-md {
+    float: right !important;
+  }
+}
