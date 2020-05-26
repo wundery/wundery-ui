@@ -129,3 +129,18 @@
     margin-top: 20px;
   }
 }
+
+.group-option-discount {
+  box-shadow: initial;
+  .ui-list-item {
+    border-bottom: 0;
+    &.ui-list-item-with-onclick:hover {
+      background: transparent;
+    }
+  }
+}
+.search-results {
+  max-height: 235px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
