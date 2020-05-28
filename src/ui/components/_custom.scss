@@ -144,3 +144,22 @@
   overflow-y: auto;
   margin-bottom: 20px;
 }
+.actions-app {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  .button-app-dropdown {
+    border: 0;
+    background: transparent;
+    &:hover {
+      background: transparent;
+    }
+    .ui-button-content {
+      font-size: 20px;
+      color: #767676;
+    }
+    .ui-button-append {
+      display: none;
+    }
+  }
+}
