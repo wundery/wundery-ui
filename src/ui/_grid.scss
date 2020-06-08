@@ -943,3 +943,36 @@
     float: left !important;
   }
 }
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.ui-margin-auto-gird {
+  margin: auto;
+}
+
+.ui-flex-gird {
+  @include desktop {
+    @include display(flex);
+  }
+
+  @include tablet {
+    @include display(flex);
+  }
+}
+
+.ui-flex-end-gird {
+  @include desktop {
+    align-self: flex-end;
+  }
+
+  @include tablet {
+    align-self: flex-end;
+  }
+}
+
+
