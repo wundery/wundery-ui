@@ -952,7 +952,9 @@
 }
 
 .ui-margin-auto-gird {
-  margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-content: center;
 }
 
 .ui-flex-gird {
