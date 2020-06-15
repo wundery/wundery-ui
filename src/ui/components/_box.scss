@@ -30,6 +30,13 @@
     }
   }
 
+  &.ui-box-theme-error-payment {
+    background-color: #F77272;
+    .ui-box-content {
+      color: white;
+    }
+  }
+
   // Boxes might be clickable and then need hover styles
 
   &.ui-box-clickable {
