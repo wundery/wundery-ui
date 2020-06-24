@@ -183,6 +183,18 @@
   }
 }
 
+.ui-display-flex-button {
+  @include flex-basis(80%);
+
+  @include tablet {
+    @include flex-basis(100%);
+  }
+
+  @include desktop-1280 {
+    @include flex-basis(100%);
+  }
+}
+
 .ui-flex-text {
   @include flex-basis(86%);
 
