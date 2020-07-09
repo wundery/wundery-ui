@@ -210,6 +210,26 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   &.ui-button-relative {
     position: relative;
   }
+
+  &.ui-button-referral {
+    @include desktop {
+      width: 80%;
+      float: right;
+    }
+
+    border-radius: 10px;
+    background-color: #5FA5CD !important;
+    background-image: none !important;
+    color: white !important;
+    border-color: #5FA5CD !important;
+    box-shadow: none !important;
+    height: 35px !important;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
 }
 
 .ui-notify {

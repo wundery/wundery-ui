@@ -32,6 +32,29 @@
   font-size: 40px;
 }
 
+.ui-text-referral {
+  font-size: 70px;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  &.number-of-device {
+    width: 155px;
+  }
+
+  &.number-payment {
+    width: 230px;
+  }
+}
+
+.ui-text-title-referral {
+  display: inline-block;
+  text-align: center;
+  font-weight: 700;
+  @include desktop {
+    margin-left: 30px;
+  }
+}
+
 .ui-text-opaque {
   opacity: 0.7;
 }
