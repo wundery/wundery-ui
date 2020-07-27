@@ -155,6 +155,23 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     }
   }
 
+  &.ui-button-type-delete {
+    @include linear-gradient( #DB2F30, darken(#DB2F30, 4%));
+
+    box-shadow: 0 1px 0 rgba(255,255,255,0.2) inset;
+    border-color: #DB2F30 #DB2F30 #DB2F30;
+    border-style: solid;
+    border-width: 1px;
+    color: $ui-button-success-color !important;
+
+    &:hover {
+      @include linear-gradient(
+        #CE0000,
+        darken(#CE0000, 5%)
+      );
+    }
+  }
+
   &.ui-button-type-link {
     border: none;
     background: transparent;
