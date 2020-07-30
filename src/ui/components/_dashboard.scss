@@ -22,15 +22,16 @@
 			}
 
 			&.ui-dashboard-item-size-default {
-				@include flex-basis(20%);
+				@include flex-basis(25% - $spacing-double);
 			}
 
 			&.ui-dashboard-item-size-wide {
-				@include flex-basis(40%);
+				@include flex-basis(50% - $spacing-double);
 			}
 
 			&.ui-dashboard-item-size-full {
 				@include flex-basis(100%);
+        margin: 0;
 			}
 
 			.ui-list {
