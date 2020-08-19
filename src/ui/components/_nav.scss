@@ -11,8 +11,8 @@
   }
 
   .ui-nav-navitems {
-    @include display(flex);
-    @include align-items(center);
+    display: flex;
+    align-items: center;
 
     @include phone {
       display: block;
@@ -32,8 +32,8 @@
       }
 
       &.ui-nav-navitem-brand {
-        @include display(flex);
-        @include align-items(center);
+        display: flex;
+        align-items: center;
 
         img {
           opacity: 1;
@@ -49,7 +49,8 @@
         margin-right: 0;
       }
 
-      > .ui-button, > .ui-dropdown-wrapper > .ui-button {
+      > .ui-button,
+      > .ui-dropdown-wrapper > .ui-button {
         background: #004a73;
         color: white;
         border: 0;
@@ -59,7 +60,6 @@
           background: #004a73;
         }
       }
-
     }
   }
 

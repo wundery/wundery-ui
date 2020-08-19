@@ -1,5 +1,5 @@
 .ui-hint {
-  @include display(flex);
+  display: flex;
 
   margin-top: 10px;
   border-radius: 3px;
@@ -7,7 +7,7 @@
   padding: 10px;
 
   .ui-hint-label {
-    @include flex-shrink(0);
+    flex-shrink: 0;
     margin-right: 10px;
   }
 

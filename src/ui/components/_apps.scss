@@ -13,23 +13,24 @@
 }
 
 .ui-app {
-  @include display(flex);
-  @include flex-direction(column);
-  @include justify-content(space-between);
-  @include linear-gradient(240deg,
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(
+    240deg,
     lighten($ui-table-header-background-color, 2%),
     darken($ui-table-header-background-color, 1%)
   );
 
   border: 1px solid $ui-table-border-color;
   border-radius: 3px;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.06);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.06);
   padding: 15px;
   transition: border-color 0.2s;
 
   .ui-app-meta {
-    @include display(flex);
-    @include justify-content(space-between);
+    display: flex;
+    justify-content: space-between;
 
     &.ui-app-meta-theme {
       height: 100%;
@@ -73,21 +74,20 @@
   }
 
   .ui-app-footer {
-
     margin-top: 20px;
 
     .ui-app-actions {
-      @include display(flex);
-      @include align-items(center);
-      @include justify-content(space-between);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
       .ui-app-info {
-        @include display(flex);
-        @include align-items(center);
-        @include order(1);
+        display: flex;
+        align-items: center;
+        order: 1;
 
         .ui-app-active-indicator {
-          @include order(2);
+          order: 2;
 
           border: 1px solid $ui-color-green;
           border-radius: $ui-border-radius;
@@ -101,7 +101,7 @@
         }
 
         .ui-app-price {
-          @include order(1);
+          order: 1;
 
           border: 1px solid $ui-color-blue;
           border-radius: $ui-border-radius;
@@ -114,7 +114,7 @@
         }
       }
       .ui-app-buttons {
-        @include order(2);
+        order: 2;
       }
     }
 
@@ -122,7 +122,7 @@
       margin-top: 4px;
 
       .ui-app-developer {
-        @include order(1);
+        order: 1;
 
         font-size: 11px;
         text-transform: uppercase;
@@ -152,70 +152,67 @@
 }
 
 .ui-display-flex {
-  @include display(flex);
+  display: flex;
 }
 
 .ui-display-flex-small {
-  @include display(flex);
+  display: flex;
   @include phone {
-    @include display(block);
+    display: block;
   }
 }
 
 .ui-invited {
-  @include flex-shrink(0);
-  @include flex-basis(100%);
+  flex-shrink: 0;
+  flex-basis: 100%;
 }
 
 .flex-basic-full {
-  @include flex-basis(100%);
+  flex-basis: 100%;
 }
 
 .ui-display-flex-table {
-  @include flex-basis(70%);
+  flex-basis: 70%;
 
   @include tablet {
-    @include flex-basis(100%);
+    flex-basis: 100%;
   }
 
   @include desktop-1280 {
-    @include flex-basis(90%);
+    flex-basis: 90%;
   }
 }
 
 .ui-display-flex-button {
-  @include flex-basis(80%);
+  flex-basis: 80%;
 
   @include tablet {
-    @include flex-basis(100%);
+    flex-basis: 100%;
   }
 
   @include desktop-1280 {
-    @include flex-basis(100%);
+    flex-basis: 100%;
   }
 }
 
 .ui-flex-text {
-  @include flex-basis(86%);
+  flex-basis: 86%;
 
   @include tablet {
-    @include flex-basis(85%);
+    flex-basis: 85%;
   }
 
   @include desktop-1280 {
-    @include flex-basis(82%);
+    flex-basis: 82%;
   }
 }
 
 .ui-display {
   @include desktop {
-    @include display(flex);
+    display: flex;
   }
 
   @include tablet {
-    @include display(flex);
+    display: flex;
   }
 }
-
-
-

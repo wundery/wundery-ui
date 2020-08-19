@@ -26,14 +26,13 @@ $darken-amount: 30% !default;
 }
 
 .ui-wizard {
-
   .ui-wizard-prefix {
     padding: $spacing-double;
     padding-bottom: 0;
   }
 
   .ui-wizard-indicators {
-    @include display(flex);
+    display: flex;
 
     margin: 0;
     padding: $spacing-default;
@@ -41,8 +40,8 @@ $darken-amount: 30% !default;
     border-bottom: 1px solid #eaedef;
 
     .ui-wizard-indicator {
-      @include user-select(none);
-      @include flex(1);
+      user-select: none;
+      flex: 1;
 
       text-align: center;
       width: auto;
@@ -59,7 +58,7 @@ $darken-amount: 30% !default;
       cursor: pointer;
 
       &.ui-wizard-indicator-active {
-        color: #677C88;
+        color: #677c88;
 
         .ui-wizard-indicator-bubble {
           @include bubble-style($active);
@@ -98,7 +97,7 @@ $darken-amount: 30% !default;
       top: $bubble-size / 2 - $border-thickness;
       width: 100%;
       height: $bubble-line-thickness;
-      content: '';
+      content: "";
       background-color: $incomplete;
     }
 

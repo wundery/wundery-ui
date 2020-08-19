@@ -4,8 +4,8 @@
   }
 
   .ui-gallery-items {
-    @include display(flex);
-    @include flex-wrap(wrap);
+    display: flex;
+    flex-wrap: wrap;
 
     padding: 10px;
 
@@ -32,16 +32,16 @@
         border-bottom-right-radius: 3px;
         border-bottom-left-radius: 3px;
         text-align: center;
-        @include linear-gradient(
+        background: linear-gradient(
           $ui-button-success-background-color,
           darken($ui-button-success-background-color, 4%)
         );
       }
 
       .ui-gallery-item-src-missing {
-        @include display(flex);
-        @include justify-content(center);
-        @include align-items(center);
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         height: 100%;
         min-height: 90px;
@@ -51,9 +51,9 @@
       }
 
       .ui-gallery-item {
-        @include display(flex);
-        @include flex-direction(column);
-        @include align-items(center);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         .ui-gallery-item-src {
           width: 100%;
@@ -85,7 +85,7 @@
         }
       }
 
-      &.ui-gallery-item-wrapper-size-medium{
+      &.ui-gallery-item-wrapper-size-medium {
         width: 150px;
         .ui-gallery-item-src {
           height: 100px;
@@ -95,9 +95,9 @@
       }
     }
     /*.ui-gallery-item-wrapper {
-      @include display(flex);
-      @include flex-direction(column);
-      @include align-items(center);
+      display:flex;
+     flex-direction: column;
+      align-items: center;
 
       // overflow: hidden;
       background: #f5f5f5;
@@ -120,9 +120,9 @@
         position: relative;
 
         .ui-gallery-item-src-loading {
-          @include display(flex);
-          @include justify-content(center);
-          @include align-items(center);
+          display:flex;
+          justify-content: center;
+          align-items: center;
 
           position: absolute;
           top: 0;

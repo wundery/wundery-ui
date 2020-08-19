@@ -1,26 +1,30 @@
 @-webkit-keyframes highlight-animation {
-  from { background: #fffbe4; }
-  to   { background: transparent; }
+  from {
+    background: #fffbe4;
+  }
+  to {
+    background: transparent;
+  }
 }
 
 @mixin responsive-table {
-   @media (min-width: 421px) and (max-width: 1440px) {
+  @media (min-width: 421px) and (max-width: 1440px) {
     @content;
-   }
+  }
 }
 
 .ui-table-wrapper {
   border: 1px solid $ui-table-border-color;
   border-radius: 3px;
   background-color: $ui-table-background-color;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.06);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.06);
   position: relative;
 
   .ui-table-overlay {
-    @include justify-content(center);
-    @include align-items(center);
+    justify-content: center;
+    align-items: center;
 
-    background: rgba(0,0,0,0.05);
+    background: rgba(0, 0, 0, 0.05);
     position: absolute;
     bottom: 0;
     top: 0;
@@ -77,25 +81,25 @@
 
           &.ui-table-cell-align-right {
             .ui-table-cell-content {
-              @include justify-content(flex-end);
+              justify-content: flex-end;
             }
           }
 
           &.ui-table-cell-align-left {
             .ui-table-cell-content {
-              @include justify-content(flex-start);
+              justify-content: flex-start;
             }
           }
 
           .ui-table-cell-content {
-            @include display(flex);
-            @include flex-wrap(no-wrap);
-            @include justify-content(flex-start);
+            display: flex;
+            flex-wrap: no-wrap;
+            justify-content: flex-start;
 
             .ui-table-cell-suffix {
               &.ui-table-sort {
-                @include display(flex);
-                @include flex-wrap(no-wrap);
+                display: flex;
+                flex-wrap: no-wrap;
                 .ui-icon {
                   width: 16px;
                   height: 16px;
@@ -118,7 +122,8 @@
                 }
 
                 &.ui-table-sort-disabled {
-                  .ui-icon, .ui-icon:hover {
+                  .ui-icon,
+                  .ui-icon:hover {
                     border: $ui-table-headers-sort-icon-border;
                     color: $ui-table-headers-sort-icon-color;
                     cursor: initial;
@@ -143,14 +148,14 @@
 
     .ui-table-row-wrapper {
       .ui-table-row {
-        @include display(flex);
+        display: flex;
 
         border-bottom: 1px solid $ui-table-inner-border-color;
 
         .ui-table-cell {
-          @include display(flex);
-          @include justify-content(center);
-          @include flex-grow(1);
+          display: flex;
+          justify-content: center;
+          flex-grow: 1;
 
           text-align: left;
           border: 1px solid $ui-table-inner-border-color;
@@ -159,10 +164,10 @@
           border-bottom: none;
 
           .ui-table-row-expand-trigger {
-            @include display(flex);
-            @include justify-content(center);
-            @include align-items(center);
-            @include flex-grow(1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
 
             color: #717f88;
             outline: none;
@@ -183,7 +188,7 @@
           .ui-table-cell-title {
             display: none;
             color: #b1b1b1;
-      			padding-right: $spacing-double;
+            padding-right: $spacing-double;
             text-transform: uppercase;
             font-size: 11px;
             font-weight: $ui-font-weight-bold;
@@ -195,7 +200,7 @@
           }
 
           .ui-table-cell-content {
-            @include display(flex);
+            display: flex;
 
             word-break: break-word;
             width: 100%;
@@ -233,10 +238,10 @@
             }
 
             .ui-table-cell-content {
-              @include justify-content(flex-end);
+              justify-content: flex-end;
 
               .ui-buttongroup {
-                @include justify-content(flex-end);
+                justify-content: flex-end;
               }
             }
           }
@@ -249,7 +254,7 @@
             }
 
             .ui-table-cell-content {
-              @include justify-content(center);
+              justify-content: center;
             }
           }
 
@@ -260,7 +265,7 @@
           &.ui-table-cell-align-center {
             text-align: center;
             .ui-table-cell-content {
-              @include justify-content(space-around);
+              justify-content: space-around;
             }
           }
 
@@ -308,15 +313,14 @@
     }
 
     .ui-table-actions {
-      @include display(flex);
-      @include justify-content(space-between);
-      @include align-items(center);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
       background: $ui-table-header-background;
       border-bottom: 1px solid $ui-table-inner-border-color;
       text-align: right;
       padding: $spacing-default;
-
 
       .ui-table-actions-info {
         color: lighten($ui-table-header-font-color, 10%);
@@ -324,11 +328,11 @@
       }
 
       .ui-table-actions-trigger {
-        @include display(flex);
+        display: flex;
 
         .ui-table-actions-progress {
-          @include display(flex);
-          @include align-items(center);
+          display: flex;
+          align-items: center;
           margin-right: 20px;
 
           .ui-table-actions-progress-title {
@@ -342,7 +346,6 @@
             width: 200px;
           }
         }
-
       }
     }
 
@@ -369,7 +372,7 @@
 
             &.ui-table-cell-editable {
               &:hover {
-                @include user-select(none);
+                user-select: none;
 
                 background: #fffceb;
                 cursor: pointer;
@@ -384,8 +387,8 @@
               }
 
               .ui-table-cell-text {
-                @include display(flex);
-                @include justify-content(center);
+                display: flex;
+                justify-content: center;
               }
             }
           }
@@ -399,11 +402,11 @@
       }
 
       .ui-table-spinner-wrapper {
-        @include display(flex);
-        @include flex-direction(column);
-        @include justify-content(center);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         position: absolute;
-        background-color: rgba(255,255,255,0.8);
+        background-color: rgba(255, 255, 255, 0.8);
         top: 0;
         right: 0;
         left: 0;
@@ -411,7 +414,6 @@
       }
 
       .ui-table-row-wrapper {
-
         &:last-child {
           > .ui-table-row {
             // border-bottom: none;
@@ -436,7 +438,6 @@
           }
 
           &:last-child {
-
             // .ui-table-cell {
             //  border-bottom: none;
             // }
@@ -446,25 +447,25 @@
     }
 
     .ui-table-footer {
-      @include display(flex);
-      @include justify-content(space-between);
-      @include align-items(center);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       background: $ui-table-header-background;
 
       .ui-table-footer-pagination {
-        @include flex-basis(90%);
+        flex-basis: 90%;
 
         .ui-pagination {
           border-width: 0;
 
           .ui-pagination-pages {
-            @include flex-wrap(wrap);
+            flex-wrap: wrap;
           }
         }
       }
 
       .ui-table-footer-page-sizes {
-        @include display(flex);
+        display: flex;
 
         margin-right: $spacing-default;
 
@@ -481,10 +482,10 @@
           outline: none;
 
           &.ui-table-footer-page-size-active {
-
           }
 
-          &:hover, &.ui-table-footer-page-size-active {
+          &:hover,
+          &.ui-table-footer-page-size-active {
             background: darken($ui-table-page-size-background-color, 10%);
           }
         }
@@ -494,7 +495,6 @@
       }
     }
   }
-
 
   .ui-table-footer {
     border-top: 1px solid $ui-table-inner-border-color;
@@ -507,7 +507,7 @@
 
   &.ui-table-loading {
     > .ui-table-overlay {
-      @include display(flex);
+      display: flex;
     }
   }
 
@@ -529,7 +529,7 @@
   }
   @include responsive-table {
     overflow-x: auto;
-    .ui-table-header, 
+    .ui-table-header,
     .ui-table-body {
       width: 100%;
     }

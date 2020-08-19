@@ -31,7 +31,7 @@ body.ui-modal-attached {
 
   .ui-modal-backdrop {
     z-index: 1000;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
     position: fixed;
     width: 100%;
     height: 100%;
@@ -60,25 +60,26 @@ body.ui-modal-attached {
     max-height: 90vh;
     overflow-y: auto;
 
-    .ui-modal-header, .ui-modal-footer {
+    .ui-modal-header,
+    .ui-modal-footer {
       padding: 20px;
     }
 
     .ui-modal-header {
-      border-bottom: 1px solid rgba(0,0,0,0.07);
-      @include linear-gradient(240deg,
+      border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+      background: linear-gradient(
+        240deg,
         lighten($ui-table-header-background-color, 2%),
         darken($ui-table-header-background-color, 1%)
       );
     }
 
     .ui-modal-footer {
-      border-top: 1px solid rgba(0,0,0,0.07);
+      border-top: 1px solid rgba(0, 0, 0, 0.07);
     }
 
     .ui-modal-content {
       margin: $spacing-double;
-
 
       .ui-modal-headline {
         font-size: 16px;
@@ -105,6 +106,5 @@ body.ui-modal-attached {
       top: 20px;
       width: auto !important;
     }
-
   }
 }

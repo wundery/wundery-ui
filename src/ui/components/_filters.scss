@@ -1,11 +1,11 @@
 .ui-filters {
-  @include display(flex);
-  @include align-items(center);
+  display: flex;
+  align-items: center;
 
   .ui-filter {
-    @include display(flex);
-    @include align-items(center);
-    @include user-select(none);
+    display: flex;
+    align-items: center;
+    user-select: none;
 
     margin-right: 10px;
     font-size: 13px;

@@ -1,5 +1,5 @@
 .ui-buttongroup {
-  @include display(inline-flex);
+  display: inline-flex;
 
   @include phone {
     display: block;

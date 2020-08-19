@@ -11,9 +11,9 @@
   background: white;
 
   .ui-tag-inner {
-    @include display(flex);
-    @include flex-wrap(nowrap);
-    @include align-items(center);
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
 
     .ui-tag-content {
       padding: 0 10px;

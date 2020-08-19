@@ -1,5 +1,5 @@
 .ui-breadcrumb {
-  @include display(flex);
+  display: flex;
 
   border: 1px solid #e8e8e8;
 
@@ -12,8 +12,8 @@
   }
 
   .ui-breadcrumb-separator {
-    @include display(flex);
-    @include align-items(center);
+    display: flex;
+    align-items: center;
 
     color: #c3c6c7;
   }

@@ -1,5 +1,5 @@
 .ui-inline-list {
-  @include display(flex);
+  display: flex;
 
   @include phone {
     display: block;
@@ -33,6 +33,6 @@
     }
   }
   &.ui-inline-list-center {
-    align-items: center
+    align-items: center;
   }
 }

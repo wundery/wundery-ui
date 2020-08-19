@@ -1,4 +1,6 @@
-input[type="text"], input[type="password"], textarea {
+input[type="text"],
+input[type="password"],
+textarea {
   &.ui-form-control {
     font-family: $ui-font-family;
     border-radius: $ui-form-control-border-radius;
@@ -83,17 +85,17 @@ textarea {
 }
 
 .ui-form-item {
-  @include display(flex);
-  @include flex-wrap(nowrap);
+  display: flex;
+  flex-wrap: nowrap;
 
   @include phone {
     display: block;
   }
 
   .ui-form-label {
-    @include flex-basis(200px);
-    @include flex-grow(0);
-    @include flex-shrink(0);
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
 
     font-weight: $ui-font-weight-bold;
     padding-right: $spacing-double;
@@ -106,10 +108,12 @@ textarea {
   }
 
   .ui-form-input {
-    @include flex-grow(1);
+    flex-grow: 1;
 
     &.ui-form-input-with-errors {
-      input[type="text"], input[type="password"], textarea {
+      input[type="text"],
+      input[type="password"],
+      textarea {
         &.ui-form-control {
           border: 1px solid red;
           background: #fff2f2;
@@ -119,10 +123,11 @@ textarea {
   }
 
   &.ui-form-item-compact {
-    @include flex-wrap(wrap);
+    flex-wrap: wrap;
 
-    .ui-form-label, .ui-form-input {
-      @include flex-basis(100%);
+    .ui-form-label,
+    .ui-form-input {
+      flex-basis: 100%;
     }
 
     .ui-form-label {
@@ -137,9 +142,7 @@ textarea {
   }
 }
 
-
 .ui-form-item {
-
 }
 
 .ui-form-label {
@@ -180,7 +183,6 @@ textarea {
   }
 }
 
-
 .ui-form-control-group-wrapper {
   &.ui-form-control-group-wrapper-with-addon {
     > .ui-form-control-group > .ui-form-control-wrapper > .ui-form-control {
@@ -191,10 +193,10 @@ textarea {
 }
 
 .ui-form-control-group {
-  @include display(flex);
+  display: flex;
 
   .ui-form-control-wrapper {
-    @include flex-grow(1);
+    flex-grow: 1;
 
     position: relative;
 
@@ -203,8 +205,8 @@ textarea {
     }
 
     .ui-form-control-spinner {
-      @include display(flex);
-      @include align-items(center);
+      display: flex;
+      align-items: center;
 
       position: absolute;
       right: 5px;
@@ -217,15 +219,16 @@ textarea {
     }
   }
 
-  .ui-form-control-group-prefix, .ui-form-control-group-suffix {
+  .ui-form-control-group-prefix,
+  .ui-form-control-group-suffix {
     border-color: $ui-form-control-border-color;
     border-style: solid;
     border-width: 1px;
 
     &.ui-form-control-group-content-text {
-      @include display(flex);
-      @include align-items(center);
-      @include flex-shrink(0);
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
 
       font-size: 12px;
       background: #f5f5f5;
@@ -298,7 +301,7 @@ textarea {
     padding-right: 100px;
     margin-bottom: 15px;
     position: relative;
-    .ui-actions{
+    .ui-actions {
       position: absolute;
       right: 0;
       top: 0;
@@ -307,9 +310,9 @@ textarea {
 }
 
 .ui-account-tab-normal {
-  @include flex-basis(10%);
-  @include flex-grow(0);
-  @include flex-shrink(0);
+  flex-basis: 1;
+  flex-grow: 0;
+  flex-shrink: 0;
 
   $_color: lighten($ui-headline-color, 35%);
   font-size: 18px;
@@ -318,7 +321,7 @@ textarea {
   padding-right: $spacing-double;
 
   @include phone {
-    @include flex-basis(10px);
+    flex-basis: 10px;
     text-align: left;
   }
 }
@@ -329,7 +332,7 @@ textarea {
 
 .ui-form-item-type-checkbox-default {
   @include phone {
-    @include display(flex);
+    display: flex;
   }
 }
 
@@ -348,6 +351,3 @@ textarea {
 .ui-form-input-width-full {
   width: 100% !important;
 }
-
-
-

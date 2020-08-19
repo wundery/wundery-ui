@@ -1,42 +1,42 @@
 .ui-dashboard {
-	padding: $ui-spacing-double;
+  padding: $ui-spacing-double;
 
-	.ui-dashboard-actions {
-		margin-bottom: $ui-spacing-double;
-	}
+  .ui-dashboard-actions {
+    margin-bottom: $ui-spacing-double;
+  }
 
-	.ui-dashboard-items {
-		@include display(flex);
-		@include flex-wrap(wrap);
-		@include justify-content(space-between);
+  .ui-dashboard-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-		.ui-dashboard-item {
-			margin-right: $spacing-double;
+    .ui-dashboard-item {
+      margin-right: $spacing-double;
 
-			@include display(flex);
+      display: flex;
 
-			.ui-box {
-				@include flex-basis(100%);
-				@include display(flex);
-				@include flex-direction(column);
-			}
+      .ui-box {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+      }
 
-			&.ui-dashboard-item-size-default {
-				@include flex-basis(20%);
-			}
+      &.ui-dashboard-item-size-default {
+        flex-basis: 20%;
+      }
 
-			&.ui-dashboard-item-size-wide {
-				@include flex-basis(40%);
-			}
+      &.ui-dashboard-item-size-wide {
+        flex-basis: 40%;
+      }
 
-			&.ui-dashboard-item-size-full {
-				@include flex-basis(100%);
-			}
+      &.ui-dashboard-item-size-full {
+        flex-basis: 100%;
+      }
 
-			.ui-list {
-				max-height: 150px;
-				overflow: scroll;
-			}
-		}
-	}
+      .ui-list {
+        max-height: 150px;
+        overflow: scroll;
+      }
+    }
+  }
 }

@@ -1,12 +1,11 @@
-button::-moz-focus-inner, input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
 }
-.ui-button-wrapper > a, .ui-button {
-  @include user-select(none);
-
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+.ui-button-wrapper > a,
+.ui-button {
+  user-select: none;
   box-sizing: border-box;
   padding: 4px 8px;
   border-radius: 3px;
@@ -22,13 +21,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
   &.ui-button-left {
     .ui-button-inner {
-      @include justify-content(flex-start);
+      justify-content: flex-start;
     }
   }
 
   .ui-button-inner {
-    @include display(flex);
-    @include justify-content(center);
+    display: flex;
+    justify-content: center;
   }
 
   // Append / Prepend
@@ -45,9 +44,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     margin-left: 3px;
   }
 
-  .ui-button-prepend, .ui-button-append {
-    @include display(flex);
-    @include align-items(center);
+  .ui-button-prepend,
+  .ui-button-append {
+    display: flex;
+    align-items: center;
   }
 
   .ui-button-content {
@@ -89,8 +89,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   // Types
 
   &.ui-button-type-default {
-    @include linear-gradient(to bottom,#f7f8fa,#e7e9ec);
-    box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
+    background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
     border-color: #adb1b8 #a2a6ac #8d9096;
     border-style: solid;
     border-width: 1px;
@@ -98,25 +98,22 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     font-weight: $ui-font-weight-bold;
 
     &:hover {
-      @include linear-gradient(to bottom,#e7eaf0,#d9dce1);
+      background: linear-gradient(to bottom, #e7eaf0, #d9dce1);
       border-color: #a2a6ac #979aa1 #82858a;
     }
   }
 
   &.ui-button-type-success {
-    @include linear-gradient(
-      $ui-button-success-background-color,
-      darken($ui-button-success-background-color, 4%)
-    );
+    background: linear-gradient($ui-button-success-background-color, darken($ui-button-success-background-color, 4%));
 
-    box-shadow: 0 1px 0 rgba(255,255,255,0.2) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
     border-color: #4aab00 #409600 #347900;
     border-style: solid;
     border-width: 1px;
     color: $ui-button-success-color !important;
 
     &:hover {
-      @include linear-gradient(
+      background: linear-gradient(
         $ui-button-success-hover-background-color,
         darken($ui-button-success-hover-background-color, 5%)
       );
@@ -124,10 +121,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   }
 
   &.ui-button-type-info {
-    @include linear-gradient(
-      $ui-button-info-background-color,
-      darken($ui-button-info-background-color, 4%)
-    );
+    background: linear-gradient($ui-button-info-background-color, darken($ui-button-info-background-color, 4%));
 
     // box-shadow: 0 1px 0 rgba(255,255,255,0.2) inset;
     border-color: #0087d4 #0074b5 #006096;
@@ -136,7 +130,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     color: $ui-button-info-color !important;
 
     &:hover {
-      @include linear-gradient(
+      background: linear-gradient(
         $ui-button-info-hover-background-color,
         darken($ui-button-info-hover-background-color, 5%)
       );
@@ -148,7 +142,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     border-color: #c73434 #c33030 #d62929;
     background: linear-gradient(to bottom, #ff6a6a, #f43636);
     color: white;
-    text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
 
     &:hover {
       background: linear-gradient(to bottom, darken(#ff6a6a, 4%), darken(#f43636, 4%));
@@ -156,19 +150,16 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   }
 
   &.ui-button-type-delete {
-    @include linear-gradient( #DB2F30, darken(#DB2F30, 4%));
+    background: linear-gradient(#db2f30, darken(#db2f30, 4%));
 
-    box-shadow: 0 1px 0 rgba(255,255,255,0.2) inset;
-    border-color: #DB2F30 #DB2F30 #DB2F30;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+    border-color: #db2f30 #db2f30 #db2f30;
     border-style: solid;
     border-width: 1px;
     color: $ui-button-success-color !important;
 
     &:hover {
-      @include linear-gradient(
-        #CE0000,
-        darken(#CE0000, 5%)
-      );
+      background: linear-gradient(#ce0000, darken(#ce0000, 5%));
     }
   }
 
@@ -190,7 +181,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
   // States
 
-  &[disabled], &.ui-button-state-disabled {
+  &[disabled],
+  &.ui-button-state-disabled {
     .ui-button-inner {
       opacity: 0.6;
     }
@@ -235,10 +227,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     }
 
     border-radius: 10px;
-    background-color: #5FA5CD !important;
+    background-color: #5fa5cd !important;
     background-image: none !important;
     color: white !important;
-    border-color: #5FA5CD !important;
+    border-color: #5fa5cd !important;
     box-shadow: none !important;
     height: 35px !important;
 
@@ -246,7 +238,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
       opacity: 0.8;
     }
   }
-
 }
 
 .ui-notify {

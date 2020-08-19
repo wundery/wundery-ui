@@ -1,36 +1,37 @@
 .ui-details {
-	.ui-details-item {
-		@include display(flex);
-		margin-bottom: $ui-spacing-default;
+  .ui-details-item {
+    display: flex;
+    margin-bottom: $ui-spacing-default;
 
-		&:last-child {
-			margin-bottom: 0px;
-		}
+    &:last-child {
+      margin-bottom: 0px;
+    }
 
-		.ui-details-item-label {
-			@include flex-grow(0);
-			@include flex-shrink(0);
-			@include flex-basis(170px);
+    .ui-details-item-label {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 170px;
 
       text-align: right;
-			color: #b1b1b1;
-			padding-right: $spacing-double;
+      color: #b1b1b1;
+      padding-right: $spacing-double;
       text-transform: uppercase;
       font-size: 11px;
       font-weight: $ui-font-weight-bold;
-		}
+    }
 
-		.ui-details-item-value {
-			@include flex-grow(1);
+    .ui-details-item-value {
+      flex-grow: 1;
       font-size: 14px;
-		}
-	}
+    }
+  }
 
   &.ui-details-compact {
     .ui-details-item {
       display: block;
 
-      .ui-details-item-label, .ui-details-item-value {
+      .ui-details-item-label,
+      .ui-details-item-value {
       }
 
       .ui-details-item-label {
@@ -44,8 +45,8 @@
   }
 
   &.ui-details-horizontal {
-    @include display(flex);
-    @include flex-wrap(wrap);
+    display: flex;
+    flex-wrap: wrap;
 
     .ui-details-item {
       margin-right: $ui-spacing-double * 2;

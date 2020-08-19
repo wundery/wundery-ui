@@ -1,11 +1,10 @@
 .ui-wrapper {
-
   &.ui-wrapper-accent {
     background-color: $ui-wrapper-background-color-accent;
   }
 
   &.ui-wrapper-highlight {
-    @include linear-gradient(
+    background: linear-gradient(
       $ui-wrapper-background-color-highlight,
       darken($ui-wrapper-background-color-highlight, 10%)
     );

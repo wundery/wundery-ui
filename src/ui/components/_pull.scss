@@ -1,9 +1,9 @@
 .ui-pull {
-	@include display(flex);
-	@include justify-content(space-between);
-  @include flex-wrap(no-wrap);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: no-wrap;
 
-	.ui-pull-right {
-    @include flex-shrink(0);
-	}
+  .ui-pull-right {
+    flex-shrink: 0;
+  }
 }

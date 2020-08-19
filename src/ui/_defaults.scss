@@ -5,11 +5,14 @@
   box-sizing: border-box;
 }
 
-body, html, body > div {
+body,
+html,
+body > div {
   height: 100%;
 }
 
-body > div#intercom-css-container, body > div#intercom-container {
+body > div#intercom-css-container,
+body > div#intercom-container {
   height: 0%;
 }
 
@@ -47,16 +50,36 @@ pre {
   font-size: 11px;
   margin: 0;
   padding: 0;
-  .renderjson a              { text-decoration: none; }
-  .renderjson .disclosure    { color: #404142; }
-  .renderjson .syntax        { color: grey; }
-  .renderjson .string        { color: #e91e63; }
-  .renderjson .number        { color: #4caf50; }
-  .renderjson .boolean       { color: #a71f5e; }
-  .renderjson .key           { color: #0086b3; }
-  .renderjson .keyword       { color: #6d6a6a; }
-  .renderjson .object.syntax { color: #adadad; }
-  .renderjson .array.syntax  { color: #adadad; }
+  .renderjson a {
+    text-decoration: none;
+  }
+  .renderjson .disclosure {
+    color: #404142;
+  }
+  .renderjson .syntax {
+    color: grey;
+  }
+  .renderjson .string {
+    color: #e91e63;
+  }
+  .renderjson .number {
+    color: #4caf50;
+  }
+  .renderjson .boolean {
+    color: #a71f5e;
+  }
+  .renderjson .key {
+    color: #0086b3;
+  }
+  .renderjson .keyword {
+    color: #6d6a6a;
+  }
+  .renderjson .object.syntax {
+    color: #adadad;
+  }
+  .renderjson .array.syntax {
+    color: #adadad;
+  }
 }
 
 figure {
@@ -64,10 +87,9 @@ figure {
   padding: 0;
 }
 
-
 .ui-helpers-flexbox {
-  @include display(flex);
-  @include align-items(center);
+  display: flex;
+  align-items: center;
 }
 
 .ui-helpers-em {

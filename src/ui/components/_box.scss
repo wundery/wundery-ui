@@ -2,7 +2,7 @@
   border: 1px solid $ui-table-border-color;
   border-radius: 3px;
   background-color: $ui-table-background-color;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.06);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.06);
   position: relative;
 
   &.ui-box-embedded {
@@ -12,7 +12,8 @@
   // Themes
 
   &.ui-box-theme-highlight {
-    @include linear-gradient(240deg,
+    background: linear-gradient(
+      240deg,
       lighten($ui-table-header-background-color, 2%),
       darken($ui-table-header-background-color, 1%)
     );
@@ -31,7 +32,7 @@
   }
 
   &.ui-box-theme-error-payment {
-    background-color: #F77272;
+    background-color: #f77272;
     .ui-box-content {
       color: white;
       padding: 10px;
@@ -72,7 +73,8 @@
 
   // Header and footer
 
-  .ui-box-header, .ui-box-footer {
+  .ui-box-header,
+  .ui-box-footer {
     padding: 10px;
     background: #f9f9f9;
   }
@@ -111,8 +113,8 @@
   // Ribbon
 
   .ui-box-ribbon-wrapper {
-    @include display(flex);
-    @include justify-content(center);
+    display: flex;
+    justify-content: center;
 
     position: absolute;
     top: -10px;
@@ -120,7 +122,7 @@
     left: 0;
 
     .ui-box-ribbon {
-      background: #C1E4A6;
+      background: #c1e4a6;
       color: #528829;
       border-radius: $ui-border-radius;
       padding: 2px 6px;
@@ -129,5 +131,4 @@
       font-weight: $ui-font-weight-bold;
     }
   }
-
 }
