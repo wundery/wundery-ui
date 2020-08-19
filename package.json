@@ -7,8 +7,10 @@
     "start": "gulp"
   },
   "devDependencies": {
-    "babel-core": "^6.11.4",
-    "babel-preset-es2015": "^6.9.0",
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/register": "^7.10.5",
+    "autoprefixer": "^9.8.6",
     "c3": "^0.4.10",
     "cors": "^2.7.1",
     "font-awesome": "^4.5.0",
@@ -18,16 +20,21 @@
     "gulp-connect": "^0.9.0",
     "gulp-if": "^1.2.5",
     "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^8.0.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^1.2.4",
     "gulp-util": "^3.0.0",
     "minimatch": "^3.0.2",
     "run-sequence": "^0.3.6",
-    "yargs": "^1.3.1"
+    "yargs": "^1.3.1",
+    "gulp-replace": "^0.5.4"
   },
   "dependencies": {
     "bourbon": "^7.0.0",
-    "devicons": "^1.8.0",
-    "gulp-replace": "^0.5.4"
-  }
+    "devicons": "^1.8.0"
+  },
+  "browserslist": [
+    "defaults",
+    "last 4 versions"
+  ]
 }

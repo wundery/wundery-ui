@@ -11,8 +11,10 @@ import concat from 'gulp-concat';
 import cors from 'cors';
 import plumber from 'gulp-plumber';
 import replace from 'gulp-replace';
+import postcss from 'gulp-postcss';
+import autoprefixer from 'autoprefixer';
 
-const args  = yargs.argv;
+const args = yargs.argv;
 const buildDir = 'build';
 const version = args.version || 'latest';
 const releaseDir = `${buildDir}/${version}`;
@@ -21,7 +23,7 @@ util.log(`Building ${releaseDir}`);
 
 gulp.task('build:clean', () =>
   gulp
-    .src([releaseDir], {read: false})
+    .src([releaseDir], { read: false })
     .pipe(clean())
 );
 
@@ -41,6 +43,7 @@ gulp.task('build:scss', () =>
     // Devicons does not allow to specify the font path using a variable,
     // so we need to replace it
     .pipe(replace(/\.\.\/fonts\/devicons/g, './fonts/devicons'))
+    .pipe(postcss([autoprefixer()]))
     .pipe(gulp.dest(releaseDir))
 );
 
