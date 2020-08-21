@@ -1,0 +1,52 @@
+version: 2.1
+
+orbs:
+  aws-s3: circleci/aws-s3@1.0.16
+
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8.11.3
+    steps:
+      - checkout
+      - run:
+          name: Nodejs Version
+          command: node --version
+      - run:
+          name: Install Dependencies
+          command: yarn install
+      - run:
+          name: Run Build
+          command: yarn build
+      - persist_to_workspace:
+          root: .
+          paths:
+            - build/latest
+
+  deploy_production:
+    docker:
+      - image: circleci/node:8.11.3
+    steps:
+      - attach_workspace:
+          at: .
+      - aws-s3/sync:
+          arguments: |
+            --acl public-read \
+            --cache-control "max-age=86400"
+          aws-access-key-id: AWS_ACCESS_KEY_ID
+          aws-region: AWS_DEFAULT_REGION
+          aws-secret-access-key: AWS_SECRET_ACCESS_KEY
+          from: build/latest
+          overwrite: false
+          to: "s3://ui.wundery.com/v1.0.13" # update version number here.
+
+workflows:
+  deploy:
+    jobs:
+      - build
+      - deploy_production:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
