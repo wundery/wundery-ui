@@ -16,11 +16,10 @@ import autoprefixer from 'autoprefixer';
 
 const args = yargs.argv;
 const buildDir = 'build';
-const version = args.version || 'latest';
+const version = process.env.npm_package_version || 'latest';
 const releaseDir = `${buildDir}/${version}`;
 
 util.log(`Building ${releaseDir}`);
-
 gulp.task('build:clean', () =>
   gulp
     .src([releaseDir], { read: false })

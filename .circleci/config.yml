@@ -21,20 +21,14 @@ jobs:
       - persist_to_workspace:
           root: .
           paths:
-            - build/latest
+            - build/
 
   deploy_production:
     docker:
       - image: circleci/node:10.12.0
     steps:
-      - checkout
       - attach_workspace:
           at: .
-      - run:
-          name: Assign bucket URL
-          command: |
-            APP_VERSION=`node -pe "require('./package.json').version"`
-            BUCKET_URL=s3://ui.wundery.com/v${APP_VERSION}
       - aws-s3/copy:
           arguments: |
             --acl public-read \
@@ -42,8 +36,8 @@ jobs:
           aws-access-key-id: AWS_ACCESS_KEY_ID
           aws-region: AWS_DEFAULT_REGION
           aws-secret-access-key: AWS_SECRET_ACCESS_KEY
-          from: build/latest
-          to: BUCKET_URL # update version number here.
+          from: build/
+          to: s3://ui.wundery.com/ # update version number here.
 
 workflows:
   deploy:
