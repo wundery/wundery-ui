@@ -41,7 +41,7 @@ jobs:
           aws-access-key-id: AWS_ACCESS_KEY_ID
           aws-region: AWS_DEFAULT_REGION
           aws-secret-access-key: AWS_SECRET_ACCESS_KEY
-          from: build/*
+          from: build/
           overwrite: false
           to: "s3://ui.wundery.com"
 
