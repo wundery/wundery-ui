@@ -21,7 +21,7 @@ jobs:
       - persist_to_workspace:
           root: .
           paths:
-            - build/latest
+            - build/
 
   deploy_production:
     docker:
@@ -36,9 +36,9 @@ jobs:
           aws-access-key-id: AWS_ACCESS_KEY_ID
           aws-region: AWS_DEFAULT_REGION
           aws-secret-access-key: AWS_SECRET_ACCESS_KEY
-          from: build/latest
+          from: build/
           overwrite: false
-          to: "s3://ui.wundery.com/v1.0.14" # update version number here.
+          to: "s3://ui.wundery.com"
 
 workflows:
   deploy:
