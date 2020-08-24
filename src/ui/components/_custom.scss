@@ -1,7 +1,8 @@
 .custom-modal-currency {
   text-align: center;
-  .ui-modal-footer{
-    @include linear-gradient(240deg,
+  .ui-modal-footer {
+    background: linear-gradient(
+      240deg,
       lighten($ui-table-header-background-color, 2%),
       darken($ui-table-header-background-color, 1%)
     );
@@ -9,7 +10,7 @@
       max-width: 100px;
       margin: 0 auto;
     }
-  } 
+  }
 }
 .footer-layer {
   position: fixed;
@@ -18,7 +19,7 @@
   text-align: center;
   width: 100%;
   background: $ui-color-blue;
-  .footer-text{
+  .footer-text {
     margin-right: 20px;
     color: white;
   }
@@ -45,7 +46,7 @@
     .ui-table {
       .ui-table-row-wrapper {
         .ui-table-row {
-          @include flex-wrap(wrap);
+          flex-wrap: wrap;
         }
       }
     }
@@ -89,7 +90,7 @@
 }
 .kpi-store-home {
   .ui-kpi-primary {
-    .ui-kpi-value{
+    .ui-kpi-value {
       height: auto;
       .revenue-today-in-home {
         font-size: 16px;

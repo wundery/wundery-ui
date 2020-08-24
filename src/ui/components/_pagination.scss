@@ -1,17 +1,16 @@
 .ui-pagination {
-  @include display(flex);
+  display: flex;
 
   border: 1px solid $border-color-default;
   border-radius: 3px;
 
   .ui-pagination-pages {
-    @include display(flex);
-
+    display: flex;
 
     .ui-pagination-pagegroup {
       display: none;
       &.ui-pagination-pagegroup-current {
-        @include display(flex);
+        display: flex;
       }
     }
 
@@ -40,7 +39,8 @@
         // border-right: none;
       }
 
-      .ui-pagination-page-disabled, a {
+      .ui-pagination-page-disabled,
+      a {
         display: block;
         min-width: 40px;
         padding: $spacing-default $spacing-default + 4;

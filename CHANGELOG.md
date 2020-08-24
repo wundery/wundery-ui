@@ -1,3 +1,7 @@
+# 1.0.14
+
+* Major upgrade to some internal libraries
+
 # 1.0.13
 
 * Limit max height of images in tabs.

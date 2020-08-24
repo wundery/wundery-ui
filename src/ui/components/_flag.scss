@@ -7,259 +7,755 @@
   height: 11px;
   border-radius: 3px;
 
-  &.ui-flag-af { background-image: url('./assets/flags/af.png'); }
-  &.ui-flag-al { background-image: url('./assets/flags/al.png'); }
-  &.ui-flag-dz { background-image: url('./assets/flags/dz.png'); }
-  &.ui-flag-as { background-image: url('./assets/flags/as.png'); }
-  &.ui-flag-vi { background-image: url('./assets/flags/vi.png'); }
-  &.ui-flag-ad { background-image: url('./assets/flags/ad.png'); }
-  &.ui-flag-ao { background-image: url('./assets/flags/ao.png'); }
-  &.ui-flag-ai { background-image: url('./assets/flags/ai.png'); }
-  &.ui-flag-aq { background-image: url('./assets/flags/aq.png'); }
-  &.ui-flag-ag { background-image: url('./assets/flags/ag.png'); }
-  &.ui-flag-ar { background-image: url('./assets/flags/ar.png'); }
-  &.ui-flag-am { background-image: url('./assets/flags/am.png'); }
-  &.ui-flag-aw { background-image: url('./assets/flags/aw.png'); }
-  &.ui-flag-az { background-image: url('./assets/flags/az.png'); }
-  &.ui-flag-au { background-image: url('./assets/flags/au.png'); }
-  &.ui-flag-bs { background-image: url('./assets/flags/bs.png'); }
-  &.ui-flag-bh { background-image: url('./assets/flags/bh.png'); }
-  &.ui-flag-bd { background-image: url('./assets/flags/bd.png'); }
-  &.ui-flag-bb { background-image: url('./assets/flags/bb.png'); }
-  &.ui-flag-by { background-image: url('./assets/flags/by.png'); }
-  &.ui-flag-be { background-image: url('./assets/flags/be.png'); }
-  &.ui-flag-bz { background-image: url('./assets/flags/bz.png'); }
-  &.ui-flag-bj { background-image: url('./assets/flags/bj.png'); }
-  &.ui-flag-bm { background-image: url('./assets/flags/bm.png'); }
-  &.ui-flag-bt { background-image: url('./assets/flags/bt.png'); }
-  &.ui-flag-bo { background-image: url('./assets/flags/bo.png'); }
-  &.ui-flag-bq { background-image: url('./assets/flags/bq.png'); }
-  &.ui-flag-ba { background-image: url('./assets/flags/ba.png'); }
-  &.ui-flag-bw { background-image: url('./assets/flags/bw.png'); }
-  &.ui-flag-bv { background-image: url('./assets/flags/bv.png'); }
-  &.ui-flag-br { background-image: url('./assets/flags/br.png'); }
-  &.ui-flag-vg { background-image: url('./assets/flags/vg.png'); }
-  &.ui-flag-io { background-image: url('./assets/flags/io.png'); }
-  &.ui-flag-bn { background-image: url('./assets/flags/bn.png'); }
-  &.ui-flag-bg { background-image: url('./assets/flags/bg.png'); }
-  &.ui-flag-bf { background-image: url('./assets/flags/bf.png'); }
-  &.ui-flag-bi { background-image: url('./assets/flags/bi.png'); }
-  &.ui-flag-cl { background-image: url('./assets/flags/cl.png'); }
-  &.ui-flag-cn { background-image: url('./assets/flags/cn.png'); }
-  &.ui-flag-ck { background-image: url('./assets/flags/ck.png'); }
-  &.ui-flag-cr { background-image: url('./assets/flags/cr.png'); }
-  &.ui-flag-cw { background-image: url('./assets/flags/cw.png'); }
-  &.ui-flag-ci { background-image: url('./assets/flags/ci.png'); }
-  &.ui-flag-de { background-image: url('./assets/flags/de.png'); }
-  &.ui-flag-dm { background-image: url('./assets/flags/dm.png'); }
-  &.ui-flag-do { background-image: url('./assets/flags/do.png'); }
-  &.ui-flag-dj { background-image: url('./assets/flags/dj.png'); }
-  &.ui-flag-dk { background-image: url('./assets/flags/dk.png'); }
-  &.ui-flag-ec { background-image: url('./assets/flags/ec.png'); }
-  &.ui-flag-sv { background-image: url('./assets/flags/sv.png'); }
-  &.ui-flag-er { background-image: url('./assets/flags/er.png'); }
-  &.ui-flag-ee { background-image: url('./assets/flags/ee.png'); }
-  &.ui-flag-fk { background-image: url('./assets/flags/fk.png'); }
-  &.ui-flag-fj { background-image: url('./assets/flags/fj.png'); }
-  &.ui-flag-fi { background-image: url('./assets/flags/fi.png'); }
-  &.ui-flag-fr { background-image: url('./assets/flags/fr.png'); }
-  &.ui-flag-gf { background-image: url('./assets/flags/gf.png'); }
-  &.ui-flag-pf { background-image: url('./assets/flags/pf.png'); }
-  &.ui-flag-tf { background-image: url('./assets/flags/tf.png'); }
-  &.ui-flag-fo { background-image: url('./assets/flags/fo.png'); }
-  &.ui-flag-ga { background-image: url('./assets/flags/ga.png'); }
-  &.ui-flag-gm { background-image: url('./assets/flags/gm.png'); }
-  &.ui-flag-ge { background-image: url('./assets/flags/ge.png'); }
-  &.ui-flag-gh { background-image: url('./assets/flags/gh.png'); }
-  &.ui-flag-gi { background-image: url('./assets/flags/gi.png'); }
-  &.ui-flag-gd { background-image: url('./assets/flags/gd.png'); }
-  &.ui-flag-gr { background-image: url('./assets/flags/gr.png'); }
-  &.ui-flag-gl { background-image: url('./assets/flags/gl.png'); }
-  &.ui-flag-gp { background-image: url('./assets/flags/gp.png'); }
-  &.ui-flag-gu { background-image: url('./assets/flags/gu.png'); }
-  &.ui-flag-gt { background-image: url('./assets/flags/gt.png'); }
-  &.ui-flag-gg { background-image: url('./assets/flags/gg.png'); }
-  &.ui-flag-gn { background-image: url('./assets/flags/gn.png'); }
-  &.ui-flag-gw { background-image: url('./assets/flags/gw.png'); }
-  &.ui-flag-gy { background-image: url('./assets/flags/gy.png'); }
-  &.ui-flag-ht { background-image: url('./assets/flags/ht.png'); }
-  &.ui-flag-hm { background-image: url('./assets/flags/hm.png'); }
-  &.ui-flag-hn { background-image: url('./assets/flags/hn.png'); }
-  &.ui-flag-hk { background-image: url('./assets/flags/hk.png'); }
-  &.ui-flag-in { background-image: url('./assets/flags/in.png'); }
-  &.ui-flag-id { background-image: url('./assets/flags/id.png'); }
-  &.ui-flag-im { background-image: url('./assets/flags/im.png'); }
-  &.ui-flag-iq { background-image: url('./assets/flags/iq.png'); }
-  &.ui-flag-ir { background-image: url('./assets/flags/ir.png'); }
-  &.ui-flag-ie { background-image: url('./assets/flags/ie.png'); }
-  &.ui-flag-is { background-image: url('./assets/flags/is.png'); }
-  &.ui-flag-il { background-image: url('./assets/flags/il.png'); }
-  &.ui-flag-it { background-image: url('./assets/flags/it.png'); }
-  &.ui-flag-jm { background-image: url('./assets/flags/jm.png'); }
-  &.ui-flag-jp { background-image: url('./assets/flags/jp.png'); }
-  &.ui-flag-ye { background-image: url('./assets/flags/ye.png'); }
-  &.ui-flag-je { background-image: url('./assets/flags/je.png'); }
-  &.ui-flag-jo { background-image: url('./assets/flags/jo.png'); }
-  &.ui-flag-ky { background-image: url('./assets/flags/ky.png'); }
-  &.ui-flag-kh { background-image: url('./assets/flags/kh.png'); }
-  &.ui-flag-cm { background-image: url('./assets/flags/cm.png'); }
-  &.ui-flag-ca { background-image: url('./assets/flags/ca.png'); }
-  &.ui-flag-cv { background-image: url('./assets/flags/cv.png'); }
-  &.ui-flag-kz { background-image: url('./assets/flags/kz.png'); }
-  &.ui-flag-qa { background-image: url('./assets/flags/qa.png'); }
-  &.ui-flag-ke { background-image: url('./assets/flags/ke.png'); }
-  &.ui-flag-kg { background-image: url('./assets/flags/kg.png'); }
-  &.ui-flag-ki { background-image: url('./assets/flags/ki.png'); }
-  &.ui-flag-cc { background-image: url('./assets/flags/cc.png'); }
-  &.ui-flag-co { background-image: url('./assets/flags/co.png'); }
-  &.ui-flag-km { background-image: url('./assets/flags/km.png'); }
-  &.ui-flag-cd { background-image: url('./assets/flags/cd.png'); }
-  &.ui-flag-kp { background-image: url('./assets/flags/kp.png'); }
-  &.ui-flag-kr { background-image: url('./assets/flags/kr.png'); }
-  &.ui-flag-hr { background-image: url('./assets/flags/hr.png'); }
-  &.ui-flag-cu { background-image: url('./assets/flags/cu.png'); }
-  &.ui-flag-kw { background-image: url('./assets/flags/kw.png'); }
-  &.ui-flag-la { background-image: url('./assets/flags/la.png'); }
-  &.ui-flag-ls { background-image: url('./assets/flags/ls.png'); }
-  &.ui-flag-lv { background-image: url('./assets/flags/lv.png'); }
-  &.ui-flag-lb { background-image: url('./assets/flags/lb.png'); }
-  &.ui-flag-lr { background-image: url('./assets/flags/lr.png'); }
-  &.ui-flag-ly { background-image: url('./assets/flags/ly.png'); }
-  &.ui-flag-li { background-image: url('./assets/flags/li.png'); }
-  &.ui-flag-lt { background-image: url('./assets/flags/lt.png'); }
-  &.ui-flag-lu { background-image: url('./assets/flags/lu.png'); }
-  &.ui-flag-mo { background-image: url('./assets/flags/mo.png'); }
-  &.ui-flag-mg { background-image: url('./assets/flags/mg.png'); }
-  &.ui-flag-mw { background-image: url('./assets/flags/mw.png'); }
-  &.ui-flag-my { background-image: url('./assets/flags/my.png'); }
-  &.ui-flag-mv { background-image: url('./assets/flags/mv.png'); }
-  &.ui-flag-ml { background-image: url('./assets/flags/ml.png'); }
-  &.ui-flag-mt { background-image: url('./assets/flags/mt.png'); }
-  &.ui-flag-ma { background-image: url('./assets/flags/ma.png'); }
-  &.ui-flag-mh { background-image: url('./assets/flags/mh.png'); }
-  &.ui-flag-mq { background-image: url('./assets/flags/mq.png'); }
-  &.ui-flag-mr { background-image: url('./assets/flags/mr.png'); }
-  &.ui-flag-mu { background-image: url('./assets/flags/mu.png'); }
-  &.ui-flag-yt { background-image: url('./assets/flags/yt.png'); }
-  &.ui-flag-mk { background-image: url('./assets/flags/mk.png'); }
-  &.ui-flag-mx { background-image: url('./assets/flags/mx.png'); }
-  &.ui-flag-fm { background-image: url('./assets/flags/fm.png'); }
-  &.ui-flag-md { background-image: url('./assets/flags/md.png'); }
-  &.ui-flag-mc { background-image: url('./assets/flags/mc.png'); }
-  &.ui-flag-mn { background-image: url('./assets/flags/mn.png'); }
-  &.ui-flag-me { background-image: url('./assets/flags/me.png'); }
-  &.ui-flag-ms { background-image: url('./assets/flags/ms.png'); }
-  &.ui-flag-mz { background-image: url('./assets/flags/mz.png'); }
-  &.ui-flag-mm { background-image: url('./assets/flags/mm.png'); }
-  &.ui-flag-na { background-image: url('./assets/flags/na.png'); }
-  &.ui-flag-nr { background-image: url('./assets/flags/nr.png'); }
-  &.ui-flag-np { background-image: url('./assets/flags/np.png'); }
-  &.ui-flag-nc { background-image: url('./assets/flags/nc.png'); }
-  &.ui-flag-nz { background-image: url('./assets/flags/nz.png'); }
-  &.ui-flag-ni { background-image: url('./assets/flags/ni.png'); }
-  &.ui-flag-nl { background-image: url('./assets/flags/nl.png'); }
-  &.ui-flag-ne { background-image: url('./assets/flags/ne.png'); }
-  &.ui-flag-ng { background-image: url('./assets/flags/ng.png'); }
-  &.ui-flag-nu { background-image: url('./assets/flags/nu.png'); }
-  &.ui-flag-nf { background-image: url('./assets/flags/nf.png'); }
-  &.ui-flag-no { background-image: url('./assets/flags/no.png'); }
-  &.ui-flag-mp { background-image: url('./assets/flags/mp.png'); }
-  &.ui-flag-om { background-image: url('./assets/flags/om.png'); }
-  &.ui-flag-tl { background-image: url('./assets/flags/tl.png'); }
-  &.ui-flag-pk { background-image: url('./assets/flags/pk.png'); }
-  &.ui-flag-pw { background-image: url('./assets/flags/pw.png'); }
-  &.ui-flag-ps { background-image: url('./assets/flags/ps.png'); }
-  &.ui-flag-pa { background-image: url('./assets/flags/pa.png'); }
-  &.ui-flag-pg { background-image: url('./assets/flags/pg.png'); }
-  &.ui-flag-py { background-image: url('./assets/flags/py.png'); }
-  &.ui-flag-pe { background-image: url('./assets/flags/pe.png'); }
-  &.ui-flag-ph { background-image: url('./assets/flags/ph.png'); }
-  &.ui-flag-pn { background-image: url('./assets/flags/pn.png'); }
-  &.ui-flag-pl { background-image: url('./assets/flags/pl.png'); }
-  &.ui-flag-pt { background-image: url('./assets/flags/pt.png'); }
-  &.ui-flag-tw { background-image: url('./assets/flags/tw.png'); }
-  &.ui-flag-cg { background-image: url('./assets/flags/cg.png'); }
-  &.ui-flag-rw { background-image: url('./assets/flags/rw.png'); }
-  &.ui-flag-ro { background-image: url('./assets/flags/ro.png'); }
-  &.ui-flag-ru { background-image: url('./assets/flags/ru.png'); }
-  &.ui-flag-re { background-image: url('./assets/flags/re.png'); }
-  &.ui-flag-bl { background-image: url('./assets/flags/bl.png'); }
-  &.ui-flag-mf { background-image: url('./assets/flags/mf.png'); }
-  &.ui-flag-pm { background-image: url('./assets/flags/pm.png'); }
-  &.ui-flag-sb { background-image: url('./assets/flags/sb.png'); }
-  &.ui-flag-zm { background-image: url('./assets/flags/zm.png'); }
-  &.ui-flag-ws { background-image: url('./assets/flags/ws.png'); }
-  &.ui-flag-sm { background-image: url('./assets/flags/sm.png'); }
-  &.ui-flag-sa { background-image: url('./assets/flags/sa.png'); }
-  &.ui-flag-se { background-image: url('./assets/flags/se.png'); }
-  &.ui-flag-ch { background-image: url('./assets/flags/ch.png'); }
-  &.ui-flag-sn { background-image: url('./assets/flags/sn.png'); }
-  &.ui-flag-rs { background-image: url('./assets/flags/rs.png'); }
-  &.ui-flag-sc { background-image: url('./assets/flags/sc.png'); }
-  &.ui-flag-sl { background-image: url('./assets/flags/sl.png'); }
-  &.ui-flag-zw { background-image: url('./assets/flags/zw.png'); }
-  &.ui-flag-sg { background-image: url('./assets/flags/sg.png'); }
-  &.ui-flag-sx { background-image: url('./assets/flags/sx.png'); }
-  &.ui-flag-sk { background-image: url('./assets/flags/sk.png'); }
-  &.ui-flag-si { background-image: url('./assets/flags/si.png'); }
-  &.ui-flag-so { background-image: url('./assets/flags/so.png'); }
-  &.ui-flag-es { background-image: url('./assets/flags/es.png'); }
-  &.ui-flag-lk { background-image: url('./assets/flags/lk.png'); }
-  &.ui-flag-sh { background-image: url('./assets/flags/sh.png'); }
-  &.ui-flag-kn { background-image: url('./assets/flags/kn.png'); }
-  &.ui-flag-lc { background-image: url('./assets/flags/lc.png'); }
-  &.ui-flag-vc { background-image: url('./assets/flags/vc.png'); }
-  &.ui-flag-sd { background-image: url('./assets/flags/sd.png'); }
-  &.ui-flag-sr { background-image: url('./assets/flags/sr.png'); }
-  &.ui-flag-sj { background-image: url('./assets/flags/sj.png'); }
-  &.ui-flag-sz { background-image: url('./assets/flags/sz.png'); }
-  &.ui-flag-sy { background-image: url('./assets/flags/sy.png'); }
-  &.ui-flag-st { background-image: url('./assets/flags/st.png'); }
-  &.ui-flag-za { background-image: url('./assets/flags/za.png'); }
-  &.ui-flag-gs { background-image: url('./assets/flags/gs.png'); }
-  &.ui-flag-ss { background-image: url('./assets/flags/ss.png'); }
-  &.ui-flag-tj { background-image: url('./assets/flags/tj.png'); }
-  &.ui-flag-tz { background-image: url('./assets/flags/tz.png'); }
-  &.ui-flag-th { background-image: url('./assets/flags/th.png'); }
-  &.ui-flag-tg { background-image: url('./assets/flags/tg.png'); }
-  &.ui-flag-tk { background-image: url('./assets/flags/tk.png'); }
-  &.ui-flag-to { background-image: url('./assets/flags/to.png'); }
-  &.ui-flag-tt { background-image: url('./assets/flags/tt.png'); }
-  &.ui-flag-td { background-image: url('./assets/flags/td.png'); }
-  &.ui-flag-cz { background-image: url('./assets/flags/cz.png'); }
-  &.ui-flag-tn { background-image: url('./assets/flags/tn.png'); }
-  &.ui-flag-tm { background-image: url('./assets/flags/tm.png'); }
-  &.ui-flag-tc { background-image: url('./assets/flags/tc.png'); }
-  &.ui-flag-tv { background-image: url('./assets/flags/tv.png'); }
-  &.ui-flag-tr { background-image: url('./assets/flags/tr.png'); }
-  &.ui-flag-ug { background-image: url('./assets/flags/ug.png'); }
-  &.ui-flag-ua { background-image: url('./assets/flags/ua.png'); }
-  &.ui-flag-hu { background-image: url('./assets/flags/hu.png'); }
-  &.ui-flag-um { background-image: url('./assets/flags/um.png'); }
-  &.ui-flag-uy { background-image: url('./assets/flags/uy.png'); }
-  &.ui-flag-uz { background-image: url('./assets/flags/uz.png'); }
-  &.ui-flag-vu { background-image: url('./assets/flags/vu.png'); }
-  &.ui-flag-va { background-image: url('./assets/flags/va.png'); }
-  &.ui-flag-ve { background-image: url('./assets/flags/ve.png'); }
-  &.ui-flag-ae { background-image: url('./assets/flags/ae.png'); }
-  &.ui-flag-us { background-image: url('./assets/flags/us.png'); }
-  &.ui-flag-gb { background-image: url('./assets/flags/gb.png'); }
-  &.ui-flag-vn { background-image: url('./assets/flags/vn.png'); }
-  &.ui-flag-wf { background-image: url('./assets/flags/wf.png'); }
-  &.ui-flag-cx { background-image: url('./assets/flags/cx.png'); }
-  &.ui-flag-eh { background-image: url('./assets/flags/eh.png'); }
-  &.ui-flag-cf { background-image: url('./assets/flags/cf.png'); }
-  &.ui-flag-cy { background-image: url('./assets/flags/cy.png'); }
-  &.ui-flag-eg { background-image: url('./assets/flags/eg.png'); }
-  &.ui-flag-gq { background-image: url('./assets/flags/gq.png'); }
-  &.ui-flag-et { background-image: url('./assets/flags/et.png'); }
-  &.ui-flag-ax { background-image: url('./assets/flags/ax.png'); }
-  &.ui-flag-at { background-image: url('./assets/flags/at.png'); }
+  &.ui-flag-af {
+    background-image: url("./assets/flags/af.png");
+  }
+  &.ui-flag-al {
+    background-image: url("./assets/flags/al.png");
+  }
+  &.ui-flag-dz {
+    background-image: url("./assets/flags/dz.png");
+  }
+  &.ui-flag-as {
+    background-image: url("./assets/flags/as.png");
+  }
+  &.ui-flag-vi {
+    background-image: url("./assets/flags/vi.png");
+  }
+  &.ui-flag-ad {
+    background-image: url("./assets/flags/ad.png");
+  }
+  &.ui-flag-ao {
+    background-image: url("./assets/flags/ao.png");
+  }
+  &.ui-flag-ai {
+    background-image: url("./assets/flags/ai.png");
+  }
+  &.ui-flag-aq {
+    background-image: url("./assets/flags/aq.png");
+  }
+  &.ui-flag-ag {
+    background-image: url("./assets/flags/ag.png");
+  }
+  &.ui-flag-ar {
+    background-image: url("./assets/flags/ar.png");
+  }
+  &.ui-flag-am {
+    background-image: url("./assets/flags/am.png");
+  }
+  &.ui-flag-aw {
+    background-image: url("./assets/flags/aw.png");
+  }
+  &.ui-flag-az {
+    background-image: url("./assets/flags/az.png");
+  }
+  &.ui-flag-au {
+    background-image: url("./assets/flags/au.png");
+  }
+  &.ui-flag-bs {
+    background-image: url("./assets/flags/bs.png");
+  }
+  &.ui-flag-bh {
+    background-image: url("./assets/flags/bh.png");
+  }
+  &.ui-flag-bd {
+    background-image: url("./assets/flags/bd.png");
+  }
+  &.ui-flag-bb {
+    background-image: url("./assets/flags/bb.png");
+  }
+  &.ui-flag-by {
+    background-image: url("./assets/flags/by.png");
+  }
+  &.ui-flag-be {
+    background-image: url("./assets/flags/be.png");
+  }
+  &.ui-flag-bz {
+    background-image: url("./assets/flags/bz.png");
+  }
+  &.ui-flag-bj {
+    background-image: url("./assets/flags/bj.png");
+  }
+  &.ui-flag-bm {
+    background-image: url("./assets/flags/bm.png");
+  }
+  &.ui-flag-bt {
+    background-image: url("./assets/flags/bt.png");
+  }
+  &.ui-flag-bo {
+    background-image: url("./assets/flags/bo.png");
+  }
+  &.ui-flag-bq {
+    background-image: url("./assets/flags/bq.png");
+  }
+  &.ui-flag-ba {
+    background-image: url("./assets/flags/ba.png");
+  }
+  &.ui-flag-bw {
+    background-image: url("./assets/flags/bw.png");
+  }
+  &.ui-flag-bv {
+    background-image: url("./assets/flags/bv.png");
+  }
+  &.ui-flag-br {
+    background-image: url("./assets/flags/br.png");
+  }
+  &.ui-flag-vg {
+    background-image: url("./assets/flags/vg.png");
+  }
+  &.ui-flag-io {
+    background-image: url("./assets/flags/io.png");
+  }
+  &.ui-flag-bn {
+    background-image: url("./assets/flags/bn.png");
+  }
+  &.ui-flag-bg {
+    background-image: url("./assets/flags/bg.png");
+  }
+  &.ui-flag-bf {
+    background-image: url("./assets/flags/bf.png");
+  }
+  &.ui-flag-bi {
+    background-image: url("./assets/flags/bi.png");
+  }
+  &.ui-flag-cl {
+    background-image: url("./assets/flags/cl.png");
+  }
+  &.ui-flag-cn {
+    background-image: url("./assets/flags/cn.png");
+  }
+  &.ui-flag-ck {
+    background-image: url("./assets/flags/ck.png");
+  }
+  &.ui-flag-cr {
+    background-image: url("./assets/flags/cr.png");
+  }
+  &.ui-flag-cw {
+    background-image: url("./assets/flags/cw.png");
+  }
+  &.ui-flag-ci {
+    background-image: url("./assets/flags/ci.png");
+  }
+  &.ui-flag-de {
+    background-image: url("./assets/flags/de.png");
+  }
+  &.ui-flag-dm {
+    background-image: url("./assets/flags/dm.png");
+  }
+  &.ui-flag-do {
+    background-image: url("./assets/flags/do.png");
+  }
+  &.ui-flag-dj {
+    background-image: url("./assets/flags/dj.png");
+  }
+  &.ui-flag-dk {
+    background-image: url("./assets/flags/dk.png");
+  }
+  &.ui-flag-ec {
+    background-image: url("./assets/flags/ec.png");
+  }
+  &.ui-flag-sv {
+    background-image: url("./assets/flags/sv.png");
+  }
+  &.ui-flag-er {
+    background-image: url("./assets/flags/er.png");
+  }
+  &.ui-flag-ee {
+    background-image: url("./assets/flags/ee.png");
+  }
+  &.ui-flag-fk {
+    background-image: url("./assets/flags/fk.png");
+  }
+  &.ui-flag-fj {
+    background-image: url("./assets/flags/fj.png");
+  }
+  &.ui-flag-fi {
+    background-image: url("./assets/flags/fi.png");
+  }
+  &.ui-flag-fr {
+    background-image: url("./assets/flags/fr.png");
+  }
+  &.ui-flag-gf {
+    background-image: url("./assets/flags/gf.png");
+  }
+  &.ui-flag-pf {
+    background-image: url("./assets/flags/pf.png");
+  }
+  &.ui-flag-tf {
+    background-image: url("./assets/flags/tf.png");
+  }
+  &.ui-flag-fo {
+    background-image: url("./assets/flags/fo.png");
+  }
+  &.ui-flag-ga {
+    background-image: url("./assets/flags/ga.png");
+  }
+  &.ui-flag-gm {
+    background-image: url("./assets/flags/gm.png");
+  }
+  &.ui-flag-ge {
+    background-image: url("./assets/flags/ge.png");
+  }
+  &.ui-flag-gh {
+    background-image: url("./assets/flags/gh.png");
+  }
+  &.ui-flag-gi {
+    background-image: url("./assets/flags/gi.png");
+  }
+  &.ui-flag-gd {
+    background-image: url("./assets/flags/gd.png");
+  }
+  &.ui-flag-gr {
+    background-image: url("./assets/flags/gr.png");
+  }
+  &.ui-flag-gl {
+    background-image: url("./assets/flags/gl.png");
+  }
+  &.ui-flag-gp {
+    background-image: url("./assets/flags/gp.png");
+  }
+  &.ui-flag-gu {
+    background-image: url("./assets/flags/gu.png");
+  }
+  &.ui-flag-gt {
+    background-image: url("./assets/flags/gt.png");
+  }
+  &.ui-flag-gg {
+    background-image: url("./assets/flags/gg.png");
+  }
+  &.ui-flag-gn {
+    background-image: url("./assets/flags/gn.png");
+  }
+  &.ui-flag-gw {
+    background-image: url("./assets/flags/gw.png");
+  }
+  &.ui-flag-gy {
+    background-image: url("./assets/flags/gy.png");
+  }
+  &.ui-flag-ht {
+    background-image: url("./assets/flags/ht.png");
+  }
+  &.ui-flag-hm {
+    background-image: url("./assets/flags/hm.png");
+  }
+  &.ui-flag-hn {
+    background-image: url("./assets/flags/hn.png");
+  }
+  &.ui-flag-hk {
+    background-image: url("./assets/flags/hk.png");
+  }
+  &.ui-flag-in {
+    background-image: url("./assets/flags/in.png");
+  }
+  &.ui-flag-id {
+    background-image: url("./assets/flags/id.png");
+  }
+  &.ui-flag-im {
+    background-image: url("./assets/flags/im.png");
+  }
+  &.ui-flag-iq {
+    background-image: url("./assets/flags/iq.png");
+  }
+  &.ui-flag-ir {
+    background-image: url("./assets/flags/ir.png");
+  }
+  &.ui-flag-ie {
+    background-image: url("./assets/flags/ie.png");
+  }
+  &.ui-flag-is {
+    background-image: url("./assets/flags/is.png");
+  }
+  &.ui-flag-il {
+    background-image: url("./assets/flags/il.png");
+  }
+  &.ui-flag-it {
+    background-image: url("./assets/flags/it.png");
+  }
+  &.ui-flag-jm {
+    background-image: url("./assets/flags/jm.png");
+  }
+  &.ui-flag-jp {
+    background-image: url("./assets/flags/jp.png");
+  }
+  &.ui-flag-ye {
+    background-image: url("./assets/flags/ye.png");
+  }
+  &.ui-flag-je {
+    background-image: url("./assets/flags/je.png");
+  }
+  &.ui-flag-jo {
+    background-image: url("./assets/flags/jo.png");
+  }
+  &.ui-flag-ky {
+    background-image: url("./assets/flags/ky.png");
+  }
+  &.ui-flag-kh {
+    background-image: url("./assets/flags/kh.png");
+  }
+  &.ui-flag-cm {
+    background-image: url("./assets/flags/cm.png");
+  }
+  &.ui-flag-ca {
+    background-image: url("./assets/flags/ca.png");
+  }
+  &.ui-flag-cv {
+    background-image: url("./assets/flags/cv.png");
+  }
+  &.ui-flag-kz {
+    background-image: url("./assets/flags/kz.png");
+  }
+  &.ui-flag-qa {
+    background-image: url("./assets/flags/qa.png");
+  }
+  &.ui-flag-ke {
+    background-image: url("./assets/flags/ke.png");
+  }
+  &.ui-flag-kg {
+    background-image: url("./assets/flags/kg.png");
+  }
+  &.ui-flag-ki {
+    background-image: url("./assets/flags/ki.png");
+  }
+  &.ui-flag-cc {
+    background-image: url("./assets/flags/cc.png");
+  }
+  &.ui-flag-co {
+    background-image: url("./assets/flags/co.png");
+  }
+  &.ui-flag-km {
+    background-image: url("./assets/flags/km.png");
+  }
+  &.ui-flag-cd {
+    background-image: url("./assets/flags/cd.png");
+  }
+  &.ui-flag-kp {
+    background-image: url("./assets/flags/kp.png");
+  }
+  &.ui-flag-kr {
+    background-image: url("./assets/flags/kr.png");
+  }
+  &.ui-flag-hr {
+    background-image: url("./assets/flags/hr.png");
+  }
+  &.ui-flag-cu {
+    background-image: url("./assets/flags/cu.png");
+  }
+  &.ui-flag-kw {
+    background-image: url("./assets/flags/kw.png");
+  }
+  &.ui-flag-la {
+    background-image: url("./assets/flags/la.png");
+  }
+  &.ui-flag-ls {
+    background-image: url("./assets/flags/ls.png");
+  }
+  &.ui-flag-lv {
+    background-image: url("./assets/flags/lv.png");
+  }
+  &.ui-flag-lb {
+    background-image: url("./assets/flags/lb.png");
+  }
+  &.ui-flag-lr {
+    background-image: url("./assets/flags/lr.png");
+  }
+  &.ui-flag-ly {
+    background-image: url("./assets/flags/ly.png");
+  }
+  &.ui-flag-li {
+    background-image: url("./assets/flags/li.png");
+  }
+  &.ui-flag-lt {
+    background-image: url("./assets/flags/lt.png");
+  }
+  &.ui-flag-lu {
+    background-image: url("./assets/flags/lu.png");
+  }
+  &.ui-flag-mo {
+    background-image: url("./assets/flags/mo.png");
+  }
+  &.ui-flag-mg {
+    background-image: url("./assets/flags/mg.png");
+  }
+  &.ui-flag-mw {
+    background-image: url("./assets/flags/mw.png");
+  }
+  &.ui-flag-my {
+    background-image: url("./assets/flags/my.png");
+  }
+  &.ui-flag-mv {
+    background-image: url("./assets/flags/mv.png");
+  }
+  &.ui-flag-ml {
+    background-image: url("./assets/flags/ml.png");
+  }
+  &.ui-flag-mt {
+    background-image: url("./assets/flags/mt.png");
+  }
+  &.ui-flag-ma {
+    background-image: url("./assets/flags/ma.png");
+  }
+  &.ui-flag-mh {
+    background-image: url("./assets/flags/mh.png");
+  }
+  &.ui-flag-mq {
+    background-image: url("./assets/flags/mq.png");
+  }
+  &.ui-flag-mr {
+    background-image: url("./assets/flags/mr.png");
+  }
+  &.ui-flag-mu {
+    background-image: url("./assets/flags/mu.png");
+  }
+  &.ui-flag-yt {
+    background-image: url("./assets/flags/yt.png");
+  }
+  &.ui-flag-mk {
+    background-image: url("./assets/flags/mk.png");
+  }
+  &.ui-flag-mx {
+    background-image: url("./assets/flags/mx.png");
+  }
+  &.ui-flag-fm {
+    background-image: url("./assets/flags/fm.png");
+  }
+  &.ui-flag-md {
+    background-image: url("./assets/flags/md.png");
+  }
+  &.ui-flag-mc {
+    background-image: url("./assets/flags/mc.png");
+  }
+  &.ui-flag-mn {
+    background-image: url("./assets/flags/mn.png");
+  }
+  &.ui-flag-me {
+    background-image: url("./assets/flags/me.png");
+  }
+  &.ui-flag-ms {
+    background-image: url("./assets/flags/ms.png");
+  }
+  &.ui-flag-mz {
+    background-image: url("./assets/flags/mz.png");
+  }
+  &.ui-flag-mm {
+    background-image: url("./assets/flags/mm.png");
+  }
+  &.ui-flag-na {
+    background-image: url("./assets/flags/na.png");
+  }
+  &.ui-flag-nr {
+    background-image: url("./assets/flags/nr.png");
+  }
+  &.ui-flag-np {
+    background-image: url("./assets/flags/np.png");
+  }
+  &.ui-flag-nc {
+    background-image: url("./assets/flags/nc.png");
+  }
+  &.ui-flag-nz {
+    background-image: url("./assets/flags/nz.png");
+  }
+  &.ui-flag-ni {
+    background-image: url("./assets/flags/ni.png");
+  }
+  &.ui-flag-nl {
+    background-image: url("./assets/flags/nl.png");
+  }
+  &.ui-flag-ne {
+    background-image: url("./assets/flags/ne.png");
+  }
+  &.ui-flag-ng {
+    background-image: url("./assets/flags/ng.png");
+  }
+  &.ui-flag-nu {
+    background-image: url("./assets/flags/nu.png");
+  }
+  &.ui-flag-nf {
+    background-image: url("./assets/flags/nf.png");
+  }
+  &.ui-flag-no {
+    background-image: url("./assets/flags/no.png");
+  }
+  &.ui-flag-mp {
+    background-image: url("./assets/flags/mp.png");
+  }
+  &.ui-flag-om {
+    background-image: url("./assets/flags/om.png");
+  }
+  &.ui-flag-tl {
+    background-image: url("./assets/flags/tl.png");
+  }
+  &.ui-flag-pk {
+    background-image: url("./assets/flags/pk.png");
+  }
+  &.ui-flag-pw {
+    background-image: url("./assets/flags/pw.png");
+  }
+  &.ui-flag-ps {
+    background-image: url("./assets/flags/ps.png");
+  }
+  &.ui-flag-pa {
+    background-image: url("./assets/flags/pa.png");
+  }
+  &.ui-flag-pg {
+    background-image: url("./assets/flags/pg.png");
+  }
+  &.ui-flag-py {
+    background-image: url("./assets/flags/py.png");
+  }
+  &.ui-flag-pe {
+    background-image: url("./assets/flags/pe.png");
+  }
+  &.ui-flag-ph {
+    background-image: url("./assets/flags/ph.png");
+  }
+  &.ui-flag-pn {
+    background-image: url("./assets/flags/pn.png");
+  }
+  &.ui-flag-pl {
+    background-image: url("./assets/flags/pl.png");
+  }
+  &.ui-flag-pt {
+    background-image: url("./assets/flags/pt.png");
+  }
+  &.ui-flag-tw {
+    background-image: url("./assets/flags/tw.png");
+  }
+  &.ui-flag-cg {
+    background-image: url("./assets/flags/cg.png");
+  }
+  &.ui-flag-rw {
+    background-image: url("./assets/flags/rw.png");
+  }
+  &.ui-flag-ro {
+    background-image: url("./assets/flags/ro.png");
+  }
+  &.ui-flag-ru {
+    background-image: url("./assets/flags/ru.png");
+  }
+  &.ui-flag-re {
+    background-image: url("./assets/flags/re.png");
+  }
+  &.ui-flag-bl {
+    background-image: url("./assets/flags/bl.png");
+  }
+  &.ui-flag-mf {
+    background-image: url("./assets/flags/mf.png");
+  }
+  &.ui-flag-pm {
+    background-image: url("./assets/flags/pm.png");
+  }
+  &.ui-flag-sb {
+    background-image: url("./assets/flags/sb.png");
+  }
+  &.ui-flag-zm {
+    background-image: url("./assets/flags/zm.png");
+  }
+  &.ui-flag-ws {
+    background-image: url("./assets/flags/ws.png");
+  }
+  &.ui-flag-sm {
+    background-image: url("./assets/flags/sm.png");
+  }
+  &.ui-flag-sa {
+    background-image: url("./assets/flags/sa.png");
+  }
+  &.ui-flag-se {
+    background-image: url("./assets/flags/se.png");
+  }
+  &.ui-flag-ch {
+    background-image: url("./assets/flags/ch.png");
+  }
+  &.ui-flag-sn {
+    background-image: url("./assets/flags/sn.png");
+  }
+  &.ui-flag-rs {
+    background-image: url("./assets/flags/rs.png");
+  }
+  &.ui-flag-sc {
+    background-image: url("./assets/flags/sc.png");
+  }
+  &.ui-flag-sl {
+    background-image: url("./assets/flags/sl.png");
+  }
+  &.ui-flag-zw {
+    background-image: url("./assets/flags/zw.png");
+  }
+  &.ui-flag-sg {
+    background-image: url("./assets/flags/sg.png");
+  }
+  &.ui-flag-sx {
+    background-image: url("./assets/flags/sx.png");
+  }
+  &.ui-flag-sk {
+    background-image: url("./assets/flags/sk.png");
+  }
+  &.ui-flag-si {
+    background-image: url("./assets/flags/si.png");
+  }
+  &.ui-flag-so {
+    background-image: url("./assets/flags/so.png");
+  }
+  &.ui-flag-es {
+    background-image: url("./assets/flags/es.png");
+  }
+  &.ui-flag-lk {
+    background-image: url("./assets/flags/lk.png");
+  }
+  &.ui-flag-sh {
+    background-image: url("./assets/flags/sh.png");
+  }
+  &.ui-flag-kn {
+    background-image: url("./assets/flags/kn.png");
+  }
+  &.ui-flag-lc {
+    background-image: url("./assets/flags/lc.png");
+  }
+  &.ui-flag-vc {
+    background-image: url("./assets/flags/vc.png");
+  }
+  &.ui-flag-sd {
+    background-image: url("./assets/flags/sd.png");
+  }
+  &.ui-flag-sr {
+    background-image: url("./assets/flags/sr.png");
+  }
+  &.ui-flag-sj {
+    background-image: url("./assets/flags/sj.png");
+  }
+  &.ui-flag-sz {
+    background-image: url("./assets/flags/sz.png");
+  }
+  &.ui-flag-sy {
+    background-image: url("./assets/flags/sy.png");
+  }
+  &.ui-flag-st {
+    background-image: url("./assets/flags/st.png");
+  }
+  &.ui-flag-za {
+    background-image: url("./assets/flags/za.png");
+  }
+  &.ui-flag-gs {
+    background-image: url("./assets/flags/gs.png");
+  }
+  &.ui-flag-ss {
+    background-image: url("./assets/flags/ss.png");
+  }
+  &.ui-flag-tj {
+    background-image: url("./assets/flags/tj.png");
+  }
+  &.ui-flag-tz {
+    background-image: url("./assets/flags/tz.png");
+  }
+  &.ui-flag-th {
+    background-image: url("./assets/flags/th.png");
+  }
+  &.ui-flag-tg {
+    background-image: url("./assets/flags/tg.png");
+  }
+  &.ui-flag-tk {
+    background-image: url("./assets/flags/tk.png");
+  }
+  &.ui-flag-to {
+    background-image: url("./assets/flags/to.png");
+  }
+  &.ui-flag-tt {
+    background-image: url("./assets/flags/tt.png");
+  }
+  &.ui-flag-td {
+    background-image: url("./assets/flags/td.png");
+  }
+  &.ui-flag-cz {
+    background-image: url("./assets/flags/cz.png");
+  }
+  &.ui-flag-tn {
+    background-image: url("./assets/flags/tn.png");
+  }
+  &.ui-flag-tm {
+    background-image: url("./assets/flags/tm.png");
+  }
+  &.ui-flag-tc {
+    background-image: url("./assets/flags/tc.png");
+  }
+  &.ui-flag-tv {
+    background-image: url("./assets/flags/tv.png");
+  }
+  &.ui-flag-tr {
+    background-image: url("./assets/flags/tr.png");
+  }
+  &.ui-flag-ug {
+    background-image: url("./assets/flags/ug.png");
+  }
+  &.ui-flag-ua {
+    background-image: url("./assets/flags/ua.png");
+  }
+  &.ui-flag-hu {
+    background-image: url("./assets/flags/hu.png");
+  }
+  &.ui-flag-um {
+    background-image: url("./assets/flags/um.png");
+  }
+  &.ui-flag-uy {
+    background-image: url("./assets/flags/uy.png");
+  }
+  &.ui-flag-uz {
+    background-image: url("./assets/flags/uz.png");
+  }
+  &.ui-flag-vu {
+    background-image: url("./assets/flags/vu.png");
+  }
+  &.ui-flag-va {
+    background-image: url("./assets/flags/va.png");
+  }
+  &.ui-flag-ve {
+    background-image: url("./assets/flags/ve.png");
+  }
+  &.ui-flag-ae {
+    background-image: url("./assets/flags/ae.png");
+  }
+  &.ui-flag-us {
+    background-image: url("./assets/flags/us.png");
+  }
+  &.ui-flag-gb {
+    background-image: url("./assets/flags/gb.png");
+  }
+  &.ui-flag-vn {
+    background-image: url("./assets/flags/vn.png");
+  }
+  &.ui-flag-wf {
+    background-image: url("./assets/flags/wf.png");
+  }
+  &.ui-flag-cx {
+    background-image: url("./assets/flags/cx.png");
+  }
+  &.ui-flag-eh {
+    background-image: url("./assets/flags/eh.png");
+  }
+  &.ui-flag-cf {
+    background-image: url("./assets/flags/cf.png");
+  }
+  &.ui-flag-cy {
+    background-image: url("./assets/flags/cy.png");
+  }
+  &.ui-flag-eg {
+    background-image: url("./assets/flags/eg.png");
+  }
+  &.ui-flag-gq {
+    background-image: url("./assets/flags/gq.png");
+  }
+  &.ui-flag-et {
+    background-image: url("./assets/flags/et.png");
+  }
+  &.ui-flag-ax {
+    background-image: url("./assets/flags/ax.png");
+  }
+  &.ui-flag-at {
+    background-image: url("./assets/flags/at.png");
+  }
 }
 
 .ui-flag-wrapper {
-  @include display(flex);
-  @include align-items(center);
+  display: flex;
+  align-items: center;
 
   .ui-flag {
     margin-right: 6px;

@@ -6,7 +6,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: circleci/node:8.11.3
+      - image: circleci/node:10.12.0
     steps:
       - checkout
       - run:
@@ -21,11 +21,11 @@ jobs:
       - persist_to_workspace:
           root: .
           paths:
-            - build/latest
+            - build/
 
   deploy_production:
     docker:
-      - image: circleci/node:8.11.3
+      - image: circleci/node:10.12.0
     steps:
       - attach_workspace:
           at: .
@@ -36,9 +36,9 @@ jobs:
           aws-access-key-id: AWS_ACCESS_KEY_ID
           aws-region: AWS_DEFAULT_REGION
           aws-secret-access-key: AWS_SECRET_ACCESS_KEY
-          from: build/latest
+          from: build/
           overwrite: false
-          to: "s3://ui.wundery.com/v1.0.13" # update version number here.
+          to: "s3://ui.wundery.com"
 
 workflows:
   deploy:

@@ -1,5 +1,5 @@
 .ui-message {
-  @include display(flex);
+  display: flex;
 
   padding: $ui-spacing-default;
 

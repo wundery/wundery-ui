@@ -1,6 +1,10 @@
 @-webkit-keyframes highlight-animation {
-  from { background: #fffbe4; }
-  to   { background: transparent; }
+  from {
+    background: #fffbe4;
+  }
+  to {
+    background: transparent;
+  }
 }
 
 .ui-timeline {
@@ -8,7 +12,7 @@
   overflow-y: scroll;
 
   .ui-timeline-item {
-    @include display(flex);
+    display: flex;
 
     position: relative;
 
@@ -23,7 +27,7 @@
     }
 
     .ui-timeline-item-icon {
-     @include flex-shrink(0);
+      flex-shrink: 0;
 
       width: 40px;
       line-height: 1;
@@ -52,7 +56,6 @@
         color: #666;
       }
     }
-
 
     &:last-child {
       .ui-timeline-item-content {

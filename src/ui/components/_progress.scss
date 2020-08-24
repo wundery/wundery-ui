@@ -1,14 +1,14 @@
 .ui-progress {
-  @include display(flex);
+  display: flex;
 
   background: #94d066;
   position: relative;
   border-radius: 3px;
 
   .ui-progress-value {
-    @include display(flex);
-    @include justify-content(center);
-    @include align-items(center);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     font-size: 11px;
     font-weight: $ui-font-weight-bold;
@@ -28,11 +28,8 @@
     background: $color-green;
     border-radius: 3px;
 
-    @include linear-gradient(
-      $ui-button-success-background-color,
-      darken($ui-button-success-background-color, 4%)
-    );
-	}
+    background: linear-gradient($ui-button-success-background-color, darken($ui-button-success-background-color, 4%));
+  }
 
   &.ui-progress-small {
     .ui-progress-bar {

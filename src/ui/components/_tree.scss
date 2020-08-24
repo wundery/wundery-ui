@@ -8,13 +8,12 @@
       border: 1px solid $ui-table-border-color;
       border-radius: 3px;
       background-color: $ui-table-background-color;
-      box-shadow: 0 1px 5px rgba(0,0,0,0.06);
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.06);
 
       .ui-tree-item-details-inner {
-        @include display(flex);
-        @include align-items(center);
-        @include flex-wrap(nowrap);
-
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
 
         .ui-tree-item-prefix {
           display: block;
@@ -29,9 +28,9 @@
         }
 
         .ui-tree-item-box {
-          @include flex-grow(1);
-          @include display(flex);
-          @include justify-content(space-between);
+          flex-grow: 1;
+          display: flex;
+          justify-content: space-between;
 
           color: $ui-font-default-color;
           outline: none;

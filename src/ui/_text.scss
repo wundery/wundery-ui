@@ -8,12 +8,12 @@
 
 .ui-text-inline-info {
   font-size: 11px;
-  color: #B5B5B5;
+  color: #b5b5b5;
   font-weight: bold;
 }
 
 .ui-text-vertically-aligned {
-  @include display(flex);
+  display: flex;
 }
 
 .ui-align-center {
