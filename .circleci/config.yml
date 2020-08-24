@@ -34,15 +34,15 @@ jobs:
           command: |
             sudo apt-get install tree
             tree
-      - aws-s3/copy:
-          arguments: |
-            --acl public-read \
-            --cache-control "max-age=86400"
-          aws-access-key-id: AWS_ACCESS_KEY_ID
-          aws-region: AWS_DEFAULT_REGION
-          aws-secret-access-key: AWS_SECRET_ACCESS_KEY
-          from: build/
-          to: s3://ui.wundery.com/
+      # - aws-s3/copy:
+      #     arguments: |
+      #       --acl public-read \
+      #       --cache-control "max-age=86400"
+      #     aws-access-key-id: AWS_ACCESS_KEY_ID
+      #     aws-region: AWS_DEFAULT_REGION
+      #     aws-secret-access-key: AWS_SECRET_ACCESS_KEY
+      #     from: build/
+      #     to: s3://ui.wundery.com/
 
 workflows:
   deploy:
