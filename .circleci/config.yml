@@ -32,7 +32,7 @@ jobs:
           at: .
       - run:
           name: Get Package Version
-          command: &APP_VERSION node -pe "require('./package.json').version
+          command: &APP_VERSION node -pe "require('./package.json').version"
       - aws-s3/copy:
           arguments: |
             --acl public-read \
