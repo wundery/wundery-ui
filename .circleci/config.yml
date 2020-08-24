@@ -32,7 +32,7 @@ jobs:
       - run:
           name: Get Package Version
           command: APP_VERSION=`node -pe "require('./package.json').version"`
-      - aws-s3/sync:
+      - aws-s3/copy:
           arguments: |
             --acl public-read \
             --cache-control "max-age=86400"
@@ -52,4 +52,4 @@ workflows:
             - build
           filters:
             branches:
-              only: master
+              only: upgrade-bourbon-to-7.0
