@@ -29,6 +29,11 @@ jobs:
     steps:
       - attach_workspace:
           at: .
+      - run:
+          name: Check folders
+          command: |
+            sudo apt-get install tree
+            tree
       - aws-s3/copy:
           arguments: |
             --acl public-read \
@@ -37,7 +42,7 @@ jobs:
           aws-region: AWS_DEFAULT_REGION
           aws-secret-access-key: AWS_SECRET_ACCESS_KEY
           from: build/
-          to: s3://ui.wundery.com/ # update version number here.
+          to: s3://ui.wundery.com/
 
 workflows:
   deploy:
