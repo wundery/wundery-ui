@@ -40,7 +40,6 @@ jobs:
           aws-region: AWS_DEFAULT_REGION
           aws-secret-access-key: AWS_SECRET_ACCESS_KEY
           from: build/latest
-          overwrite: false
           to: "s3://ui.wundery.com/v${APP_VERSION}" # update version number here.
 
 workflows:
