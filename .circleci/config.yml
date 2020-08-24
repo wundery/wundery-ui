@@ -49,4 +49,4 @@ workflows:
             - build
           filters:
             branches:
-              only: upgrade-bourbon-to-7.0
+              only: master
