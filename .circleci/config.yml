@@ -31,8 +31,10 @@ jobs:
       - attach_workspace:
           at: .
       - run:
-          name: Get Package Version
-          command: &APP_VERSION node -pe "require('./package.json').version"
+          name: Assign bucket URL
+          command: |
+            APP_VERSION=`node -pe "require('./package.json').version"`
+            BUCKET_URL=s3://ui.wundery.com/v${APP_VERSION}
       - aws-s3/copy:
           arguments: |
             --acl public-read \
@@ -41,7 +43,7 @@ jobs:
           aws-region: AWS_DEFAULT_REGION
           aws-secret-access-key: AWS_SECRET_ACCESS_KEY
           from: build/latest
-          to: s3://ui.wundery.com/v*APP_VERSION # update version number here.
+          to: BUCKET_URL # update version number here.
 
 workflows:
   deploy:
