@@ -29,11 +29,6 @@ jobs:
     steps:
       - attach_workspace:
           at: .
-      # - run:
-      #     name: Check folders
-      #     command: |
-      #       sudo apt-get install tree
-      #       tree
       - aws-s3/sync:
           arguments: |
             --acl public-read \
