@@ -337,7 +337,10 @@ textarea {
 }
 
 .ui-form-label-checkbox-default {
-  color: $ui-color-black;
+  color: #3c4146;
+  &.ui-form-label-bold {
+    font-weight: $ui-font-weight-bold;
+  }
 }
 
 .ui-form-input-width-short {
@@ -351,3 +354,10 @@ textarea {
 .ui-form-input-width-full {
   width: 100% !important;
 }
+
+.ui-form-input-checkbox-default-right {
+  margin: 2px 10px 0px 10px;
+}
+
+
+
