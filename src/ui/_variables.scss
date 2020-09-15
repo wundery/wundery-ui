@@ -10,16 +10,16 @@ $ui-border-line: 1px;
 // Colors
 
 $ui-color-red: #f44336 !default;
-$ui-color-red-dark: #9C2B2B !default;
+$ui-color-red-dark: #9c2b2b !default;
 $ui-color-red-light: #deb4b1 !default;
-$ui-color-blue: #0071b1 !default;
-$ui-color-blue-light: #357ACA !default;
+$ui-color-blue: #374db1 !default;
+$ui-color-blue-light: #357aca !default;
 $ui-color-blue-medium: #4b9ccc !default;
 $ui-color-blue-dark: #006198 !default;
 $ui-color-green: #4bad00 !default;
 $ui-color-green-dark: #4da20b !default;
-$ui-color-green-light: #70B32C !default;
-$ui-color-darkblue: #0065BD !default;
+$ui-color-green-light: #70b32c !default;
+$ui-color-darkblue: #0065bd !default;
 $ui-color-grey-light: #f5f5f5 !default;
 $ui-color-border: #ddd;
 $ui-color-black: black;
@@ -75,10 +75,9 @@ $ui-spacing-double: $ui-spacing-default * 2 !default;
 $ui-nav-border-color: #eaeaea;
 $ui-nav-inverse-background: #005382;
 $ui-nav-inverse-brand-color: white;
-$ui-nav-inverse-muted-color: #C3D1DE;
+$ui-nav-inverse-muted-color: #c3d1de;
 $ui-nav-inverse-navitem-color: rgba(255, 255, 255, 0.8);
-$ui-nav-inverse-button-backgorund: #005F8F;
-
+$ui-nav-inverse-button-backgorund: #005f8f;
 
 // Defaults
 
@@ -109,9 +108,12 @@ $ui-headline-color: #2d2d2d !default;
 $ui-table-body-font-size: 14px;
 $ui-table-border-color: #cad4d9 !default;
 $ui-table-inner-border-color: lighten($ui-table-border-color, 7%) !default;
-$ui-table-header-background-color: #FAFAFA;
-$ui-table-header-background: linear-gradient($ui-table-header-background-color, darken($ui-table-header-background-color, 1%));
-$ui-table-header-font-color: #677C88 !default;
+$ui-table-header-background-color: #fafafa;
+$ui-table-header-background: linear-gradient(
+  $ui-table-header-background-color,
+  darken($ui-table-header-background-color, 1%)
+);
+$ui-table-header-font-color: #677c88 !default;
 $ui-table-header-font-size: 11px !default;
 $ui-table-header-text-transform: uppercase !default;
 $ui-table-header-font-weight: $ui-font-weight-bold !default;
@@ -124,7 +126,7 @@ $ui-table-headers-sort-icon-color: lighten($ui-table-header-font-color, 15%);
 $ui-table-headers-sort-icon-background: transparent;
 $ui-table-headers-sort-icon-border: 1px solid lighten($ui-table-headers-sort-icon-color, 20%);
 $ui-table-headers-sort-icon-hover-color: darken($ui-table-headers-sort-icon-color, 20%);
-$ui-table-headers-sort-icon-hover-border: 1px solid #9AA9B3;
+$ui-table-headers-sort-icon-hover-border: 1px solid #9aa9b3;
 $ui-table-title-background: $ui-table-header-background-color;
 
 // Box
@@ -151,15 +153,15 @@ $ui-kpi-horizon-value-color: black;
 
 // Pagination
 
-$ui-pagination-link-color: #677C88;
+$ui-pagination-link-color: #677c88;
 $ui-pagination-text-color: lighten($ui-pagination-link-color, 20%);
 $ui-pagination-font-size: 11px;
 
 // Buttons
 
 $ui-button-font-size: 11px;
-$ui-button-state-default-background: linear-gradient(#FAFAFA, #f7f7f7);
-$ui-button-state-default-hover-background: linear-gradient(darken(#FAFAFA, 3%), darken(#f7f7f7, 3%));
+$ui-button-state-default-background: linear-gradient(#fafafa, #f7f7f7);
+$ui-button-state-default-hover-background: linear-gradient(darken(#fafafa, 3%), darken(#f7f7f7, 3%));
 $ui-button-state-default-border: 1px solid rgba(187, 199, 206, 0.43);
 $ui-button-state-default-color: rgba(59, 88, 103, 0.81);
 
@@ -175,6 +177,6 @@ $font-color-grey: #999 !default;
 $border-color-default: darken(#f5f5f5, 5%) !default;
 $spacing-default: $ui-spacing-default;
 $spacing-half: $spacing-default / 2 !default;
-$spacing-double: 2* $spacing-default !default;
+$spacing-double: 2 * $spacing-default !default;
 
 // Vendor overrides
