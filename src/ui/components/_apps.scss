@@ -113,6 +113,19 @@
           font-weight: $ui-font-weight-bold;
           margin-right: 4px;
         }
+
+        .ui-app-inactive-pending-indicator {
+          order: 2;
+          border: 1px solid $ui-color-red;
+          border-radius: $ui-border-radius;
+          padding: 3px 6px;
+          font-size: 11px;
+          text-transform: uppercase;
+          font-weight: $ui-font-weight-bold;
+          color: $ui-color-red;
+          background: $ui-color-red;
+          color: white;
+        }
       }
       .ui-app-buttons {
         order: 2;
