@@ -40,6 +40,12 @@
         }
       }
 
+      &.ui-nav-navitem-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
       &.ui-nav-navitem-right {
         margin-left: auto;
         margin-right: 0px;

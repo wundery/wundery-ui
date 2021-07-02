@@ -164,3 +164,39 @@
     }
   }
 }
+
+.ui-beta-bar {
+  .ui-nav-navitems {
+    padding: 7px 16px;
+    background-color: #000;
+    color: #fff;
+
+    .ui-nav-navitem-center {
+      width: 100%;
+      font-size: 13px;
+
+      span {
+        margin: 0 9px;
+      }
+
+      a {
+        color: #fff;
+        opacity: 0.8;
+      }
+    }
+
+    .ui-nav-navitem-right {
+      min-width: 164px;
+
+      .ui-button-type-success {
+        background: linear-gradient(#33c345, #1ad08f);
+        height: 30px;
+        border-radius: 5px;
+
+        img {
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+}
